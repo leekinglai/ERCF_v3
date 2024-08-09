@@ -83,10 +83,10 @@ The ERCF ecosystem includes several options to allow you to customize to your sp
 
 <br>
 
-### Filament Buffering System
+### Filament Buffer/Rewinder Systems
 When an MMU changes tool, the unloaded filament needs to be thoughtfully managed so that it doesn't tangle. The ERCF project provides two such systems. The best choice for you will depend on your specific setup:
 
-#### Enraged Rabbit Cotton Tail (ERCT) - Filament Buffer
+### Enraged Rabbit Cotton Tail (ERCT) - Filament Buffer
 <table>
 <tr>
 <td width=30%><img src="Recommended_Options/ERCT_Buffer/Assets/heroimage_ERCT.png" alt='ERCT'></td>
@@ -107,7 +107,7 @@ ERCT is a very compact and integrated buffer system that is great when your spoo
 
 <br>
 
-#### Enraged Rabbit Filamentalist - Filament Rewinder
+### Enraged Rabbit Filamentalist - Filament Rewinder
 <table>
 <tr>
 <td>
