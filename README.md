@@ -81,10 +81,10 @@ There is a rapidly growing list of MMUs in the marketplace, from the mass-produc
 
 The ERCF ecosystem includes several options to allow you to customize to your specific needs:
 
-<br>
-
-### Filament Buffer/Rewinder Systems
+#### Filament Buffer/Rewinder Systems
 When an MMU changes tool, the unloaded filament needs to be thoughtfully managed so that it doesn't tangle. The ERCF project provides two such systems. The best choice for you will depend on your specific setup:
+
+<br>
 
 ### Enraged Rabbit Cotton Tail (ERCT) - Filament Buffer
 <table>
