@@ -111,7 +111,7 @@ ERCT is a very compact and integrated buffer system that is great when your spoo
 <table>
 <tr>
 <td>
-The Enraged Rabbit Filamentalist is an combined solution for buffering AND spool holder and thus provides total space savings. Rather than containing the unwound coils of filament it instead rewinds the filament back onto the spool which means there is never loose filament coils to tangle.
+The Enraged Rabbit Filamentalist is an combined solution for buffering AND spool holder and thus provides total space savings. Rather than containing the unwound coils of filament it instead rewinds the filament back onto the spool which means there are never loose filament coils to tangle.
 <p>
 
 Filamentalist requires no additional motors because of its innovation of using the gear stepper of the MMU coupled through the filament to power both feeding and rewinding the spool. This can help overcome friction but caution is recommended for really soft TPU.
