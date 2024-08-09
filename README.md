@@ -120,9 +120,9 @@ Filamentalist is requires no additional motors because of its innovation of usin
 Filamentalist can also use the modular pre-gate filament sensor and gate entry LED blocks from ERCT so you don't give up on bling!
 <p>
 
-[Read more](Recommended_Options/ER_Filamentalist/README.md)
+[Read more](Recommended_Options/Filamentalist_Rewinder/README.md)
 </td>
-<td width=30%><img src="Recommended_Options/ER_Filamentalist/Assets/Filamentalist_render.png" alt='Filamentalist'></td>
+<td width=30%><img src="Recommended_Options/Filamentalist/Assets_Rewinder/Filamentalist_render.png" alt='Filamentalist'></td>
 </tr>
 </table>
 
