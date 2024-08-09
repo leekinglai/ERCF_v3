@@ -122,7 +122,7 @@ Filamentalist can also use the modular pre-gate filament sensor and gate entry L
 
 [Read more](Recommended_Options/Filamentalist_Rewinder/README.md)
 </td>
-<td width=30%><img src="Recommended_Options/Filamentalist/Assets_Rewinder/Filamentalist_render.png" alt='Filamentalist'></td>
+<td width=30%><img src="Recommended_Options/Filamentalist_Rewinder/Assets/Filamentalist_render.png" alt='Filamentalist'></td>
 </tr>
 </table>
 
