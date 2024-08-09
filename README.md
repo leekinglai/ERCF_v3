@@ -2,7 +2,7 @@
 
 <p align="center">
   <img src="/Assets/Full_CAD.jpg" alt='ERCFv2' width='70%'>
-  <h1 align="center">ERCF v2 - RC1</h1>
+  <h1 align="center">ERCF v2 - RC2</h1>
 </p>
 
 <p align="center">
@@ -83,9 +83,10 @@ The ERCF ecosystem includes several options to allow you to customize to your sp
 
 <br>
 
-Buffering System: When an MMU changes tool, the unloaded filament needs to be thoughtfully managed so that it doesn't tangle. The ERCF project provides two such systems. The best choice for you will depend on your specific setup:
+### Filament Buffering System
+When an MMU changes tool, the unloaded filament needs to be thoughtfully managed so that it doesn't tangle. The ERCF project provides two such systems. The best choice for you will depend on your specific setup:
 
-### Enraged Rabbit Cotton Tail (ERCT)
+#### Enraged Rabbit Cotton Tail (ERCT) - Filament Buffer
 <table>
 <tr>
 <td width=30%><img src="Recommended_Options/ERCT_Buffer/Assets/heroimage_ERCT.png" alt='ERCT'></td>
@@ -106,7 +107,7 @@ ERCT is a very compact and integrated buffer system that is great when your spoo
 
 <br>
 
-### Enraged Rabbit Filamentalist
+#### Enraged Rabbit Filamentalist - Filament Rewinder
 <table>
 <tr>
 <td>
@@ -121,7 +122,7 @@ Filamentalist can also use the modular pre-gate filament sensor and gate entry L
 
 [Read more](Recommended_Options/ER_Filamentalist/README.md)
 </td>
-<td width=30%><img src="Recommended_Options/ER_Filamentalist/Assets/heroimage_ERCT.png" alt='ERCT'></td>
+<td width=30%><img src="Recommended_Options/ER_Filamentalist/Assets/Filamentalist_render.png" alt='Filamentalist'></td>
 </tr>
 </table>
 
@@ -229,7 +230,7 @@ A lot of work has gone into creating a quality CAD model of the project, careful
 <br>
 
 ## FAQ
-ERCF v2 is currently in the RC1 phase.  That means that we hope the BOM and parts are complete, but there are still some areas of polish needed: documentation, kit availability, etc. Therefore, we're sure there will be lots of questions.  To avoid repetition on the various support channels, you can find a list of [frequently asked questions](FAQ.md) here.  If something isn't answered the best place to go is the primary [Voron #ercf_questions](https://discord.com/channels/460117602945990666/909743915475816458) Discord server
+ERCF v2 is currently at the second iteration or RC2 phase. Design evolution has required some BOM changes over RC1. There are still some areas that require refinement but we are close to final.  We're sure there will be lots of questions.  To avoid repetition on the various support channels, you can find a list of [frequently asked questions](FAQ.md) here.  If something isn't answered the best place to go is the primary [Voron #ercf_questions](https://discord.com/channels/460117602945990666/909743915475816458) Discord server
 
 <br>
 
