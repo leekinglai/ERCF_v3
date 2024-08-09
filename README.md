@@ -86,7 +86,7 @@ When an MMU changes tool, the unloaded filament needs to be thoughtfully managed
 
 <br>
 
-### <img src="Assets/Carrot.png" alt="" width="23" height="21">Enraged Rabbit Cotton Tail (ERCT) - Filament Buffer
+### <img src="Assets/Carrot.png" alt="" width="24">Enraged Rabbit Cotton Tail (ERCT) - Filament Buffer
 <table>
 <tr>
 <td width=30%><img src="Recommended_Options/ERCT_Buffer/Assets/heroimage_ERCT.png" alt='ERCT'></td>
@@ -107,7 +107,7 @@ ERCT is a very compact and integrated buffer system that is great when your spoo
 
 <br>
 
-### <img src="Assets/Carrot.png" alt="" width="23" height="21">Enraged Rabbit Filamentalist - Filament Rewinder
+### <img src="Assets/Carrot.png" alt="" width="24">Enraged Rabbit Filamentalist - Filament Rewinder
 <table>
 <tr>
 <td>
@@ -128,7 +128,7 @@ Filamentalist can also use the modular pre-gate filament sensor and gate entry L
 
 <br>
 
-### <img src="Assets/Carrot.png" alt="" width="23" height="21">Toolhead Cutter: Enraged Rabbit Filametrix (ERF)
+### <img src="Assets/Carrot.png" alt="" width="24">Toolhead Cutter: Enraged Rabbit Filametrix (ERF)
 <table>
 <tr>
 <td width=30%><img src="Recommended_Options/ERF_Filament_Cutter/Assets/ERF.png" alt='ERF'></td>
@@ -146,7 +146,7 @@ ERF also supports an optional servo operated ganrtry activation pin so no print 
 
 <br>
 
-### <img src="Assets/Carrot.png" alt="" width="23" height="21">Toolhead Sensor Modifications
+### <img src="Assets/Carrot.png" alt="" width="24">Toolhead Sensor Modifications
 <table>
 <tr>
 <td>
