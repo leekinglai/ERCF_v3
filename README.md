@@ -160,8 +160,8 @@ ERCF can be operated without a toolhead sensor (filament detection) in the toolh
 
 <br>
 
-### Purge System (Blobifier)
-Pellet purge system to remove the need for the wipe tower.
+### Purge System (ERPS)
+Pellet purge system to remove the need for the wipe tower. Stay tuned
 
 <br>
 
