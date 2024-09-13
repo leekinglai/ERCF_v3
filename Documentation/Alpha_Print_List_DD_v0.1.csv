@@ -1,0 +1,53 @@
+Part;Qty
+[a]_Bypass_LRF.STL;1
+[a]_Drag_Chain_Anchor_Bottom.STL;1
+[a]_Gear_Box_Foot.STL;1
+[a]_Gear_Box_Top_Panel.STL;1
+[a]_Hatch.STL;1
+[a]_Latch_xN.STL;8
+[a]_Motor_Lock.STL;1
+[a]_Selector_Cart.STL;1
+[a]_Servo_Arm_Savox.STL (1);1
+[a]_Side_Latch_v2_x2.STL;2
+[a]_Split_Coupler_A.STL;1
+[a]_Split_Coupler_B.STL;1
+[a]_Tophat_xN.STL;8
+[a]_Trap_M3x3_xN.STL;8
+[c]_Cover_Lens_xN.STL (1);8
+[c]_Encoder_Diffuser.STL (1);1
+[c]_Logo_Diffuser.STL;1
+[mm]_Selector_Door_Carrot_Body_1.STL;1
+[mm]_Selector_Door_Carrot_Body_2.STL;1
+[mm]_Selector_Door_Carrot_Body_3.STL;1
+[mm]_Selector_Door_Carrot_Leaf_1.STL;1
+[mm]_Selector_Door_Carrot_Leaf_2.STL;1
+[mm]_Selector_Door_Carrot_Leaf_3.STL;1
+[o]_Diffuser_Mask.STL;1
+[o]_Encoder_Slotted_Wheel.STL (1);1
+Base_xN.STL;8
+Belt_Tensioner.STL;1
+Cover_Body_xN.STL (1);8
+Drag_Chain_Anchor.STL;1
+Encoder_Left.STL (3);1
+Encoder_Right.STL (2);1
+End_Block.STL;1
+Filament path_xN.STL;8
+Filament_Hinge;1
+Gearbox.STL;1
+Holder_COAS_x2.STL;2
+LED_Carrier.STL;1
+Linear_Axis_Idler_Block.STL;1
+Linear_Axis_Selector_Motor_Support.STL;1
+Logo_Plate.STL;1
+Motor_Mount_NEMA17_Direct_Drive.STL;1
+Selector_Door.STL;1
+Selector_Spring_Cap.STL (2);1
+Servo_Mount_DS041MG.STL;1
+Tag plate_0.STL;2
+Tag plate_1.STL;2
+Tag plate_2.STL;2
+Tag plate_3.STL;2
+Tag plate_4.STL;2
+Tag plate_5.STL;2
+Tag plate_6.STL;2
+Tag plate_7.STL;2
