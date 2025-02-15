@@ -1,8 +1,8 @@
 # Enraged Rabbit Community Project
 
 <p align="center">
-  <img src="/Assets/Full_CAD.jpg" alt='ERCFv2' width='70%'>
-  <h1 align="center">ERCF v2 - RC2</h1>
+  <img src="/Assets/Full_CAD.jpg" alt='ERCFv25' width='70%'>
+  <h1 align="center">ERCF v2.5</h1>
 </p>
 
 <p align="center">
@@ -26,7 +26,7 @@ An expandable MMU for Klipper-based 3D-Printers
 This is a community-born project and a major update to the Voron ERCF MMU that was started a couple of years ago by Ette.  It is endorsed by Ette, and the guiding philosophy wasn't to start again with a new MMU design but to refine what has already proven to be a very capable machine and push it to be the best it can be by simplifying problematic construction, improving reliability and aligning as close as possible to v1.1 BOM. However, the project includes an all-new optional integrated filament buffer system (ERCT), filament cutter option (ERF), a collection of recommended tool head sensor modifications and a bit of Bling! It fully leverages the Happy Hare firmware MMU control software with Klipper Screen extensions.
 <p>
   
-There is a rapidly growing list of MMUs in the marketplace, from the mass-produced "Fords" who pioneered the market to the "Toyota" that are more recent efficient engineering feat but somehow lacked soul. We consider ERCFv2 the "BMW" - a little over-engineered perhaps but distinctively cool, and you feel good driving it.  We hope you enjoy it! &nbsp;&nbsp; Videos: [Teaser](https://www.youtube.com/watch?v=U2QwvPacIUk) &nbsp; [Release](https://www.youtube.com/watch?v=EJCPerBsM3Q)
+There is a rapidly growing list of MMUs in the marketplace, from the mass-produced "Fords" who pioneered the market to the "Toyota" that are more recent efficient engineering feat but somehow lacked soul. We consider ERCFv2.5 the "BMW" - a little over-engineered perhaps but distinctively cool, and you feel good driving it.  We hope you enjoy it! &nbsp;&nbsp; Videos: [Teaser](https://www.youtube.com/watch?v=U2QwvPacIUk) &nbsp; [Release](https://www.youtube.com/watch?v=EJCPerBsM3Q)
 </td>
 </tr>
 </table>
@@ -91,7 +91,7 @@ When an MMU changes tool, the unloaded filament needs to be thoughtfully managed
 <tr>
 <td width=30%><img src="Recommended_Options/ERCT_Buffer/Assets/heroimage_ERCT.png" alt='ERCT'></td>
 <td>
-The Enraged Rabbit Cotton Tail (ERCT) buffer system is designed to attach directly to ERCF v2. It is a passive system that optimizes space and is also designed to reduce resistance in the filament path, creating a consistent system for calibration.
+The Enraged Rabbit Cotton Tail (ERCT) buffer system is designed to attach directly to ERCF v2.5. It is a passive system that optimizes space and is also designed to reduce resistance in the filament path, creating a consistent system for calibration.
 <p>
 
 ERCT includes a pre-gate filament sensor for automated filament loading and detect runout for endless spool feature. It also incorporates a NEOpixel on each gate that, when driven by the Happy Hare firmware, provides functional feedback and the necessary "bling!"
@@ -187,10 +187,10 @@ Happy Hare provides an easy installation script which has knowledge of recommend
 <table>
 <tr>
 <td>
-Building something as complex as an MMU is a challenging undertaking, but the ERCFv2 project contains an amazingly detailed and illustrated manual with step-by-step instructions.  We have tried to make the process similar to fitting together a jigsaw puzzle, albeit with a few optional pieces.
+Building something as complex as an MMU is a challenging undertaking, but the ERCFv2.5 project contains an amazingly detailed and illustrated manual with step-by-step instructions.  We have tried to make the process similar to fitting together a jigsaw puzzle, albeit with a few optional pieces.
 <p>
 
-[ERCFv2 PDF Manual](Documentation/ERCF_v2_Manual.pdf)
+[ERCFv2.5 PDF Manual](Documentation/ERCF_v2_Manual.pdf)
 </td>
 <td width=30%><img src="Assets/Manual_Page.png" alt='ERCF Manual'></td>
 </tr>
@@ -205,7 +205,7 @@ Building something as complex as an MMU is a challenging undertaking, but the ER
 <td>
 You can find a Bill of Materials (BOM) and a convenient printed parts tracker for the project and options here. Note that the BOM also contains an upgrade list for those of you who want to use your existing ERCF v1.1 kits. Please make a copy and edit the "Filament Blocks #" to be the number of gates for your build.  This can be any number, but we encourage kit vendors to use 4/8/12 as size variations. Note that there are separate columns for core ERCF, the optional ERCT and ERF options, as well as the suggested "extras"
 <p>
-Please be aware that the BOM is strictly for reference. The recommended parts can be exchanged for other similar quality parts. Manufacturers who use the BOM as a reference must submit an application for certification before selling them as ERCF V2 kits. Please contact us for certification.
+Please be aware that the BOM is strictly for reference. The recommended parts can be exchanged for other similar quality parts. Manufacturers who use the BOM as a reference must submit an application for certification before selling them as ERCF V2.5 kits. Please contact us for certification.
 
 [BOM](https://docs.google.com/spreadsheets/d/1HtVIu4yqzS6xJQr63-JKtMAh4Xq7wbtWPFeuiCnrnnE) &nbsp;&nbsp; [Printed Parts Tracker](https://docs.google.com/spreadsheets/d/1h1bJurR6Z8Ou36c5U9cWmqI86tXKlWrcZrWrHgGN13A)
 </td>
@@ -230,7 +230,7 @@ A lot of work has gone into creating a quality CAD model of the project, careful
 <br>
 
 ## FAQ
-ERCF v2 is currently at the second iteration or RC2 phase. Design evolution has required some BOM changes over RC1. There are still some areas that require refinement but we are close to final.  We're sure there will be lots of questions.  To avoid repetition on the various support channels, you can find a list of [frequently asked questions](FAQ.md) here.  If something isn't answered the best place to go is the primary [Voron #ercf_questions](https://discord.com/channels/460117602945990666/909743915475816458) Discord server
+ERCF v2 is currently at the third iteration or v2.5 phase. Design evolution has required some BOM changes over RC1. There are still some areas that require refinement but we are close to final.  We're sure there will be lots of questions.  To avoid repetition on the various support channels, you can find a list of [frequently asked questions](FAQ.md) here.  If something isn't answered the best place to go is the primary [Voron #ercf_questions](https://discord.com/channels/460117602945990666/909743915475816458) Discord server
 
 <br>
 
@@ -293,7 +293,8 @@ _If you want to be included, please contact us. We are happy to validate your ki
 
 ## Changelog
 <ul>
-  <li>v2.0 rc1 - Initial Release (Merry Christmas!)
+  <li>v2.5 - Full Release (Happy Easter!)
+  <li>v2 RC1 - Initial Release (Happy Christmas!)
 </ul>
 
 CAD Design Guidelines used in this project (in case you were interested) can be found: [here](/Assets/Dev_Notes.md).
