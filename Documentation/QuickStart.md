@@ -29,6 +29,8 @@ Now, clone the Happy Hare repository onto your Raspberry Pi:
 
 ```
 cd ~
+```
+```
 git clone https://github.com/moggieuk/Happy-Hare.git
 ```
 
@@ -40,6 +42,8 @@ To install Happy Hare firmware, run the following commands on your Raspberry Pi 
 
 ```
 cd ~/Happy-Hare
+```
+```
 ./install.sh -i
 ```
 
@@ -99,11 +103,11 @@ This is usually set to `y` on new Happy Hare installations, and `n` on existing 
 
 ---
 
-🎉 Happy Hare is successfully installed! If you selected one of the default control boards, you don't need to follow the rest of this guide. You can continue with configuration and calibrations [here](https://3dcoded.github.io/3MS/instructions/).
+🎉 Happy Hare is successfully installed! If you selected one of the default control boards, you don't need to follow the rest of this guide. You can continue with configuration and calibrations [here](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/tree/main/Documentation/).
 <p>
 If you selected `Not in list / Unknown`, read on.
 
-## ![#f03c15](resources/f03c15.png) ![#c5f015](resources/c5f015.png) ![#1589F0](resources/1589F0.png) Configuration
+## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Configuration
 
 If you aren't using one of the default Happy Hare provided control boards, you will have to select a ERCF-specific configuration for your control board.
 
