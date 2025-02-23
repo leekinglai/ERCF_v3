@@ -8,7 +8,7 @@
 
 This quickstart guide explains how to install Happy Hare firmware for use with the [ERCFv2.5](https://github.com/Enraged-Rabbit-Community/ERCFv2.5) multimaterial system. 
 
-## ![#f03c15](resources/f03c15.png) ![#c5f015](resources/c5f015.png) ![#1589F0](resources/1589F0.png) Cloning Happy Hare Repo
+## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Cloning Happy Hare Repo
 
 First, download the Happy Hare repository onto your Raspberry Pi using the `git` tool. Log into your Raspberry Pi via SSH (PuTTy on Windows):
 
@@ -34,7 +34,7 @@ git clone https://github.com/moggieuk/Happy-Hare.git
 
 Happy Hare is now downloaded onto your Raspberry Pi. The next step is installing it.
 
-## ![#f03c15](resources/f03c15.png) ![#c5f015](resources/c5f015.png) ![#1589F0](resources/1589F0.png) Running Installer
+## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Running Installer
 
 To install Happy Hare firmware, run the following commands on your Raspberry Pi through SSH:
 
@@ -126,7 +126,7 @@ Here are a few examples of this naming scheme:
 `MAIN_0_3_btt_octopus`: Internal BTT Octopus controlling four tools numbered `0` to `3`.
 
 > [!NOTE]
-> If you can't find a configuration for your control board on the 3MS repository, you can [open an issue](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/issues/new/choose) to get a configuration created for your control board.
+> If you can't find a configuration for your control board on the ERCF repository, you can [open an issue](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/issues/new/choose) to get a configuration created for your control board.
 
 ### Installing Configuration
 
