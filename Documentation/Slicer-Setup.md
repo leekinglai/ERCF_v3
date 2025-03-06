@@ -21,7 +21,7 @@ Make sure the `Expert Options` of your slicer are enabled and go to the Printer 
 
 Enter the following (using your own print start macro call) into your "custom start g-code" box:
 
-<img src="https://github.com/moggieuk/Happy-Hare/wiki/resources/Slicer-Setup/start_gcode.png" width="100%" alt="Custom Start G-Code"><br>Your `START_PRINT ...` macro is likely to be different from mine! Here is some cut'n'paste text:
+<img src="assets/start_gcode.png" width="100%" alt="Custom Start G-Code"><br>Your `START_PRINT ...` macro is likely to be different from mine! Here is some cut'n'paste text:
 
 ```yml
 MMU_START_SETUP INITIAL_TOOL={initial_tool} TOTAL_TOOLCHANGES=!total_toolchanges! REFERENCED_TOOLS=!referenced_tools! TOOL_COLORS=!colors! TOOL_TEMPS=!temperatures! TOOL_MATERIALS=!materials! FILAMENT_NAMES=!filament_names! PURGE_VOLUMES=!purge_volumes!
@@ -102,7 +102,7 @@ Optionally you can put the parts of your original print start macro that you sep
 
 > [!TIP]  
 > Did you know the slicer defined extruder colors can be displayed on Mainsail / Fluidd UI next to the Extruder "Tx" buttons (see below). Happy Hare ensures the color information is parsed from the slicers g-code and provided to this user interface.
-> <p align="center"><img src="https://github.com/moggieuk/Happy-Hare/wiki/resources/Slicer-Setup/mainsail_colors.png" width="500" alt="Mailsail Extruder Colors"></p>
+> <p align="center"><img src="assets/mainsail_colors.png" width="500" alt="Mailsail Extruder Colors"></p>
 
 <br>
 
@@ -110,7 +110,7 @@ Optionally you can put the parts of your original print start macro that you sep
 
 Ensure this is added in your slicer's "custom end g-code" box:
 
-<img src="https://github.com/moggieuk/Happy-Hare/wiki/resources/Slicer-Setup/end_gcode.png" width="320" alt="End G-Code">
+<img src="assets/end_gcode.png" width="320" alt="End G-Code">
 
 ```yml
 MMU_END
@@ -133,7 +133,7 @@ This should be the very last g-code executed. When printing from virtual sd-card
 
 The reason for this is to support sequential printing and explained [here](https://github.com/moggieuk/Happy-Hare/wiki/Toolchange-Movement#---z-hop-moves)
 
-<img src="https://github.com/moggieuk/Happy-Hare/wiki/resources/Slicer-Setup/after_layer_change_gcode.png" width="320" alt="After Layer Change G-Code">
+<img src="assets/after_layer_change_gcode.png" width="320" alt="After Layer Change G-Code">
 
 ```yml
 _MMU_UPDATE_HEIGHT
@@ -148,7 +148,7 @@ SET_PRINT_STATS_INFO CURRENT_LAYER={layer_num} ; For pause at layer functionalit
 
 This is likely to be the slicer default, but it is worth checking that the custom tool change g-code is set to this:
 
-<img src="https://github.com/moggieuk/Happy-Hare/wiki/resources/Slicer-Setup/tool_change_gcode.png" width="280" alt="Tool Change G-Code">
+<img src="assets/tool_change_gcode.png" width="280" alt="Tool Change G-Code">
 
 ```yml
 T[next_extruder]
@@ -186,7 +186,7 @@ variable_dump_stats                         : True      ; True/False, Whether to
 
 When Happy Hare detects an error, even during print start it will pause the print allowing you to fix and then resume. If the option `show_error_dialog: 1` is set in `mmu_parameters.cfg` a pop-up dialog will be displayed on Mailsail/Fluidd/KlipperScreen providing you options through the UI. If it is occurs during these startup macros there will also be an option to abort the print. The abort option will disappear during the print. To disable the popup, set `show_error_dialog: 0`
 
-<img src="https://github.com/moggieuk/Happy-Hare/wiki/resources/Slicer-Setup/error_dialog_during_start.png" width="400" alt="Error Dialog">
+<img src="assets/error_dialog_during_start.png" width="400" alt="Error Dialog">
 
 > [!IMPORTANT]  
 > If you are writing your own startup macros beware of the earlier note because the use of a popup dialog can make it seem as though your printer is locked up for long running macros
@@ -209,23 +209,23 @@ The first place is a setting like this on the `printer settings` tab.  This disa
 > <br>
 > **With PrusaSlicer v2.8 and above please use a value of exactly 0.**
 
-<img src="https://github.com/moggieuk/Happy-Hare/wiki/resources/Slicer-Setup/printer_settings.png" width="500" alt="Slicer printer settings">
+<img src="assets/printer_settings.png" width="500" alt="Slicer printer settings">
 
 Working in conjunction with the above and found on the `filament settings` tab is this area where you should zero out all all movement speeds and distances.  Leave only the timing inputs that you can tune once you know the average loading and unloading time for your particular MMU.
 
-<img src="https://github.com/moggieuk/Happy-Hare/wiki/resources/Slicer-Setup/filament_settings.png" width="680" alt="Slicer filament settings">
+<img src="assets/filament_settings.png" width="680" alt="Slicer filament settings">
 
 The next setting must be configure on each of your extruders.  This turns off an initial retraction and subsequent extrude that will leave blobs on your wipetower.  The reason to turn this off is that Happy Hare will correctly load the filament exatly to the nozzle and additonal extrusion will cause a blob.
 
-<img src="https://github.com/moggieuk/Happy-Hare/wiki/resources/Slicer-Setup/printer_settings_extruder.png" width="500" alt="Slicer printer settings per extruder">
+<img src="assets/printer_settings_extruder.png" width="500" alt="Slicer printer settings per extruder">
 
 Unless you have a sepcialized purge system (documented later) you will want the slicer to manage a wipe tower used to purge out the remains of the previous filament.  To do this, make sure this option is enabled (it usually is by default):
 
-<img src="https://github.com/moggieuk/Happy-Hare/wiki/resources/Slicer-Setup/print_settings.png" width="500" alt="Slicer print settings">
+<img src="assets/print_settings.png" width="500" alt="Slicer print settings">
 
 > [!NOTE]  
 > If you use SuperSlicer, be sure to turn off Skinnydip:
-> <br><img src="https://github.com/moggieuk/Happy-Hare/wiki/resources/Slicer-Setup/skinny_dip.png" width="500" alt="Skinnydip disabling"><br>
+> <br><img src="assets/skinny_dip.png" width="500" alt="Skinnydip disabling"><br>
 > It's probably also a good idea to zero out the distances below.
 > Doing this prevents Superslicer from pushing out a blob of filament before cutting the tip.
 
