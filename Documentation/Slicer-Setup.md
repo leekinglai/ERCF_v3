@@ -284,7 +284,16 @@ I wish slicers made it easy to toggle tip forming on/off but unfortunately that 
 
 <br>
 
-### Related docs:
-- [Slicer Setup]
+### More essential config setup:
+- [Basic Operation](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Basic-Operation.md)
+- [Hardware Configuration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Hardware-Configuration.md)
+- [MMU Calibration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/MMU-Calibration.md)
+- [Setup Calibration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Setup_Calibration.md)
+- Slicer Setup
+- [Endstops, Movement and Homing](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Movement-and-Homing.md)
+- [Happy Hare Parameters](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Happy-Hare-Parameters.md)
+- [Macro Configuration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Macro-Configuration.md)
+
+### Additional Happy Hare Information:
 - [Tip Forming and Purging](https://github.com/moggieuk/Happy-Hare/wiki/Tip-Forming-and-Purging)
 - [Toolchange Movement](https://github.com/moggieuk/Happy-Hare/wiki/Toolchange-Movement)

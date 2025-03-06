@@ -1,10 +1,10 @@
 #### Page Sections:
-- [Klipper Config](Hardware-Configuration#step-1-validate-your-hardware-configuration)
-- [Endstops](Hardware-Configuration#step-2-check-endstops--optional-sensors)
-- [Motor Movement](Hardware-Configuration#step-3-check-motor-movement-and-direction)
-- [Encoder](Hardware-Configuration#step-4-check-encoder-if-fitted)
-- [Other Sensors](Hardware-Configuration#step-5-check-other-sensors-if-fitted)
-- [Servo](Hardware-Configuration#step-6-check-servo)
+- [Klipper Config](Hardware-Configuration.md#step-1-validate-your-hardware-configuration)
+- [Endstops](Hardware-Configuration.md#step-2-check-endstops--optional-sensors)
+- [Motor Movement](Hardware-Configuration.md#step-3-check-motor-movement-and-direction)
+- [Encoder](Hardware-Configuration.md#step-4-check-encoder-if-fitted)
+- [Other Sensors](Hardware-Configuration.md#step-5-check-other-sensors-if-fitted)
+- [Servo](Hardware-Configuration.md#step-6-check-servo)
 
 ## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Hardware configuration (mmu\_hardware.cfg explained)
 
@@ -196,7 +196,11 @@ MMU_SERVO POS=up
 <br>
 
 ### More essential config setup:
+- [Basic Operation](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Basic-Operation.md)
 - Hardware Configuration
-  - [Endstops, Movement and Homing](Movement-and-Homing)
-- [Happy Hare Parameters](Happy-Hare-Parameters)
-- [Macro Configuration](Macro-Configuration)
+- [MMU Calibration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/MMU-Calibration.md)
+- [Setup Calibration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Setup_Calibration.md)
+- [Slicer Setup](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Slicer-Setup.md)
+- [Endstops, Movement and Homing](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Movement-and-Homing.md)
+- [Happy Hare Parameters](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Happy-Hare-Parameters.md)
+- [Macro Configuration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Macro-Configuration.md)
