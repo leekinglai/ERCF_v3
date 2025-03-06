@@ -2,7 +2,7 @@
 
 This is a sequential walkthrough of the main configuration files for Happy Hare. You should have tertiary understanding and awareness of all the settings but some are essential.  Those are labeled with "IMPORTANT" and you must setup for your MMU setup.
 
-The Klipper configuration files for Happy Hare are modular and where to find them is discussed in the [Configuration Reference](Configuration-Reference). Also be sure to consult the [Configuring mmu\_parameters.cfg](Configuring-mmu_parameters.cfg) page for details about each and every parameter.
+The Klipper configuration files for Happy Hare are modular and where to find them is discussed in the [Configuration Reference](https://github.com/moggieuk/Happy-Hare/wiki/Configuration-Reference). Also be sure to consult the [Configuring mmu\_parameters.cfg](https://github.com/moggieuk/Happy-Hare/wiki/Configuring-mmu_parameters.cfg) page for details about each and every parameter.
 
 > [!TIP]  
 > It's worth noting, and a VERY useful feature, that all the essential configuration and tuning parameters (in `mmu_parameters.cfg`) can be modified at runtime without restarting Klipper. Use the `MMU_TEST_CONFIG` command to do this. Running without any parameters will display the current values. **This even allows changes to configuration during a print!**
@@ -52,10 +52,10 @@ Any of the displayed config settings can be modified. For example, to update the
 
 ## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) MMU Vendor, Type & Size
 
-The first section specifies the type of MMU and is used by Happy Hare to adjust (primarily CAD) options. It is documented [here](Configuring-mmu_parameters.cfg#---mmu-vendor-type-and-size) and [here](Configuring-mmu_parameters.cfg#---other-mmu-cad-dimensions).
+The first section specifies the type of MMU and is used by Happy Hare to adjust (primarily CAD) options. It is documented [here](https://github.com/moggieuk/Happy-Hare/wiki/Configuring-mmu_parameters.cfg#---mmu-vendor-type-and-size) and [here](https://github.com/moggieuk/Happy-Hare/wiki/Configuring-mmu_parameters.cfg#---other-mmu-cad-dimensions).
 
 > [!IMPORTANT]  
-> These three settings must be set. If "Other" is specified you will also need to specify cad dimensions [here](Configuring-mmu_parameters.cfg#---mmu-vendor-type-and-size).
+> These three settings must be set. If "Other" is specified you will also need to specify cad dimensions [here](https://github.com/moggieuk/Happy-Hare/wikiConfiguring-mmu_parameters.cfg#---mmu-vendor-type-and-size).
 
 ```yml
 #
@@ -127,7 +127,7 @@ servo_active_down: 0			# CAUTION: 1=Force servo to stay active when down, 0=Rele
 servo_buzz_gear_on_down: 1              # Whether to "buzz" the gear stepper on down to aid engagement
 ```
 > [!TIP]  
-> As of HHv2.4 the servo calibration can be performed without updating these values and klipper restarts.  The procedure is documented in the [calibration](MMU-Calibration) doc, but briefly `MMU_SERVO SAVE=1 POS=[up|down|move]` can be used to persist position after setting correct angle with `MMU_SERVO ANGLE=..`
+> As of HHv2.4 the servo calibration can be performed without updating these values and klipper restarts.  The procedure is documented in the [MMU Calibration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/MMU-Calibration.md) doc, but briefly `MMU_SERVO SAVE=1 POS=[up|down|move]` can be used to persist position after setting correct angle with `MMU_SERVO ANGLE=..`
 
 ## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Logging
 
@@ -231,7 +231,7 @@ gate_autoload: 1                        # If pre-gate sensor fitted this control
 
 ## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Bowden Loading & Unloading
 
-For more information on the bowden correct move, read about the loading sequence [here](Basic-Operation#---filament-loading-and-unloading-sequences).  The `bowden_num_moves` allows a long move to be broken into separate moves.  Only increase this if Klipper throws errors with very long moves - setting it higher than `1` will long down the loading process.
+For more information on the bowden correct move, read about the loading sequence [here](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Basic-Operation.md#---filament-loading-and-unloading-sequences).  The `bowden_num_moves` allows a long move to be broken into separate moves.  Only increase this if Klipper throws errors with very long moves - setting it higher than `1` will long down the loading process.
 
 ```yml
 # Bowden tube loading/unloading --------------------------------------------------------------------------------------------
@@ -332,7 +332,7 @@ Consult this illustration of a typical toolhead or table of popular configuratio
 ** These settings assume you have turned off all the slicer settings like toolchange retraction!<br>
 _(please submit your verified additions to build out this table)_
 
-Read about the loading and unloading sequences [here](Basic-Operation#---filament-loading-and-unloading-sequences) and in [Understanding Operation](Understanding-Operation).
+Read about the loading and unloading sequences [here](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Basic-Operation.md#---filament-loading-and-unloading-sequences) and in [Understanding Operation](Https://github.com/moggieuk/Happy-Hare/wiki/Understanding-Operation).
 
 > [!TIP]  
 > Once Happy Hare is loaded you can use `MMU_STATUS SHOWCONFIG=1` to describe in english what you have configured for loading and unloading sequences. After changing a config value (see how to use `MMU_TEST_CONFIG` for runtime changes) you can run again to see the impact of the change. Note that this also works for dynamic changes to sensors: e.g. if you disable your toolhead sensor via Mainsail, you will be able to see the fallback approach that Happy Hare is configured to do
@@ -401,7 +401,7 @@ toolhead_move_error_tolerance: 60
 
 ## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Tip Forming
 
-Here you set the name of the macro to call to perform the "tip forming". Happy Hare supplies both a traditional tip shaping macro (based on what Prusa/Super slicer did) as well as a tip cutting macro designed for toolhead based cutters like ERF (Filametrix).  More details on slicer setup can be found [here](Toolchange-Movement#---role-of-the-slicer) and in the setup of the individual macros.
+Here you set the name of the macro to call to perform the "tip forming". Happy Hare supplies both a traditional tip shaping macro (based on what Prusa/Super slicer did) as well as a tip cutting macro designed for toolhead based cutters like ERF (Filametrix).  More details on slicer setup can be found [here](https://github.com/moggieuk/Happy-Hare/wiki/Toolchange-Movement#---role-of-the-slicer) and in the setup of the individual macros.
 
 ``` yml
 # Tip forming -------------------------------------------------------------------------------------------------------------
@@ -427,14 +427,14 @@ slicer_tip_park_pos: 0                   # This specifies the position of filame
 ```
 
 > [!NOTE]  
-> Setting `force_form_tip_standalone: 1` will cause Happy Hare to always run the supplied tip shaping macro.  If you set this then make sure you configure your slicer to not adding tip shaping logic of its own else tips will attempt to be created twice and knowledge of the filament position in the extruder may become inaccurate (see [Tip Forming and Purging](Tip-Forming-and-Purging)).
+> Setting `force_form_tip_standalone: 1` will cause Happy Hare to always run the supplied tip shaping macro.  If you set this then make sure you configure your slicer to not adding tip shaping logic of its own else tips will attempt to be created twice and knowledge of the filament position in the extruder may become inaccurate (see [Tip Forming and Purging](https://github.com/moggieuk/Happy-Hare/wiki/Tip-Forming-and-Purging)).
 Tip-Forming-and-Purging
 
 <br>
 
 ## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Gear/Extruder Synchronization
 
-Happy Hare has the ability to synchronize various motors during printing operation and this section controls those options. Make sure you have [understood the caution](Synchronized-Gear-Extruder) needed when `sync_to_extruder: 1` is enabled.
+Happy Hare has the ability to synchronize various motors during printing operation and this section controls those options. Make sure you have [understood the caution](https://github.com/moggieuk/Happy-Hare/wiki/Synchronized-Gear-Extruder) needed when `sync_to_extruder: 1` is enabled.
 
 ```yml
 # Synchronized gear/extruder movement --------------------------------------------------------------------------------------
@@ -519,7 +519,7 @@ enable_spoolman: 0                      # 0 = disabled,  1 = enable spoolman sup
 > [!NOTE]  
 > Default EndlessSpool groups can be pre-configured by setting the `endless_spool_groups` parameter to an array specifying the group for each gate. See the doc towards the end of this page for more details
 
-Clog detection and EndlessSpool feature is well documented [here](Clog-Runout-EndlessSpool).
+Clog detection and EndlessSpool feature is well documented [here](https://github.com/moggieuk/Happy-Hare/wiki/Clog-Runout-EndlessSpool).
 
 <br>
 
@@ -626,7 +626,7 @@ homing_extruder: 1              # CAUTION: Normally this should be 1. 0 will dis
 
 This section contains a list of overrides for macros that Happy Hare calls internally. You can replace these with macros of your own names and is preferred to editing the shipped defaults. The reason is that the defaults may be overwritten on updates to Happy Hare. You can also use the Klipper convention of `rename_existing` but be sure to include in your own `.cfg` file.
 
-All of the load/unload sequence macros are well explained [here](Macro-Customization). It is unlikely that you would want to change the `pause_macro` which is called on MMU error, but some community cited reasons include:
+All of the load/unload sequence macros are well explained [here](https://github.com/moggieuk/Happy-Hare/wiki/Macro-Customization). It is unlikely that you would want to change the `pause_macro` which is called on MMU error, but some community cited reasons include:
 * You are using a sparse purge tower and you want Happy Hare errors to park above your purge tower as to not hit any models that are between your tower and normal pause location
 * You want to additionally call a macro that sends a push notification on filament swap error
 * You want to set additional static arguments to either the default pause macro or your own macro
@@ -652,7 +652,7 @@ load_sequence_macro: _MMU_LOAD_SEQUENCE         # VERY ADVANCED: Optionally call
 
 ## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Statically defined "reset" defaults
 
-This final section is commented out because it is not generally needed. It retains abilities that existed in earlier versions of Happy Hare which may still be useful in some specific cases.  Normally when reset Happy Hare will default to empty or simple values for these settings. However, you can define the default here so that after a MMU reset has been performed they will be the starting values perhaps saving some additional configuration. E.g. if you always have specific filament spools loaded on a particular gate (I always have ABS black on gate #8 for example) you can define that here by setting the starting `gate_material` and `gate_color` arrays. Read [Tool and Gate](Tool-and-Gate-Maps) for more details.
+This final section is commented out because it is not generally needed. It retains abilities that existed in earlier versions of Happy Hare which may still be useful in some specific cases.  Normally when reset Happy Hare will default to empty or simple values for these settings. However, you can define the default here so that after a MMU reset has been performed they will be the starting values perhaps saving some additional configuration. E.g. if you always have specific filament spools loaded on a particular gate (I always have ABS black on gate #8 for example) you can define that here by setting the starting `gate_material` and `gate_color` arrays. Read [Tool and Gate](https://github.com/moggieuk/Happy-Hare/wiki/Tool-and-Gate-Maps) for more details.
 
 > [!NOTE]  
 > Happy Hare will report error if these arrays are not the same length as the configured number of gates.

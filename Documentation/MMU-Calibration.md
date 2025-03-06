@@ -1,15 +1,15 @@
 #### Page Sections:
-- [Calibration Steps](MMU-Calibration#---calibration-steps)
-  - [1. Selector Offsets](MMU-Calibration#---step-1-calibrate-selector-offsets)
-  - [2. Servo](MMU-Calibration#---step-2-calibrate-your-servo)
-  - [3. Gear Stepper](MMU-Calibration#---step-3-calibrate-your-gear-stepper)
-  - [4. Encoder](MMU-Calibration#---step-4-calibrate-your-encoder-if-fitted)
-  - [5. Bowden Length](MMU-Calibration#---step-5-calibrate-bowden-length)
-  - [6. Gates](MMU-Calibration#---step-6-calibrating-individual-gates)
-- [Calibration Storage](MMU-Calibration#---calibration-storage)
-- [Calibration Commands](Command-Reference#---calibration)
+- [Calibration Steps](#---calibration-steps)
+  - [1. Selector Offsets](#---step-1-calibrate-selector-offsets)
+  - [2. Servo](#---step-2-calibrate-your-servo)
+  - [3. Gear Stepper](#---step-3-calibrate-your-gear-stepper)
+  - [4. Encoder](#---step-4-calibrate-your-encoder-if-fitted)
+  - [5. Bowden Length](#---step-5-calibrate-bowden-length)
+  - [6. Gates](#---step-6-calibrating-individual-gates)
+- [Calibration Storage](#---calibration-storage)
+- [Calibration Commands](https://github.com/moggieuk/Happy-Hare/wiki/Command-Reference#---calibration)
 
-This discussion assumes that you have setup and debugged your hardware configuration. A detailed discusion can be found under [Hardware Configuration](Hardware-Configuration).
+This discussion assumes that you have setup and debugged your hardware configuration. A detailed discusion can be found under [Hardware Configuration](Hardware-Configuration.md).
 
 Before using your MMU you will need to calibrate it to adjust for differences in components used on your particular build. Be careful to calibrate in the recommended order because some settings build and depend on earlier ones. Happy Hare now has automated calibration for some of the traditionally longer steps and does not require any Klipper restarts so the process is quick and painless.
 

@@ -50,16 +50,16 @@ The `MMU_PRELOAD` is an aid to loading filament into the MMU.  The command works
 
 ### MMU\_CHECK\_GATE
 
-Similarly the `MMU_CHECK_GATE` command will check the current gate (no options) or run through all the gates (`ALL=1`) or the one specified (`GATE=`) and checks that filament is available, correctly parks and updates the [Gate Map](Tool-and-Gate-Maps#---gate-map) including the "gate status" so the MMU knows which gates have filament available.
+Similarly the `MMU_CHECK_GATE` command will check the current gate (no options) or run through all the gates (`ALL=1`) or the one specified (`GATE=`) and checks that filament is available, correctly parks and updates the [Gate Map](https://github.com/moggieuk/Happy-Hare/wiki/Tool-and-Gate-Maps#---gate-map) including the "gate status" so the MMU knows which gates have filament available.
 
 > [!NOTE]
-> The `MMU_CHECK_GATE` command has a special option that is designed to be called from your `PRINT_START` macro. When called as in this example: `MMU_CHECK_GATE TOOLS=0,3,5`. Happy Hare will validate that tools 0, 3 & 5 are ready to go else generate an error prior to starting the print. This is a really useful pre-print check! See [Slicer Setup](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Slicer-Setup) for more details.
+> The `MMU_CHECK_GATE` command has a special option that is designed to be called from your `PRINT_START` macro. When called as in this example: `MMU_CHECK_GATE TOOLS=0,3,5`. Happy Hare will validate that tools 0, 3 & 5 are ready to go else generate an error prior to starting the print. This is a really useful pre-print check! See [Slicer Setup](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Slicer-Setup.md) for more details.
 
 <br>
 
 ## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Filament Loading and Unloading sequences
 
-Happy Hare provides built-in loading and unloading sequences that have many options controlled by settings in `mmu_parameters.cfg`. These are grouped into "modular phases" that control each step of the process and vary slightly based on the capabilities of your particular MMU. Normally this provides sufficient flexibility of control. However, for advanced situations, you are able to elect to control the sequences via gcode macros. This capability is discussed later in the [gcode guide](https://github.com/moggieuk/Happy-Hare/doc/macro_customization.md).
+Happy Hare provides built-in loading and unloading sequences that have many options controlled by settings in `mmu_parameters.cfg`. These are grouped into "modular phases" that control each step of the process and vary slightly based on the capabilities of your particular MMU. Normally this provides sufficient flexibility of control. However, for advanced situations, you are able to elect to control the sequences via gcode macros. This capability is discussed later in the [gcode guide](https://github.com/moggieuk/Happy-Hare/wiki/Macro-Customization).
 
 ### Understanding the load sequence:
 

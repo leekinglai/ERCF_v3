@@ -2,7 +2,7 @@
 
 This is where you'll likely spend most of your time tuning the MMU after the initial setup is done.  It allows for configuration of all the supplied default macros in one place.
 
-You will need to consult the [Configuring mmu\_macro\_var.cfg](Configuring-mmu_macro_vars.cfg) reference page for full details, but essentially the file is broken up into sections where each section contains the configuration for the respective macro. These include:
+You will need to consult the [Configuring mmu\_macro\_var.cfg](https://github.com/moggieuk/Happy-Hare/wiki/Configuring-mmu_macro_vars.cfg) reference page for full details, but essentially the file is broken up into sections where each section contains the configuration for the respective macro. These include:
 
 | Section | Macro Filename | Description |
 | ------- | -------------- | ----------- |
