@@ -17,7 +17,7 @@ These instructions were copied from the manuals provided by BTT and updated as n
 
 ## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Flashing Katapult for MMBv1.1
 > [!NOTE] 
-> Note: Katapult (formerly CanBoot) is for updating MCU firmware directly via CAN bus. If you prefer to update via USB (DFU Mode), skip this entire section.
+> Katapult (formerly CanBoot) is for updating MCU firmware directly via CAN bus. If you prefer to update via USB (DFU Mode), skip this entire section.
 
 To flash Katapult onto Raspberry Pi or CB1, follow the instructions at https://github.com/Arksine/katapult
 
@@ -39,8 +39,11 @@ Navigate to the main directory and input `git clone https://github.com/Arksine/k
 <img src="assets/Klipper_mmbv1_3.png" alt='Querying DFU devide ID'>
 
 6. Enter the following command to flash Katapult
+
 `make flash FLASH_DEVICE=0483:df11`
-replacing `0483:df11` with the actual device ID found in the previous step.
+
+> [!NOTE] 
+> Replace `0483:df11` with the actual device ID found in the previous step.
 
 7. After flashing, disconnect the Type-C cable.
 
@@ -99,7 +102,7 @@ This will query the canbus ID (make sure the CAN cable is connected and powered 
 3. Enter `python3 flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u be69315a613c`
 
 > [!NOTE] 
-> Note: Replace `be69315a613c` with the actual device UUID found in the previous step.
+> Replace `be69315a613c` with the actual device UUID found in the previous step.
 
 klipper.bin needs to be generated in advance using the `make` command, and the application start offset of CanBoot is 8KiB offset, so Klipper's menuconfig Bootloader offset should also be 8KiB bootloader as shown in the following figure.
 
@@ -126,7 +129,7 @@ Guide to update Raspberry Pi / CB1 / primary MCU via DFU.
 `make flash FLASH_DEVICE=0483:df11`
 
 > [!NOTE] 
-> Note: Replace `0483:df11` with the actual device ID found in the previous step.
+> Replace `0483:df11` with the actual device ID found in the previous step.
 
 This will start flashing the firmware.
 
@@ -137,7 +140,7 @@ This will start flashing the firmware.
 `make flash FLASH_DEVICE=/dev/serial/by-id/usb-Klipper_stm32g0b1xx_4550357128922FC8-if00`
 
 > [!NOTE] 
->  replace `/dev/serial/by-id/xxx` with the actual ID found in the previous step.
+>  Replace `/dev/serial/by-id/xxx` with the actual ID found in the previous step.
 
 6. If you are using CAN bus for communication, disconnect the Type-C cable after flashing.
 
