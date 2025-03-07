@@ -22,8 +22,8 @@ These instructions were copied from the manuals provided by BTT and updated as n
 
 To flash Katapult onto Raspberry Pi or CB1, follow the instructions at https://github.com/Arksine/katapult
 
-1. Connect to CB1/Raspberry Pi via SSH and enter the command ```cd ~```.
-Navigate to the main directory and input ```git clone https://github.com/Arksine/katapult``` to download the Katapult project. Then enter `cd katapult` to navigate to the Katapult directory.
+1. Connect to CB1/Raspberry Pi via SSH and enter the command `cd ~`.
+Navigate to the main directory and input `git clone https://github.com/Arksine/katapult` to download the Katapult project. Then enter `cd katapult` to navigate to the Katapult directory.
 
 2. Enter `make menuconfig` and configure as shown in the provided image:
 
@@ -61,11 +61,9 @@ Configure the firmware as shown in the provided image (update Klipper firmware t
 
 <img src="assets/compile_klipper_mmbv1_1.png" alt='Querying DFU devide ID'>
 
-```yml
-[*] Enable extra low-level configuration optionsMicro-controller
- Micro-controller Architecture (STMicroelectronics STM32) --->
- Processor model (STM32G0B1) --->
-```
+`[*] Enable extra low-level configuration optionsMicro-controller`
+`Micro-controller Architecture (STMicroelectronics STM32) --->`
+`Processor model (STM32G0B1) --->`
 
 If not using Katapult:
 
@@ -81,10 +79,8 @@ If USB communication on Type-C is used:
 
 If CAN-Bus communication is used:
 
-```yml
-Communication interface (CAN bus (on PB0/PB1)) --->
-(1000000) CAN bus speed
-```
+`Communication interface (CAN bus (on PB0/PB1)) --->`
+`(1000000) CAN bus speed`
 
 2. After configuration, press `q` to exit, and select `Yes` when prompted to save.
 
