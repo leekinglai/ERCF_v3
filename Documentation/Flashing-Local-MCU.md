@@ -39,11 +39,7 @@ Navigate to the main directory and input `git clone https://github.com/Arksine/k
 
 <img src="assets/Klipper_mmbv1_3.png" alt='Querying DFU devide ID'>
 
-6. Enter the following command to flash Katapult
-
-```
-make flash FLASH_DEVICE=0483:df11
-```
+6. Enter the following command to flash Katapult: `make flash FLASH_DEVICE=0483:df11`
 
 > [!NOTE] 
 > Replace `0483:df11` with the actual device ID found in the previous step.
@@ -62,7 +58,9 @@ Configure the firmware as shown in the provided image (update Klipper firmware t
 <img src="assets/compile_klipper_mmbv1_1.png" alt='Querying DFU devide ID'>
 
 `[*] Enable extra low-level configuration optionsMicro-controller`
+
 `Micro-controller Architecture (STMicroelectronics STM32) --->`
+
 `Processor model (STM32G0B1) --->`
 
 If not using Katapult:
