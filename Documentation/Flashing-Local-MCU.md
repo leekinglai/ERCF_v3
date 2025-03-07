@@ -45,9 +45,11 @@ Configure the firmware as shown in the provided image (update Klipper firmware t
 
 <img src="assets/compile_klipper_mmbv1_1.png" alt='Querying DFU devide ID'>
 
-```[*] Enable extra low-level configuration optionsMicro-controller
+```yml
+[*] Enable extra low-level configuration optionsMicro-controller
  Micro-controller Architecture (STMicroelectronics STM32) --->
- Processor model (STM32G0B1) --->```
+ Processor model (STM32G0B1) --->
+```
 If not using Katapult:
 `Bootloader offset (No bootloader) --->`
 If using Katapult:
@@ -55,8 +57,10 @@ If using Katapult:
 If USB communication on Type-C is used:
 `Communication interface (USB (on PA11/PA12)) --->`
 If CAN-Bus communication is used:
-```Communication interface (CAN bus (on PB0/PB1)) --->
-(1000000) CAN bus speed```
+```yml
+Communication interface (CAN bus (on PB0/PB1)) --->
+(1000000) CAN bus speed
+```
 2. After configuration, press `q` to exit, and select `Yes` when prompted to save.
 3. Enter `make` to compile the firmware. The resulting `klipper.bin` file will be in the `home/username/klipper/out` folder. This can be directly downloaded to your computer from the SSH software's left panel.
 
