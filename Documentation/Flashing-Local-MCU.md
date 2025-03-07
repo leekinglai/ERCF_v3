@@ -4,6 +4,7 @@
   - [Compiling Klipper for MMBv1.1](#---compiling-klipper-firmware-for-mmbv11)
   - [Flashing Klipper onto MMBv1.1 using Katapult](#---firmware-update-via-katapult-for-mmbv11)
   - [Flashing Klipper onto MMBv1.1 using USB (DFU Mode)](#---firmware-update-via-usb-dfu-mode-for-mmbv11)
+  
 -MMBv2.0:
   - [Flashing Katapult onto MMBv2.0](#)
   - [Compiling Klipper for MMBv2.0](#)
@@ -12,7 +13,7 @@
 
 
 These instructions were copied from the manuals provided by BTT and updated as necessary.
-> [!NOTE] 
+> [!IMPORTANT] 
 > These instructions assume you already have CAN communication working on your printer (unless you're using a USB connection). If you don't, check out [Esoterical's CANBus Guide](https://canbus.esoterical.online/).
 
 ## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Flashing Katapult for MMBv1.1
@@ -21,8 +22,8 @@ These instructions were copied from the manuals provided by BTT and updated as n
 
 To flash Katapult onto Raspberry Pi or CB1, follow the instructions at https://github.com/Arksine/katapult
 
-1. Connect to CB1/Raspberry Pi via SSH and enter the command `cd ~`.
-Navigate to the main directory and input `git clone https://github.com/Arksine/katapult` to download the Katapult project. Then enter `cd katapult` to navigate to the Katapult directory.
+1. Connect to CB1/Raspberry Pi via SSH and enter the command ```cd ~```.
+Navigate to the main directory and input ```git clone https://github.com/Arksine/katapult``` to download the Katapult project. Then enter `cd katapult` to navigate to the Katapult directory.
 
 2. Enter `make menuconfig` and configure as shown in the provided image:
 
@@ -40,7 +41,9 @@ Navigate to the main directory and input `git clone https://github.com/Arksine/k
 
 6. Enter the following command to flash Katapult
 
-`make flash FLASH_DEVICE=0483:df11`
+```
+make flash FLASH_DEVICE=0483:df11
+```
 
 > [!NOTE] 
 > Replace `0483:df11` with the actual device ID found in the previous step.
