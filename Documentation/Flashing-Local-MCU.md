@@ -4,12 +4,12 @@
   - [Compiling Klipper for MMBv1.1](#---compiling-klipper-firmware-for-mmbv11)
   
 -MMBv2.0:
-  - [Flashing Katapult onto MMBv2.0](#)
-  - [Compiling Klipper for MMBv2.0](#)
+  - [Flashing Katapult onto MMBv2.0](#---flashing-katapult-for-mmbv20)
+  - [Compiling Klipper for MMBv2.0](#---flashing-katapult-for-mmbv20)
 
 -Flashing:
-  - [Flashing Klipper onto MMB using Katapult](#)
-  - [Flashing Klipper onto MMB using USB (DFU Mode)](#)
+  - [Flashing Klipper onto MMB using Katapult](#---firmware-update-via-katapult)
+  - [Flashing Klipper onto MMB using USB (DFU Mode)](#---firmware-update-via-usb-dfu-mode)
 
 
 These instructions were copied from the manuals provided by BTT and updated as necessary.
@@ -162,6 +162,8 @@ If CAN-Bus communication is used:
 
 ## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Firmware Update via Katapult
 
+Guide to update Raspberry Pi / CB1 / primary MCU via CANBus using Katapult. These steps are identical for MMBv1.1 and MMBv2.0.
+
 1. Connect the CAN bus cable and plug a jumper at the 120R terminal resistor.
 
 2. Enter the command `cd ~/katapult/scripts` then enter `python3 flash_can.py -i can0 -q`
@@ -174,7 +176,7 @@ This will query the canbus ID (make sure the CAN cable is connected and powered 
 > [!NOTE] 
 > Replace `be69315a613c` with the actual device UUID found in the previous step.
 
-klipper.bin needs to be generated in advance using the `make` command, and the application start offset of CanBoot is 8KiB offset, so Klipper's menuconfig Bootloader offset should also be 8KiB bootloader as shown in the following figure.
+klipper.bin needs to be generated in advance using the `make` command, and the application start offset of Katapult is 8KiB offset, so Klipper's menuconfig Bootloader offset should also be 8KiB bootloader as shown in the following figure.
 
 <img src="assets/compile_katapult_mmbv1_2.png" alt='CANBus Flashing Success'>
 
@@ -186,7 +188,7 @@ The Application should now show Klipper, indicating it is running correctly.
 
 ## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Firmware Update via USB (DFU Mode)
 
-Guide to update Raspberry Pi / CB1 / primary MCU via DFU.
+Guide to update Raspberry Pi / CB1 / primary MCU via USB (DFU Mode). These steps are identical for MMBv1.1 and MMBv2.0.
 
 1. Hold the Boot button and connect the MMB to Raspberry Pi/CB1 via Type-C cable to enter DFU mode.
 
@@ -216,10 +218,19 @@ This will start flashing the firmware.
 
 <br />
 
-### More essential config setup:
-- [Basic Operation](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Basic-Operation.md)
+### ERCF Setup Steps:
+- [Flashing Your Local MCU](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Flashing-Local-MCU.md)
+- Installing Happy Hare (TBW)
+- Happy Hare Configuration (TBW)
+- Calibrating Your Hardware (TBW)
+- Installing KlipperScreen Happy Hare (TBW)
+- Slicer Configuration (TBW)
+- Further Mods to Consider (TBW)
+
+### Useful References:
 - [Hardware Configuration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Hardware-Configuration.md)
 - [MMU Calibration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/MMU-Calibration.md)
+- [Basic Operation](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Basic-Operation.md)
 - [Setup Calibration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Setup_Calibration.md)
 - [Slicer Setup](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Slicer-Setup.md)
 - [Endstops, Movement and Homing](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Movement-and-Homing.md)

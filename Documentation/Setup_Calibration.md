@@ -1,5 +1,7 @@
 # Hardware configuration, Movement and Homing
 
+## Step 0. Flash Your Local MCU
+
 
 ## Step 1. Install Happy Hare software
 Please follow the [install guide for Happy Hare](https://github.com/moggieuk/Happy-Hare/tree/main?tab=readme-ov-file#---installation)
@@ -181,12 +183,12 @@ encoder_pin: ^mmu:MMU_ENCODER
 
 Run the command `MMU_SERVO POS=UP` prior to attaching the servo arm. When attaching the arm, do not twist the servo output shaft, or you will need to run the command again. As you attach the servo arm, you want it to be aligned as close to the body of the servo as possible given the position of the servo output shaft.
 
-Once the servo arm is attached and screwed into place, run the command `MMU_SERVO ANGLE=30` (for Savox, 140 for MG90S) and slowly increase the angle to fine tune the correct "up" angle where the servo arm just hits the servo body. Save this value to you `mmu_parameters.cfg` as `servo_up_angle` on line 48.
+Once the servo arm is attached and screwed into place, run the command `MMU_SERVO ANGLE=30` (for Savox, 140 for others) and slowly increase the angle to fine tune the correct "up" angle where the servo arm just hits the servo body. Save this value to you `mmu_parameters.cfg` as `servo_up_angle` on line 48.
 
 Manually position selector over one of the gates. Run the command `MMU_SERVO POS=DOWN`.  The servo should move to the marked position on the tophat and the arrows should align, but not go too far.  If the angle isn't correct, then use `MMU_SERVO ANGLE=140` (for Savox, 30 for MG90S) to try angles close to current down angle to get exactly the right angle. See pic at the bottom of this page: [https://github.com/moggieuk/ERCF-Springy](https://github.com/moggieuk/ERCF-Springy)
 Once you've got the angle correct, save it to you `mmu_parameters.cfg` as `servo_down_angle` on line 49.
 
-Run the command `MMU_SERVO POS=MOVE`.  Servo will move to "move" position in the "cutout" on the top hat that allows for free movement. If the angle is not correct then use `MMU_SERVO ANGLE=30` (for Savox, 140 for MG90S) to try angles close to current move angle to get exacly the right position.
+Run the command `MMU_SERVO POS=MOVE`.  Servo will move to "move" position in the "cutout" on the top hat that allows for free movement. If the angle is not correct then use `MMU_SERVO ANGLE=30` (for Savox, 140 for others) to try angles close to current move angle to get exacly the right position.
 Once you've got the angle correct, save it to you `mmu_parameters.cfg` as `servo_move_angle` on line 50.
 
 *RESTART KLIPPER* 
@@ -214,11 +216,35 @@ Repeat for the three positions:
 * down = to grip filament
 * move = ready the servo for selector move (optional - defaults to up)
 
-<br />
-### More essential config setup:
-- [Basic Operation](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Basic-Operation.md)
+## Step 7. Springy Calibration
+
+Put a scrap of PTFE into Gate 0. Run the command `MMU_SELECT GATE=0`.
+
+Feed a new piece of filament at least 250mm long into Gate 0.
+
+Run the command `MMU_SERVO POS=DOWN`
+
+Run the command `MMU_TEST_MOVE MOVE=100`.
+
+The filament should now be partially loaded into the MMU, with the Gear Motor engaged to keep it in place.
+
+Pull on the filament in the unloading direction, gently at first. If it moves at all, tighten the Springy tensioner bolt, half a turn at a time, until the filament is held firmly when you pull.
+
+Run the command `MMU_TEST_GRIP` and pull on the filament. The gears should grip the filament and move the Drive Shaft when you pull. If the grip is too strong, eg. there are deep grooves in the filament from the gears, or the filament is grinding, back off the Springy tensioner bolt half a turn and test again. 
+
+### ERCF Setup Steps:
+- [Flashing Your Local MCU](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Flashing-Local-MCU.md)
+- Installing Happy Hare (TBW)
+- Happy Hare Configuration (TBW)
+- Calibrating Your Hardware (TBW)
+- Installing KlipperScreen Happy Hare (TBW)
+- Slicer Configuration (TBW)
+- Further Mods to Consider (TBW)
+
+### Useful References:
 - [Hardware Configuration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Hardware-Configuration.md)
 - [MMU Calibration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/MMU-Calibration.md)
+- [Basic Operation](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Basic-Operation.md)
 - Setup Calibration
 - [Slicer Setup](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Slicer-Setup.md)
 - [Endstops, Movement and Homing](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Movement-and-Homing.md)

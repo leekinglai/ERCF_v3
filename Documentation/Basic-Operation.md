@@ -184,10 +184,19 @@ There is a lot that can go wrong with an MMU and initial setup can be frustratin
 
 Good luck!
 
-### More essential config setup:
-- Basic Operation
+### ERCF Setup Steps:
+- [Flashing Your Local MCU](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Flashing-Local-MCU.md)
+- Installing Happy Hare (TBW)
+- Happy Hare Configuration (TBW)
+- Calibrating Your Hardware (TBW)
+- Installing KlipperScreen Happy Hare (TBW)
+- Slicer Configuration (TBW)
+- Further Mods to Consider (TBW)
+
+### Useful References:
 - [Hardware Configuration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Hardware-Configuration.md)
 - [MMU Calibration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/MMU-Calibration.md)
+- Basic Operation
 - [Setup Calibration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Setup_Calibration.md)
 - [Slicer Setup](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Slicer-Setup.md)
 - [Endstops, Movement and Homing](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Movement-and-Homing.md)
