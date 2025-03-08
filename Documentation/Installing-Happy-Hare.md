@@ -27,13 +27,13 @@ ssh pi@mainsailos.local
 ```  
 
 > [!NOTE]  
-> You will notice in the following pictures the bash prompt is `pi@brokkr:~`. Yours won't look like that. It will be `pi@<hostname.:~` where the hostname is likely "mainsailos" or the ip address. No need to worry. I have more than one printer running Klipper, so I had to change the name to keep them separate.
+> You will notice in the following pictures the bash prompt is `Miriax@VoronRed:~`. Yours won't look like that. It will be `username@<hostname.:~` where the hostname is likely "mainsailos" or the ip address.
 
 Alternatively, you can use your Klipper ip address, which will look something like this:  
 ```
-ssh pi@192.168.0.256
+ssh username@192.168.0.256
 ```  
-(You'll need to change the ip address.)  
+(You'll need to change the username and ip address.)  
 
 <p align="left"><img src="assets/powershell.png" width="80%"></p>
 
@@ -128,12 +128,12 @@ Choose ERCFv2.0 from the list.
 > [!NOTE] 
 > There will be an ERCFv2.5 option soon, but for now we must pick v2.0
 
-<p align="left"><img src="assets/installer_questions.png"></p>
+<p align="left"><img src="assets/HH_step_1.png"></p>
 
 ### 2. Number of Gates
 Happy Hare installer then asks for the number of gates.  
 
-<p align="left"><img src="assets/questions_gates.png"></p>
+<p align="left"><img src="assets/HH_step_2.png"></p>
 
 Enter the correct number of gates for your ERCF, usually 8 in v2.5.
 
@@ -142,25 +142,25 @@ Select the type of control board you have installed. MMBv1.1 and MMBv2.0 are the
 
 *\[This graphic will be updated soon\]*
 
-<p align="left"><img src="assets/questions_mcu.png"></p>
+<p align="left"><img src="assets/HH_step_3.png"></p>
 
 #### 4. Control Board Address
-Happy Hare will then attempt to figure out where your control board is. So far, this doesn't work for CANBUS boards.
+Happy Hare will then attempt to figure out where your control board is. So far, this doesn't work for CANBUS boards. If your printer's mainboard is connected, that will be detected instead, so input "N," unless you're using a Remote MCU setup.
 
 > [!NOTE]
 > If you followed the previous guide on [Flashing Your Local MCU](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Flashing-Local-MCU.md), you should already know your CANBus UUID. You will need to manually add the CANBus UUID to the top of your mmu.cfg. If you are using USB instead, this should work and find your board!
 
-<p align="left"><img src="assets/questions_mcu_address.png"></p>
+<p align="left"><img src="assets/HH_step_4.png"></p>
 
-#### 5. Selector Touch Operation
-Decide whether or not to enable Selector Touch operation. This can help with recovery of an error, but is also a bit difficult to get set up properly. It's better to say "no" and get it working after you're more familiar with the ERCF and Happy Hare.  
-
-<p align="left"><img src="assets/questions_touch.png"></p>
-
-#### 6. LED Options
+#### 5. LED Options
 If you have neopixels installed on your ERCF, enable them here.  
 
-<p align="left"><img src="assets/questions_led.png"></p>
+<p align="left"><img src="assets/HH_step_5.png"></p>
+
+#### 6. Selector Touch Operation
+Decide whether or not to enable Selector Touch operation. This can help with recovery of an error, but is also a bit difficult to get set up properly. It's better to say "no" and get it working after you're more familiar with the ERCF and Happy Hare.
+
+<p align="left"><img src="assets/HH_step_6.png"></p>
 
 #### 7. Servo Options
 Select your servo option from the list.
@@ -168,24 +168,26 @@ Select your servo option from the list.
 > [!NOTE] 
 > You're going to adjust the angles later, so this doesn't matter too much right now. During Beta Testing, this is something we'll ask you to report on so that we can make more accurate presets.
 
-<p align="left"><img src="assets/questions_servo.png"></p>
+<p align="left"><img src="assets/HH_step_7.png"></p>
 
 #### 8. Clog detection
 With Binky, It's probably best to enable clog detection and set it to automatic. This acts like a smart filament sensor and will pause the print if something goes bad with the filament feed.  
 
-<p align="left"><img src="assets/questions_clog.png"></p>
+<p align="left"><img src="assets/HH_step_9.png"></p>
 
 #### 9. EndlessSpool
 Happy Hare has the capability to map multiple gates to one tool. This allows for "endless spool" operation. When one spool runs out, if you have the same material and color mapped to another gate, it will automatically switch to the other gate and resume printing. This option is recommended for long prints.
 
-<p align="left"><img src="assets/questions_endless.png"></p>
+<p align="left"><img src="assets/HH_step_10.png"></p>
 
 #### 10. Final step
 The last step asks to add the `[include mmu*]` lines to your printer.cfg. **On initial setup it is recommended to select yes.** In the image below, it was set to "no" because Happy Hare is already installed and wasn't needed.  
 
-<p align="left"><img src="assets/questions_include.png"></p>
+<p align="left"><img src="assets/HH_step_11.png"></p>
 
 From here, Happy Hare will install itself with the options you've selected. You should have a nice little report that Happy Hare is ready:  
+
+<p align="left"><img src="assets/HH_step_12.png"></p>
 
 <p align="left"><img src="assets/happy_hare_ready.png"></p>
 
