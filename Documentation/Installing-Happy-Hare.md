@@ -140,13 +140,15 @@ Enter the correct number of gates for your ERCF, usually 8 in v2.5.
 #### 3. Control Board
 Select the type of control board you have installed. MMBv1.1 and MMBv2.0 are the recommended boards for ERCFv2.5.
 
+*\[This graphic will be updated soon\]*
+
 <p align="left"><img src="assets/questions_mcu.png"></p>
 
 #### 4. Control Board Address
 Happy Hare will then attempt to figure out where your control board is. So far, this doesn't work for CANBUS boards.
 
 > [!NOTE]
-> If you followed the previous guide on [Flashing Your Local MCU](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Flashing-Local-MCU.md), you should already know your CANBus UUID. You will need to manually add the CANBus UUID to the top of your mmu.cfg.
+> If you followed the previous guide on [Flashing Your Local MCU](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Flashing-Local-MCU.md), you should already know your CANBus UUID. You will need to manually add the CANBus UUID to the top of your mmu.cfg. If you are using USB instead, this should work and find your board!
 
 <p align="left"><img src="assets/questions_mcu_address.png"></p>
 
@@ -181,14 +183,14 @@ Happy Hare has the capability to map multiple gates to one tool. This allows for
 #### 10. Final step
 The last step asks to add the `[include mmu*]` lines to your printer.cfg. **On initial setup it is recommended to select yes.** In the image below, it was set to "no" because Happy Hare is already installed and wasn't needed.  
 
-> [!NOTE] 
-> During Beta testing, and really any time it happens, **please report any misfires by the automatic setup!**
-
 <p align="left"><img src="assets/questions_include.png"></p>
 
 From here, Happy Hare will install itself with the options you've selected. You should have a nice little report that Happy Hare is ready:  
 
 <p align="left"><img src="assets/happy_hare_ready.png"></p>
+
+> [!NOTE] 
+> During Beta testing, and really any time it happens, **please report any misfires by the automatic setup!**
 
 Once this has been run sucessfully you will have outline configuration files installed. Happy Hare creates a hierachy of files in the klipper config directory. To review the layout and purpose of each of these files read [Configuration Reference](Configuration-Reference)
 
