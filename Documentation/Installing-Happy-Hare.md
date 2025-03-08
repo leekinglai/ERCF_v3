@@ -1,9 +1,12 @@
+*\[This page has been taken from the Happy Hare Wiki (Thanks Moggie!) and modified to be specific to ERCF v2.5.\]*
+
 #### Page Sections:
 - [Cloning Happy Hare Repo](#---cloning-happy-hare-repo)
 - [Running Installer](#---running-installer)
 - [Creating Base Klipper Config](#---creating-base-klipper-config)
 - [Pause/Resume/Cancel_Print Macros](#---pauseresumecancel_print-macros)
 - [Upgrading](#---upgrading)
+
 
 This section deals with installing Happy Hare to the host computer (most commonly the Raspberry Pi). Basically, the installation proceeds as with any other git based software, indeed like Klipper itsself.
 
@@ -32,7 +35,7 @@ ssh pi@192.168.0.256
 ```  
 (You'll need to change the ip address.)  
 
-<p align="left"><img src="Installation/powershell.png" width="80%"></p>
+<p align="left"><img src="assets/powershell.png" width="80%"></p>
 
 From there, you're going to clone Happy Hare software to your rpi:  
 
@@ -43,7 +46,7 @@ git clone https://github.com/moggieuk/Happy-Hare.git
 
 (it's ok to click the copy icon and right click in the ssh terminal to paste or just type it out if you want.)  
 Let that finish. It should only take a few seconds, and you'll now have your very own copy of Happy Hare stored on your rpi!
-<p align="center"><img src="Installation/oh_yes.gif" width="110"></p>
+<p align="center"><img src="assets/oh_yes.gif" width="110"></p>
 
 Now, you're going to change to the Happy Hare directory using the `cd` command (`cd` is Linux Geek for "change directory"):  
 
@@ -52,7 +55,7 @@ cd Happy-Hare
 ```
 
 Here is a picture of the previous steps successfully performed:
-<p align="left"><img src="Installation/console_cloning.png"></p>
+<p align="left"><img src="assets/console_cloning.png"></p>
 
 <br>
  
@@ -120,76 +123,77 @@ Finally, you'll install Happy Hare using a bash script which contains all the co
 You'll be asked a series of questions pertaining to your hardware and options.
 
 ### 1.  MMU Type
-Choose from the list. The options will from here out based on what you choose:   
+Choose ERCFv2.0 from the list.
 
-* ERCF v1.1
-    - "stock" ERCF v1.1 (Threaded rods, support blocks between every 3rd gate, etc.) 
-* ERCF V2.0
-    - This includes the "ThumperBlocs" mod. However, you'll need the "Thicker" ThumperBlocks.
-* Tradrack v1.0  
-* Other  
-    - Custom setup
-    - Just basic files you can edit yourself later.  
+> [!NOTE] 
+> There will be an ERCFv2.5 option soon, but for now we must pick v2.0
 
-<p align="left"><img src="Installation/installer_questions.png"></p>
-
-For this example, we're just going to run through a ERCF V2.O install, as that is the most popular option at the time of this writing.  
+<p align="left"><img src="assets/installer_questions.png"></p>
 
 ### 2. Number of Gates
 Happy Hare installer then asks for the number of gates.  
 
-<p align="left"><img src="Installation/questions_gates.png"></p>
+<p align="left"><img src="assets/questions_gates.png"></p>
 
-Enter the correct number of gates for your ERCF.  
+Enter the correct number of gates for your ERCF, usually 8 in v2.5.
 
 #### 3. Control Board
-Select the type of control board you have installed.  
+Select the type of control board you have installed. MMBv1.1 and MMBv2.0 are the recommended boards for ERCFv2.5.
 
-<p align="left"><img src="Installation/questions_mcu.png"></p>
+<p align="left"><img src="assets/questions_mcu.png"></p>
 
 #### 4. Control Board Address
-Happy Hare will then attempt to figure out where your control board is. So far, this doesn't work for CANBUS boards.  
+Happy Hare will then attempt to figure out where your control board is. So far, this doesn't work for CANBUS boards.
 
-<p align="left"><img src="Installation/questions_mcu_address.png"></p>
+> [!NOTE]
+> If you followed the previous guide on [Flashing Your Local MCU](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Flashing-Local-MCU.md), you should already know your CANBus UUID. You will need to manually add the CANBus UUID to the top of your mmu.cfg.
+
+<p align="left"><img src="assets/questions_mcu_address.png"></p>
 
 #### 5. Selector Touch Operation
 Decide whether or not to enable Selector Touch operation. This can help with recovery of an error, but is also a bit difficult to get set up properly. It's better to say "no" and get it working after you're more familiar with the ERCF and Happy Hare.  
 
-<p align="left"><img src="Installation/questions_touch.png"></p>
+<p align="left"><img src="assets/questions_touch.png"></p>
 
 #### 6. LED Options
 If you have neopixels installed on your ERCF, enable them here.  
 
-<p align="left"><img src="Installation/questions_led.png"></p>
+<p align="left"><img src="assets/questions_led.png"></p>
 
 #### 7. Servo Options
 Select your servo option from the list.
 
-<p align="left"><img src="Installation/questions_servo.png"></p>
+> [!NOTE] 
+> You're going to adjust the angles later, so this doesn't matter too much right now. During Beta Testing, this is something we'll ask you to report on so that we can make more accurate presets.
+
+<p align="left"><img src="assets/questions_servo.png"></p>
 
 #### 8. Clog detection
-If you have a reliable encoder, it's probably best to enable clog detection and set it to automatic. This acts like a smart filament sensor and will pause the print if something goes bad with the filament feed.  
+With Binky, It's probably best to enable clog detection and set it to automatic. This acts like a smart filament sensor and will pause the print if something goes bad with the filament feed.  
 
-<p align="left"><img src="Installation/questions_clog.png"></p>
+<p align="left"><img src="assets/questions_clog.png"></p>
 
 #### 9. EndlessSpool
-Happy Hare has the capability to map multiple gates to one tool. This allows for "endless spool" operation. When one spool runs out, if you have the same material and color mapped to another gate, it will automatically switch to the other gate and resume printing. If you have an encoder and gate switches, this option is recommended for long prints.
+Happy Hare has the capability to map multiple gates to one tool. This allows for "endless spool" operation. When one spool runs out, if you have the same material and color mapped to another gate, it will automatically switch to the other gate and resume printing. This option is recommended for long prints.
 
-<p align="left"><img src="Installation/questions_endless.png"></p>
+<p align="left"><img src="assets/questions_endless.png"></p>
 
 #### 10. Final step
 The last step asks to add the `[include mmu*]` lines to your printer.cfg. **On initial setup it is recommended to select yes.** In the image below, it was set to "no" because Happy Hare is already installed and wasn't needed.  
 
-<p align="left"><img src="Installation/questions_include.png"></p>
+> [!NOTE] 
+> During Beta testing, and really any time it happens, **please report any misfires by the automatic setup!**
+
+<p align="left"><img src="assets/questions_include.png"></p>
 
 From here, Happy Hare will install itself with the options you've selected. You should have a nice little report that Happy Hare is ready:  
 
-<p align="left"><img src="Installation/happy_hare_ready.png"></p>
+<p align="left"><img src="assets/happy_hare_ready.png"></p>
 
 Once this has been run sucessfully you will have outline configuration files installed. Happy Hare creates a hierachy of files in the klipper config directory. To review the layout and purpose of each of these files read [Configuration Reference](Configuration-Reference)
 
 Now, you have Happy Hare installed on your rpi. Feels good, doesn't it?  
-<p align="center"><img src="Installation/happy_cat.gif"></p>
+<p align="center"><img src="assets/happy_cat.gif"></p>
 
 <br>
 
@@ -203,7 +207,7 @@ Regardless of whether you use your own or use the ones provided in `client_macro
 
 During a print, if Happy Hare detects a problem, it will record the print position, safely lift the nozzle up to `z_hop_height_error` at `z_hop_speed` (to prevent a blob). It will then call the user's PAUSE macro (which can be the example one supplied in `mmu_software.cfg`). As can be seen with the provided examples it is expected that pause will save it's starting position (GCODE\_SAVE\_STATE) and move the toolhead to a park area, often above a purge bucket, at fast speed.
 
-The user then addresses the issue and calls `RESUME` to continue with the print. More on that later in [Handling Errors](Handling-Errors).
+The user then addresses the issue and calls `RESUME` to continue with the print. More on that subject can be found in Happy Hare's [Handling Errors](https://github.com/moggieuk/Happy-Hare/wiki/Handling-Errors).
 
 The user's RESUME macro may do some purging or nozzle cleaning but is expected to return the toolhead to where it was left when the pause macro was called. At this point the Happy Hare wrapper takes over and is responsible for dropping the toolhead back down to the print and resumes printing.
 
@@ -215,9 +219,9 @@ Happy Hare will always return the toolhead to the correct position, but if you l
 
 Happy Hare is always being improved. You can update in the same way as you update Klipper through the update-manager facility in Moonraker when update is indicated. If you know an update is pending and it is not yet shown in update-manager (it can take 24h) you can force a refresh by clicking on the circular arrow.
 
-<p align="center"><img src="Installation/update_manager.png" width="600"><p>
+<p align="center"><img src="assets/update_manager.png" width="600"><p>
 
-Sometimes an update includes a major change and simply upgrading through update manager is not sufficent. When this occurs you should see an error message directing you to the [Upgrade Notice](Upgrade-Notice) page (read that now because it explains major/minor/point release conventions). You will then need to run the `install.sh` script as below.
+Sometimes an update includes a major change and simply upgrading through update manager is not sufficent. When this occurs you should see an error message directing you to the [Upgrade Notice](https://github.com/moggieuk/Happy-Hare/wiki/Upgrade-Notice) page (read that now because it explains major/minor/point release conventions). You will then need to run the `install.sh` script as below.
 
 Alternatively you can simply run the following. Note that you **must not add the `-i` option to update**. This will pull the very latest code from Github and upgrade any necessary configuration files. This is also a good option to run if you suspect you have broken something or you have upgraded Klipper and it has removed the Happy Hare added modules (Hint: If you see a "step pin not defined for..." it is highly lightly that klipper has lost the Happy Hare modules and it struggling to parse the config).
 
@@ -227,7 +231,7 @@ cd ~/Happy-Hare
 ```
 
 > [!TIP]  
-> Don't be shy about runnning this. If there is nothing to update the script will do nothing and it will always backup your entire config in a directory [see config file structure](Configuration-Reference#---location-of-configuration-files) in a parallel directory with name with date stamp, similar to `mmu-20240422_102329`. The new `mmu` directory will be rebuilt extracting all the previous configuration but with updated templates. Note that an additional backup directory is created each time you run the installer uniquely date stamped.
+> Don't be shy about running this. If there is nothing to update the script will do nothing and it will always backup your entire config in a directory [see config file structure](https://github.com/moggieuk/Happy-Hare/wiki/Configuration-Reference#---location-of-configuration-files) in a parallel directory with name with date stamp, similar to `mmu-20240422_102329`. The new `mmu` directory will be rebuilt extracting all the previous configuration but with updated templates. Note that an additional backup directory is created each time you run the installer uniquely date stamped.
 
 > [!IMPORTANT]  
 > If you have Klipper installed in a non-default location (i.e. you used the `-c`,`-k` or `-r` flags) you will need to add these flags again to the above, otherwise the upgrade will look in the default location and likely not find/upgrade what you expect.
