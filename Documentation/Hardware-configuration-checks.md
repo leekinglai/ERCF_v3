@@ -1,19 +1,10 @@
 #### Page Sections:
--MMBv1.1:
-  - [Flashing Katapult onto MMBv1.1](#---flashing-katapult-for-mmbv11)
-  - [Compiling Klipper for MMBv1.1](#---compiling-klipper-firmware-for-mmbv11)
-
-## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Calibrating Your Hardware
-
-To Be Written (Soon!)
-
-Basically, you need to calibrate your servo and Springy and run some calibrations, and this page will show you how.
-
--Hardware confirmations that everything is 1. moving and 2. in the right direction
--Selector Endstop screw adjustment (kind of software? Needs to leave space between home position and Gate 0)
--Servo arm installation and setting servo angles (which is kind of software too?)
--Springy tension calibration
-
+  - [Step 1. Check Endstop & Optional Sensors](#step-1-check-endstop--optional-sensors)
+  - [Step 2. Check motor movement and direction](#step-2-check-motor-movement-and-direction)
+  - [Step 3. Check the Encoder](#step-3-check-the-encoder)
+  - [Step 4. Check other sensors (if fitted)](#step-4-check-other-sensors-if-fitted)
+  - [Step 5. Check Servo](#step-5-check-servo)
+  - [Checks You Should Have Done Already](#checks-you-should-have-done-already)
 
 ## Step 1. Check Endstop & Optional Sensors
 
@@ -128,7 +119,7 @@ encoder_pin: ^mmu:MMU_ENCODER
 ```
 
 
-## Step 5. Check other sensors (if fitted)
+## Step 4. Check other sensors (if fitted)
 
 Other sensors are generally filament sensors and act on a switch. The easiest way to check these is to run something similar to the following for each sensor/switch.
 
@@ -147,7 +138,7 @@ Filament Sensor mmu_gate_sensor: filament detected
 Note that endstops / filament sensors that are wired normally open (NO) frequently require `^` (pull up resister) to correctly function.
 
 
-## Step 6. Check Servo
+## Step 5. Check Servo
 
 > [IMPORTANT]
 > The Servo Arm should *not* be installed yet for this test!
@@ -165,21 +156,24 @@ MMU_SERVO POS=up
 ```
 
 
-## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Calibrations You Should Have Done Already
+## Checks You Should Have Done Already
 
-All of these calibrations and adjustments were covered in the Build Manual, and should have been done while building your ERCF.
+All of these checks and adjustments were covered in the Build Manual, and should have been done while building your ERCF.
 
 -Filament path / BMG Gear alignment (Manual page 71)
 -(if using a Geared setup) Adjustment of GT2 pulley and belt tension (Covered in the Geared Drive sub-Manual)
 -Encoder path adjustment (Manual page 114)
--setting GT2 pulley and belt tension (page 127), and 8mm rod depth (page 136)
+-Setting GT2 pulley and belt tension (page 127)
+-Setting 8mm rod depth (page 136)
 
 
 ### ERCF Setup Steps:
 - [Flashing Your Local MCU](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Flashing-Local-MCU.md)
 - [Installing Happy Hare](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Installing-Happy-Hare.md)
 - [Happy Hare Configuration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Happy-Hare-Configuration.md)
-- Calibrating Your Hardware
+- [Hardware Configuration Checks](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Hardware-configuration-checks.md)
+- [Servo Calibration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Servo-Calibration.md)
+
 - [Installing KlipperScreen Happy Hare](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Installing-KlipperScreen.md)
 - [Slicer Configuration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Slicer-Setup.md)
 - [Further Mods to Consider](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Further-Mods.md)
