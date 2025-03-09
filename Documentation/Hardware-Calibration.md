@@ -9,16 +9,16 @@
 - [Calibration Storage](#---calibration-storage)
 - [Calibration Commands](https://github.com/moggieuk/Happy-Hare/wiki/Command-Reference#---calibration)
 
-This discussion assumes that you have setup and debugged your hardware configuration. A detailed discusion can be found under [Hardware Configuration](Hardware-Configuration.md).
+This discussion assumes that you have setup and debugged your [Hardware Configuration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Hardware-configuration-checks.md).
 
-Before using your MMU you will need to calibrate it to adjust for differences in components used on your particular build. Be careful to calibrate in the recommended order because some settings build and depend on earlier ones. Happy Hare now has automated calibration for some of the traditionally longer steps and does not require any Klipper restarts so the process is quick and painless.
+Before using your ERCF you will need to calibrate it to adjust for differences in components used on your particular build. Be careful to calibrate in the recommended order because some settings build and depend on earlier ones. Happy Hare now has automated calibration for some of the traditionally longer steps and does not require any Klipper restarts so the process is quick and painless.
 
-<br>
+
 
 ## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Calibration Steps
 
 > [!IMPORTANT]  
-> When calibrating the first time you must perform in the prescribed order.  Once complete you can re-calibrate particular steps but remember that some calibration changes will cascade.  E.g. after calibrating the gear, you must recalibrate the encoder, the bowden and possibly all the gates.  Generally you can re-calibrate the selector (step 1) and the gates (step 5) at any time, but the gear, encoder and bowden must always be done in that order!
+> When calibrating the first time you must perform calibration in the prescribed order.  Once complete you can re-calibrate particular steps but remember that some calibration changes will cascade.  E.g. after calibrating the gear, you must recalibrate the encoder, the bowden and possibly all the `gear_rotation_distances`.  Generally you can re-calibrate the selector (step 4) and the gates (step 6) at any time, but the servo, gear, encoder and bowden must always be done in that order!
 
 ```mermaid
 graph TD;
@@ -49,7 +49,7 @@ graph TD;
 - MMU designs with disimilar `rotation_distance` on each gate require separate measured calibration of each with `MMU_CALIBRATE_GEAR` or, if an encoder is fitted, with `MMU_CALIBRATE_GATES` to automate the process. This is important even if the drive gears look similar. Tradrack is an example of a design that doesn't require this.
 - Most MMU designs will share the same bowden length (and only one need be calibrated), however if the design can have different lenghts each must be calibrated separately.
 
-<br>
+
 
 > [!TIP] 
 > All of the calibration commands can be run in a "check/test" mode. Simply add `SAVE=0` to the command and the calibration will be run but the results will not be saved. This is very useful to practice or to verify calibration
@@ -77,11 +77,11 @@ Repeat for the three positions:
 * move = ready the servo for selector move (optional - defaults to up)
 
 > [!NOTE]  
-> Refer to you specific MMU doc for information to determine exactly what servo positions are required.<br>
-> If you are unsure that your MMU requires a "move" position, set it the same as "up"<br>
-> If you are unable to attain the servo angle required you might need to "change spline" or edit the servo configuration in `mmu_hardware.cfg`<br>
+> Refer to you specific MMU doc for information to determine exactly what servo positions are required.
+> If you are unsure that your MMU requires a "move" position, set it the same as "up"
+> If you are unable to attain the servo angle required you might need to "change spline" or edit the servo configuration in `mmu_hardware.cfg`
 > 
-> **Example servo positions on ERCF MMU design**<br>
+> **Example servo positions on ERCF MMU design**
 > Ignore this if not on an ERCF, but this might be helpful to many users. Make sure the 3 position of your servo arm so the arm does not hit the tophats when the selector is moving. See picture below to find out where the position should be for the 3 positions.
 > - Servo Up. (trap released / print without sync)
 > <p align="center"><img src="assets/servo_up.jpeg" width="250" alt="Servo Up"></p>
@@ -119,7 +119,7 @@ Get out your ruler and very carefully measure the length of the emited filament.
 
 Repeat for all other gates if your MMU has variable gears (not necessary on Tradrack). However if you have an encoder you can shortcut and use `MMU_CALIBRATE_GATES` discussed later.
 
-<br>
+
 
 ### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Step 4. Calibrate your encoder
 Applicable if fitted: **All ERCF, Tradrack Binky Mod, etc**
@@ -146,9 +146,9 @@ You will see an output similar to:
 ```
 
 > [!NOTE]  
-> (i) Use fresh filament - grooves from previous passes through extruder gears can lead to slight count differences.<br>
-> (ii) Make sure the selector is aligned with the gate. If it is off to one side you will almost certainly get disimilar counts in forward and reverse directions.<br>
-> (iii) You want the counts on each attempt to be the same or very similar but don't sweat +/-3 counts.  With ERCF v2.0, sprung servo and new Binky encoder design they should be very consistent though ;-)<br>
+> (i) Use fresh filament - grooves from previous passes through extruder gears can lead to slight count differences.
+> (ii) Make sure the selector is aligned with the gate. If it is off to one side you will almost certainly get disimilar counts in forward and reverse directions.
+> (iii) You want the counts on each attempt to be the same or very similar but don't sweat +/-3 counts.  With ERCF v2.0, sprung servo and new Binky encoder design they should be very consistent though ;-)
 > (iv) You can run this (like all calibration commands) without saving the result by adding a `SAVE=0` flag.
 
 If this step worked then you should be able to unload the residual filament with `MMU_UNLOAD`. If you aren't happy with results, leave the filament ready for the next run.
@@ -164,10 +164,10 @@ Let's start by getting the selector cailbrated in this easy step (it is importan
 Sit back and relax. The selector will move to find the extremes of movement and then use information about the geometry of the particular MMU and version/options you are using to generate and save the selector offsets automatically!
 
 > [!NOTE]  
-> (i) ERCF v1.1 users need to pay particular attention to letter suffixes after the version number in `mmu_parameters.cfg`<br>
+> (i) ERCF v1.1 users need to pay particular attention to letter suffixes after the version number in `mmu_parameters.cfg`
 > (ii) ERCF v1.1 users that are using a bypass block modification also need to specify the position of that block with `BYPASS_BLOCK=` (see command reference) to indicate which bearing block contains the bypass.
 
-<br>
+
 
 #### B) Extrapolate first and last gates
 Although the above automated method above will attempt to calibrate when the selector has no deterministic hard stop at limit at travel (Tradrack) it can result in drift unless all the gates/lanes are perfectly tight together. To address this a better method that can be used with Tradrack or any MMU design with equally spaced gates (e.g. ERCF v2) is as follows:
@@ -182,7 +182,7 @@ MMU_CALIBRATE_SELECTOR GATE=n
 ```
 This will automatically set the offset of all intermediate gates distributing any build variance
 
-<br>
+
 
 #### C) Individual gate calibration
 Although it should not be necessary other than for the bypass gate, there is an option update a single position if you would like to tune or run into problems. See the command reference for more detailed information on options, but basically you turn MMU motors off, line up the desired gate with the selector and run:
@@ -207,14 +207,14 @@ The last calibration before use! Here you can calibrate the length of your bowde
 There are different ways to do this depending on your configuration and sensor options:
 
 1. If `extruder_homing_endstop: extruder` (or `mmu_gear_touch` or `filament_compression`), then you have a homing endstop and you can simply specify a `BOWDEN_LENGTH` that is GREATER than your estimated length to give plenty of room to find the homing stop (technically, Happy Hare defaults to 2000mm so you can probably omit this parameter completely).
-<br>(**This is the method for most newer (type-B) MMU designs**)
+(**This is the method for most newer (type-B) MMU designs**)
 
-  > MMU_CALIBRATE_BOWDEN<br>
+  > MMU_CALIBRATE_BOWDEN
   > MMU_CALIBRATE_BOWDEN BOWDEN_LENGTH=1500
 
 
 2. If `extruder_homing_endstop: collision` (and you are relying on an encoder), then during Bowden calibration `BOWDEN_LENGTH` needs to be supplied and MUST be slightly shorter than the actual length. A good rule of thumb is to manually measure the distance from exit from the selector to the entrance to your extruder. Subtract 40-50mm from that distance. I measured approximately 690mm on my system, so will supply 650mm as the starting value. For example:
-<br>(**This is the method for non modified ERCF design**)
+(**This is the method for non modified ERCF design**)
 
   > MMU_CALIBRATE_BOWDEN BOWDEN_LENGTH=650
 
@@ -238,17 +238,17 @@ There are different ways to do this depending on your configuration and sensor o
 ```
 
 3. Finally, if you run into problems or don't have an encoder or homing sensor or have problems with collision detection at the extruder you can run manually. To do this, select gate 0, push filament through manually all the way to the extruder gears. This run with the `MANUAL=1` option. This will measure the distance in reverse to the gate homing position:
-<br>(**This is the method for MMU designs like Tradrack that don't have encoder but do have `mmu_gate` sensor**)
+(**This is the method for MMU designs like Tradrack that don't have encoder but do have `mmu_gate` sensor**)
 
   > MMU_CALIBRATE_BOWDEN BOWDEN_LENGTH=1000 MANUAL=1
 
 This will reverse homes to the gate and uses Klipper's measurement of stepper movement.
 
 > [!NOTE]  
-> (i) This calibration assumes that the selector has been calibrated first.<br>
+> (i) This calibration assumes that the selector has been calibrated first.
 > (ii) This may cause the extruder to be heated. This is to ensure that the extruder motor is energized and can resist the impact of the collision with the filament
 
-<br>
+
 
 ### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Step 6. Calibrating individual gates
 Applicable to MMU's with varible per-gate rottion distance & encoder: **ERCF, Tradrack with Binky**
@@ -278,10 +278,10 @@ You will see an output similar to:
 ```
 
 > [!NOTE]  
-> (i) You can also quickly run through all gates (even pass the loose filament gate to gate) with `MMU_CALIBRATE_GATES ALL=1`<br>
+> (i) You can also quickly run through all gates (even pass the loose filament gate to gate) with `MMU_CALIBRATE_GATES ALL=1`
 > (ii) If you see "Calibration ignored because it is not considered valid (>20% difference from gate 0)" then it either means the calibration failed because filament was not moving or the encoder was not working correctly. Less likely but possible is because you have not calibrated gate 0 (`MMU_CALIBRATE_GEAR` and `MMU_CALIBRATE_ENCODER`) correctly which serves as the reference gate.
 
-<br>
+
 
 ### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Calibration Storage
 All calibrated results are stored in the configured `[save_variables]` file. By default and most usually this will be the `mmu_vars.cfg`. Here is a list of those variables and the command that sets them:
