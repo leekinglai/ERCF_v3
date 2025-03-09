@@ -1,9 +1,9 @@
 #### Page Sections:
 -Configuration Options for ERCFv2.5:
-  - [Necessary Updates](#---flashing-katapult-for-mmbv11)
-  - [Filament Cutter Options](#---flashing-katapult-for-mmbv11)
-  - [Filament Sensor Options](#---flashing-katapult-for-mmbv11)
-  - [Pregate Sensor Options](#---flashing-katapult-for-mmbv11)
+  - [Necessary Updates](#---necessary-configuration-updates-for-v25)
+  - [Filament Cutter Options](#---filament-cutter-options)
+  - [Filament Sensor Options](#---filament-sensor-options1)
+  - [Pregate Sensor Options](#---pregate-sensor-options)
 
 ## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Necessary Configuration Updates for v2.5
 
