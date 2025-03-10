@@ -1,11 +1,12 @@
 ## Page Sections:
 - [Calibration Steps](#---calibration-steps)
-  - [1. Servo](#---step-2-calibrate-your-servo)
-  - [2. Gear Stepper](#---step-3-calibrate-your-gear-stepper)
-  - [3. Encoder](#---step-4-calibrate-your-encoder-if-fitted)
-  - [4. Selector Offsets](#---step-1-calibrate-selector-offsets)
-  - [5. Bowden Length](#---step-5-calibrate-bowden-length)
-  - [6. Gates](#---step-6-calibrating-individual-gates)
+  - [1. Servo](#---step-1-calibrate-your-servo)
+  - [2. Springy Tension](#)
+  - [3. Gear Stepper](#---step-2-calibrate-your-gear-stepper)
+  - [4. Encoder](#---step-3-calibrate-your-encoder-if-fitted)
+  - [5. Selector Offsets](#---step-4-calibrate-selector-offsets)
+  - [6. Bowden Length](#---step-6-calibrate-bowden-length)
+  - [7. Gates](#---step-7-calibrating-individual-gates)
 - [Calibration Storage](#---calibration-storage)
 - [Calibration Commands](https://github.com/moggieuk/Happy-Hare/wiki/Command-Reference#---calibration)
 
@@ -46,6 +47,8 @@ graph TD;
     style ENCODER stroke-dasharray: 5 5, stroke:#1589f0, stroke-width:2px
 ```
 -->
+
+
 - MMU designs with disimilar `rotation_distance` on each gate require separate measured calibration of each with `MMU_CALIBRATE_GEAR` or, if an encoder is fitted, with `MMU_CALIBRATE_GATES` to automate the process. This is important even if the drive gears look similar. Tradrack is an example of a design that doesn't require this.
 - Most MMU designs will share the same bowden length (and only one need be calibrated), however if the design can have different lenghts each must be calibrated separately.
 
@@ -54,7 +57,7 @@ graph TD;
 > [!TIP] 
 > All of the calibration commands can be run in a "check/test" mode. Simply add `SAVE=0` to the command and the calibration will be run but the results will not be saved. This is very useful to practice or to verify calibration
 
-### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Step 2. Calibrate your servo
+### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Step 1. Calibrate your servo
 Only applicable to MMU's with linear selector: **E.g ERCF, Tradrack**
 
 Happy Hare sets up theoretically good servo postions during installation, however they really should be calibrated. Most MMU's require precise servo movement. To do that you need to run through this process similar to this to update and record the angle for the three symbolic positions. Be sure to consult you MMU documentation.
@@ -91,6 +94,24 @@ Repeat for the three positions:
 >
 > - Servo Down. (trap released for Load/unload or print with sync mode)
 > <p align="center"><img src="assets/servo_down.jpeg" width="250" alt="Servo Down"></p>
+
+
+### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Step 2. Springy Calibration
+
+Put a scrap of PTFE into Gate 0. Run the command `MMU_SELECT GATE=0`.
+
+Feed a new piece of filament at least 250mm long into Gate 0.
+
+Run the command `MMU_SERVO POS=DOWN`
+
+Run the command `MMU_TEST_MOVE MOVE=100`.
+
+The filament should now be partially loaded into the MMU, with the Gear Motor engaged to keep it in place.
+
+Pull on the filament in the unloading direction, gently at first. If it moves at all, tighten the Springy tensioner bolt, half a turn at a time, until the filament is held firmly when you pull.
+
+Run the command `MMU_TEST_GRIP` and pull on the filament. The gears should grip the filament and move the Drive Shaft when you pull. If the grip is too strong, eg. there are deep grooves in the filament from the gears, or the filament is grinding, back off the Springy tensioner bolt half a turn and test again. 
+
 
 ### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Step 3. Calibrate your gear stepper
 Applicable to all MMU's: **Very important to get right!**
@@ -153,7 +174,7 @@ You will see an output similar to:
 
 If this step worked then you should be able to unload the residual filament with `MMU_UNLOAD`. If you aren't happy with results, leave the filament ready for the next run.
 
-### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Step 1. Calibrate selector offsets
+### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Step 5. Calibrate selector offsets
 Only application to MMU's with linear selector: **E.g ERCF, Tradrack**
 
 #### A) Fully automatic calibration
@@ -199,7 +220,7 @@ Similar to the above if your MMU has a bypass gate you can calibrate it's positi
 **Validation:** At the end of this step you should be able to select any tool/gate on your MMU. For instance, try running `MMU_HOME TOOL=3` to re-home and select tool/gate #3.
 
 
-### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Step 5. Calibrate bowden length
+### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Step 6. Calibrate bowden length
 Applicable to MMU's with fast bowden move: **Most designs except Angry Beaver**
 
 The last calibration before use! Here you can calibrate the length of your bowden from MMU gate to extruder entrance. This is important because it allows the MMU to move the filament at a fast pace over this distance because getting to the more complicated part of the load sequence. To speed up this process and depending on what sensors you have fitted for extruder homing, you may need to give the calibration routine a hint of how far way the extruder is.
@@ -250,7 +271,7 @@ This will reverse homes to the gate and uses Klipper's measurement of stepper mo
 
 
 
-### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Step 6. Calibrating individual gates
+### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Step 7. Calibrating individual gates
 Applicable to MMU's with varible per-gate rottion distance & encoder: **ERCF, Tradrack with Binky**
 
 This step allows for calibrating slight differences between gates and saves you from having to use `MMU_CALIBRATE_GEAR` on every gate.  It isn't required (or useful) for designs that cannot have variation like the Tradrack MMU but is useful for designs like ERCF that can have variation of feed between gates.  Even with ERCF this is optional because if not run, the gates will tune themselves as they are used automatically!  That said it be beneficial to get this out of the way with a test piece of filament but doing it also: (i) removes the need to set the `autotune_rotation_distance` in `mmu_parameters.cfg`, (ii) is necessary if there is substantial variation between gates -- e.g. if BMG gears for different gates are sourced from different vendors.
