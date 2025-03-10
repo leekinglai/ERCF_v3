@@ -1,33 +1,24 @@
-#### Page Sections:
--MMBv1.1:
-  - [Flashing Katapult onto MMBv1.1](#---flashing-katapult-for-mmbv11)
-  - [Compiling Klipper for MMBv1.1](#---compiling-klipper-firmware-for-mmbv11)
-  
-> [!IMPORTANT] 
-> These instructions assume you already have CAN communication working on your printer (unless you're using a USB connection). If you don't, check out [Esoterical's CANBus Guide](https://canbus.esoterical.online/).
-
 ## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Further Mods to Consider
 
-To Be Written (Soon!)
+A toolhead filament cutter (eg Filametrix) or Selector filament cutter (eg EREC) will remove the need to tune your filament tips. It is widely considered to be a very worthwhile modification, because [tip tuning](https://github.com/moggieuk/Happy-Hare/wiki/Tip-Forming-and-Purging) is a lengthy manual process that must be done for each new filament type and brand, and potentially even for each color or batch of filament. Toolhead cutters are recommended over Selector filament cutters because of the chance for strings of filament to be left in the Bowden tube.
 
-Basically, a toolhead cutter, and toolhead sensor(s) will make your life a lot easier than relying on tip tuning.
 
+Extruder and/or toolhead filament sensors are also recommended options because they add more automation to Happy Hare's functionality. All toolhead distances can be automatically derived when using both sensors - without them, some amount of trial and error is needed to adjust the toolhead distances. This is important for both loading, unloading, and ooze prevention.
+
+
+Because there are a multitude of different extruders and toolheads, there is no single cut-and-dry solution for toolhead filament cutters or sensors. The ERCF team is working on developing suitable first-part extruder and toolhead options. One of the first to be released after ERCF v2.5 is out of beta will be a modified Clockwork2 extruder with dual sensor options, a toolhead cutter, and other quality-of-life improvements. Stay tuned!
+
+[Blobifier](https://github.com/Dendrowen/Blobifier) is a modification that allows for purging filament to pellets, instead of using a Wipe Tower. Happy Hare includes optional support for Blobifier that can be enabled either during initial setup.
 
 ### ERCF Setup Steps:
 - [Flashing Your Local MCU](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Flashing-Local-MCU.md)
 - [Installing Happy Hare](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Installing-Happy-Hare.md)
 - [Happy Hare Configuration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Happy-Hare-Configuration.md)
-- [Calibrating Your Hardware](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Calibrating-Your-Hardware.md)
+- [Hardware Configuration Checks](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Hardware-configuration-checks.md)
+- [Hardware Calibration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Hardware-Calibration.md)
 - [Installing KlipperScreen Happy Hare](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Installing-KlipperScreen.md)
-- [Slicer Configuration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Slicer-Setup.md)
+- [Slicer Setup](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Slicer-Setup.md)
 - Further Mods to Consider
 
-### Useful References:
-- [Hardware Configuration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Hardware-Configuration.md)
-- [MMU Calibration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/MMU-Calibration.md)
-- [Basic Operation](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Basic-Operation.md)
-- [Setup Calibration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Setup_Calibration.md)
-- [Slicer Setup](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Slicer-Setup.md)
-- [Endstops, Movement and Homing](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Movement-and-Homing.md)
-- [Happy Hare Parameters](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Happy-Hare-Parameters.md)
-- [Macro Configuration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Macro-Configuration.md)
+#### Even more Happy Hare info can be found at:
+- [Happy Hare Wiki](https://github.com/moggieuk/Happy-Hare/wiki)

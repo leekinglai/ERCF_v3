@@ -6,6 +6,8 @@
   - [Step 5. Check Servo](#step-5-check-servo)
   - [Checks You Should Have Done Already](#checks-you-should-have-done-already)
 
+*\[This guide was adapted from the [Happy Hare Wiki](https://github.com/moggieuk/Happy-Hare/wiki) for ERCF v2.5. Thanks Moggie!\]*
+
 ## Step 1. Check Endstop & Optional Sensors
 
 Verify that the Selector endstop, and any installed extruder or toolhead sensors are working. The recommended procedure is:
@@ -155,15 +157,21 @@ MMU_SERVO POS=down
 MMU_SERVO POS=up
 ```
 
+All we are checking is that the servo is wired and operational.
+
 
 ## Checks You Should Have Done Already
 
 All of these checks and adjustments were covered in the Build Manual, and should have been done while building your ERCF.
 
 -Filament path / BMG Gear alignment (Manual page 71)
+
 -(if using a Geared setup) Adjustment of GT2 pulley and belt tension (Covered in the Geared Drive sub-Manual)
+
 -Encoder path adjustment (Manual page 114)
+
 -Setting GT2 pulley and belt tension (page 127)
+
 -Setting 8mm rod depth (page 136)
 
 
@@ -171,19 +179,11 @@ All of these checks and adjustments were covered in the Build Manual, and should
 - [Flashing Your Local MCU](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Flashing-Local-MCU.md)
 - [Installing Happy Hare](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Installing-Happy-Hare.md)
 - [Happy Hare Configuration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Happy-Hare-Configuration.md)
-- [Hardware Configuration Checks](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Hardware-configuration-checks.md)
-- [Servo Calibration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Servo-Calibration.md)
-
+- Hardware Configuration Checks
+- [Hardware Calibration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Hardware-Calibration.md)
 - [Installing KlipperScreen Happy Hare](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Installing-KlipperScreen.md)
-- [Slicer Configuration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Slicer-Setup.md)
+- [Slicer Setup](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Slicer-Setup.md)
 - [Further Mods to Consider](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Further-Mods.md)
 
-### Useful References:
-- [Hardware Configuration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Hardware-Configuration.md)
-- [MMU Calibration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/MMU-Calibration.md)
-- [Basic Operation](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Basic-Operation.md)
-- [Setup Calibration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Setup_Calibration.md)
-- [Slicer Setup](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Slicer-Setup.md)
-- [Endstops, Movement and Homing](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Movement-and-Homing.md)
-- [Happy Hare Parameters](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Happy-Hare-Parameters.md)
-- [Macro Configuration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Macro-Configuration.md)
+#### Even more Happy Hare info can be found at:
+- [Happy Hare Wiki](https://github.com/moggieuk/Happy-Hare/wiki)
