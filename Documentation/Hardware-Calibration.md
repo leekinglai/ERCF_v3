@@ -1,14 +1,14 @@
 ## Page Sections:
 - [Calibration Steps](#---calibration-steps)
   - [1. Servo](#---step-1-calibrate-your-servo)
-  - [2. Springy Tension](#---step-2-springy-calibration)
-  - [3. Gear Stepper](#---step-3-calibrate-your-gear-stepper)
-  - [4. Encoder](#---step-4-calibrate-your-encoder-if-fitted)
-  - [5. Selector Offsets](#---step-5-calibrate-selector-offsets)
-  - [6. Bowden Length](#---step-6-calibrate-bowden-length)
-  - [7. Gates](#---step-7-calibrating-individual-gates)
+  - [2. Calibrate Gate 0](#---step-2-calibrate-gate-0-offset)
+  - [3. Springy Tension](#---step-3-springy-calibration)
+  - [4. Gear Stepper](#---step-4-calibrate-your-gear-stepper)
+  - [5. Encoder](#---step-5-calibrate-your-encoder-if-fitted)
+  - [6. Selector Offsets](#---step-6-calibrate-selector-offsets)
+  - [7. Bowden Length](#---step-7-calibrate-bowden-length)
+  - [8. Gates](#---step-8-calibrating-individual-gates)
 - [Calibration Storage](#---calibration-storage)
-- [Calibration Commands](https://github.com/moggieuk/Happy-Hare/wiki/Command-Reference#---calibration)
 
 This discussion assumes that you have setup and debugged your [Hardware Configuration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Hardware-configuration-checks.md).
 
@@ -287,7 +287,7 @@ You will see an output similar to:
 ```
 
 > [!NOTE]  
-> (i) You can also quickly run through all gates (even pass the loose filament gate to gate) with `MMU_CALIBRATE_GATES ALL=1`
+> (i) You can also quickly run through all gates (even pass the loose filament gate to gate) with `MMU_CALIBRATE_GATES ALL=1` <br>
 > (ii) If you see "Calibration ignored because it is not considered valid (>20% difference from gate 0)" then it either means the calibration failed because filament was not moving correctly, or the encoder was not working correctly. Less likely but possible is because you have not calibrated gate 0 (`MMU_CALIBRATE_GEAR` and `MMU_CALIBRATE_ENCODER`) correctly which serves as the reference gate.
 
 
@@ -304,6 +304,8 @@ All calibrated results are stored in the configured `[save_variables]` file. By 
   | mmu_calibration_bowden_home | MMU_CALIBRATE_BOWDEN | Records the gate homing endstop used as a basis for the calibration |
   | mmu_calibration_bowden_lengths | MMU_CALIBRATE_BOWDEN | The list will be the same length as the number of gates on your MMU |
   | mmu_calibration_clog_length | MMU_CALIBRATE_BOWDEN | Only used with encoder although always set incase you add in the future |
+
+Happy Hare documentation lists all [Calibration Commands](https://github.com/moggieuk/Happy-Hare/wiki/Command-Reference#---calibration)
 
 
 ### ERCF Setup Steps:
