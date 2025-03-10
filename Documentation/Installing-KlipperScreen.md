@@ -1,11 +1,11 @@
 #### Page Sections:
   - [Installation](#---installation)
-  - [Caveats](#---caveats--possible-problems--workarounds)
+  - [Caveats & Possible problems / workarounds](#---caveats--possible-problems--workarounds)
   - [Font Problems](#---font-problems)
   - [Blank Screen After Update](#---blank-screen-after-system-update)
   - [Happy Hare Version Incompatibility](#---happy-hare-version-incompatibility)
   
-*\[This guide copied from the [KlipperScreen Happy Hare repo](https://github.com/moggieuk/KlipperScreen-Happy-Hare-Edition) and reformatted for ERCF\]*
+*\[This guide is copied from the [KlipperScreen Happy Hare repo](https://github.com/moggieuk/KlipperScreen-Happy-Hare-Edition) and reformatted for ERCF. Thanks Moggie!\]*
 
 ## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Installation
 **Firstly, make sure Happy Hare software is completely up-to-date. Features were added to support this KlipperScreen add on.**
@@ -45,7 +45,7 @@ JFYI the installer will alter or add the KlipperScreen entry in `moonraker.conf`
 ## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Font problems:
 The CSS style only specifies a "Free Mono" font to be used (the same as original KlipperScreen) for all textual displays.  I use the Unicode Box character set in that font to render the selector status, filament positions and TTG map. A couple of users have reported issues with this part of the display, either not appearing or not spaced correctly.  E.g.
 
-![mmu_panel_printing](https://github.com/moggieuk/Happy-Hare/docs/img/mmu/font_problem.jpg)
+![mmu_panel_printing](https://github.com/moggieuk/KlipperScreen-Happy-Hare-Edition/blob/master/docs/img/mmu/font_problem.jpg)
 
 If this occurs the first thing to try is to run the following, then restart KlipperScreen:
 
