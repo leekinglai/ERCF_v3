@@ -4,7 +4,7 @@
   - [2. Calibrate Gate 0](#---step-2-calibrate-gate-0-offset)
   - [3. Springy Tension](#---step-3-springy-calibration)
   - [4. Gear Stepper](#---step-4-calibrate-your-gear-stepper)
-  - [5. Encoder](#---step-5-calibrate-your-encoder-if-fitted)
+  - [5. Encoder](#---step-5-calibrate-your-encoder)
   - [6. Selector Offsets](#---step-6-calibrate-selector-offsets)
   - [7. Bowden Length](#---step-7-calibrate-bowden-length)
   - [8. Gates](#---step-8-calibrating-individual-gates)
