@@ -64,7 +64,7 @@ First, run the command `MMU_TEST_CONFIG servo_active_down=1`. This will set the 
 
 Run the command `MMU_SERVO POS=down`. This will set the servo to the initial down position while you attach the servo arm.
 
-Attach the servo arm, at about 90 degrees from the servo body. Add the servo arm screw.
+Attach the servo arm, at about 90 degrees, perpendicular to the servo body. Add the servo arm screw.
 
 Next, tighten down the M3x10mm BHCS that clamps the servo arm down on the servo drive shaft splines.
 
