@@ -25,7 +25,7 @@ All of these checks and adjustments were covered in the Build Manual, and should
 
 **If you haven't done these steps, go review the manual!**
 
-
+<br>
 
 
 Now that you've completed the [Happy Hare Configuration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Happy-Hare-Configuration.md), you should be greeted by a large warning on your console:
@@ -113,9 +113,9 @@ Now repeat the exercise with the gear stepper:
 MMU_MOTORS_OFF
   (remove any filament from your MMU)
 MMU_TEST_MOVE MOVE=100 SPEED=50
-  (verify that the gear stepper would pull filament towards the extruder)
+  (verify that the gear stepper would push filament towards the extruder / pull filament from the spool)
 MMU_TEST_MOVE MOVE=-100 SPEED=50
-  (verify that the gear stepper is pushing filament away from the extruder)
+  (verify that the gear stepper is pulling filament away from the extruder / pushing filament back to the spool)
 ```
 
 If the gear stepper doesn't move or moves the wrong way open up `mmu_hardware.cfg`, find the section `[stepper_mmu_gear]`:<br>
