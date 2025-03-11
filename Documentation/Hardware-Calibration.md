@@ -58,7 +58,21 @@ graph TD;
 
 ### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Step 1. Calibrate your servo
 
-Happy Hare sets up theoretically good servo postions during installation, however they should be calibrated. ERCF requires precise servo movement. To do that you need to run through this process to update and record the angle for the three symbolic positions.
+Now it's finally time to install the servo arm!
+
+First, run the command `MMU_TEST_CONFIG servo_active_down=1`. This will set the servo so that it always tries to return to the down position. You generally don't want this option enabled, but it is useful for servo arm installation.
+
+Run the command `MMU_SERVO POS=down`. This will set the servo to the initial down position while you attach the servo arm.
+
+Attach the servo arm, at about 90 degrees from the servo body. Add the servo arm screw.
+
+Next, tighten down the M3x10mm BHCS that clamps the servo arm down on the servo drive shaft splines.
+
+Now run the command `MMU_TEST_CONFIG servo_active_down=0` to disable the servo return-to-down feature.
+
+Happy Hare sets up theoretically good servo postions during installation, however they should be calibrated. ERCF requires precise servo movement. To get that precision, you need to run through this process to update and record the angle for the "up" position. 
+
+* up   = tool is selected and filament is allowed to freely move through gate
 
 ```yml
 MMU_SERVO POS=up
@@ -67,21 +81,18 @@ MMU_SERVO
 Current servo angle: 125, Positions: {'down': 110, 'up': 125, 'move': 110}
   (Without arguments you can view the current angles)
 MMU_SERVO ANGLE=128
-  (Tweak until you are happy with position)
+  (Tweak until you are happy with the "up" position as compared to the picture below)
 MMU_SERVO POS=up SAVE=1
   (Save the current angle (128) for the "up" position)
 ```
 
-Repeat for the three positions:
-* up   = tool is selected and filament is allowed to freely move through gate
-* down = to grip filament
-* move = ready the servo for selector move (optional - defaults to up)
+Repeat for the other two positions ("down" and "move").
 
 > [!NOTE]  
-> If you are unable to attain the servo angle required you might need to reposition the Servo Arm, or edit the servo configuration in `mmu_hardware.cfg`
+> Servo can only move so far. If you are unable to attain the servo angle required you might need to reposition the Servo Arm, or edit the servo configuration in `mmu_hardware.cfg`
 > 
 > **Servo positions on ERCF**
-> Make sure the `MOVE` and `UP` positions of your servo arm are set so that the arm does not hit the tophats when the selector is moving. See picture below to find out where the position should be for the 3 positions.
+> Make sure the `MOVE` and `UP` positions of your servo arm are set so that the arm does not hit the tophats when the selector is moving. See picture below to see where the servo arm should be for the 3 positions.
 > - Servo Up. This position releasese the filament trap for printing without sync mode.
 > <p align="center"><img src="assets/servo_up.jpeg" width="250" alt="Servo Up"></p>
 >
@@ -91,7 +102,7 @@ Repeat for the three positions:
 > - Servo Down. This position meshes the BMG gears to push filament. The filament trap is released to allow for Load/unload or to print with sync mode)
 > <p align="center"><img src="assets/servo_down.jpeg" width="250" alt="Servo Down"></p>
 
-The reason we must calibrate this first, is so that the next step can succeed. If the servo isn't aligned, the arm will likely catch on the Tophats during the Selector calibration, and cause it to fail! You can 
+Once you are satisfied with your angles, you are done with this step!
 
 ### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Step 2. Calibrate selector offsets
 
