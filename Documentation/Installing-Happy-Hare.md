@@ -183,7 +183,7 @@ Happy Hare has the capability to map multiple gates to one tool. This allows for
 <p align="left"><img src="assets/HH_step_10.png"></p>
 
 #### 10. Final step
-The last step asks to add the `[include mmu*]` lines to your printer.cfg. **On initial setup it is recommended to select yes.** In the image below, it was set to "no" because Happy Hare is already installed and wasn't needed.  
+The last step asks to add the `[include mmu*]` lines to your printer.cfg. **On initial setup it is recommended to select yes.** If Happy Hare has already been installed, you should select "no."
 
 <p align="left"><img src="assets/HH_step_11.png"></p>
 
@@ -196,7 +196,7 @@ From here, Happy Hare will install itself with the options you've selected. You 
 > [!NOTE] 
 > During Beta testing, and really any time it happens, **please report any misfires by the automatic setup!**
 
-Once this has been run sucessfully you will have outline configuration files installed. Happy Hare creates a hierachy of files in the klipper config directory. To review the layout and purpose of each of these files read [Configuration Reference](Configuration-Reference)
+Once this has been run sucessfully you will have outline configuration files installed. Happy Hare creates a hierachy of files in the klipper config directory. To review the layout and purpose of each of these files read [Configuration Reference](https://github.com/moggieuk/Happy-Hare/wiki/Configuration-Reference)
 
 Now, you have Happy Hare installed on your rpi. Feels good, doesn't it?  
 <p align="center"><img src="assets/happy_cat.gif"></p>

@@ -1,13 +1,12 @@
 ## Page Sections:
 - [Calibration Steps](#---calibration-steps)
   - [1. Servo](#---step-1-calibrate-your-servo)
-  - [2. Calibrate Gate 0](#---step-2-calibrate-gate-0-offset)
+  - [2. Selector Offsets](#---step-62calibrate-selector-offsets)
   - [3. Springy Tension](#---step-3-springy-calibration)
   - [4. Gear Stepper](#---step-4-calibrate-your-gear-stepper)
   - [5. Encoder](#---step-5-calibrate-your-encoder)
-  - [6. Selector Offsets](#---step-6-calibrate-selector-offsets)
-  - [7. Bowden Length](#---step-7-calibrate-bowden-length)
-  - [8. Gates](#---step-8-calibrating-individual-gates)
+  - [6. Bowden Length](#---step-6-calibrate-bowden-length)
+  - [7. Gates](#---step-7-calibrating-individual-gates)
 - [Calibration Storage](#---calibration-storage)
 
 *\[This guide was adapted from the [Happy Hare Wiki](https://github.com/moggieuk/Happy-Hare/wiki) for ERCF v2.5. Thanks Moggie!\]*
@@ -21,7 +20,7 @@ Before using your ERCF you will need to calibrate it to adjust for differences i
 ## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Calibration Steps
 
 > [!IMPORTANT]  
-> When calibrating the first time you must perform calibration in the prescribed order.  Once complete you can re-calibrate particular steps but remember that some calibration changes will cascade.  E.g. after calibrating the gear, you must recalibrate the encoder, the bowden and possibly all the `gear_rotation_distances`.  Generally you can re-calibrate the selector (step 5) and the gates (step 7) at any time, but the servo, springy, gear, encoder and bowden must always be done in that order!
+> When calibrating the first time you must perform calibration in the prescribed order.  Once complete you can re-calibrate particular steps but remember that some calibration changes will cascade.  E.g. after calibrating the gear, you must recalibrate the encoder, the bowden and possibly all the `gear_rotation_distances`.  Generally you can re-calibrate the servo (step 1) selector (step 2) and the gates (step 7) at any time, but the gear, encoder and bowden must always be done in that order!
 
 ```mermaid
 graph TD;
@@ -51,7 +50,7 @@ graph TD;
 -->
 
 
-- For ERCF, Happy Hare keeps a `rotation_distance` on each gate which requires separate measured calibration of each gate, using `MMU_CALIBRATE_GEAR` or, if an encoder is fitted, with `MMU_CALIBRATE_GATES` to automate the process. This is important even if the drive gears look similar. 
+- For ERCF, Happy Hare keeps a `rotation_distance` on each gate which requires separate measured calibration of each gate, using `MMU_CALIBRATE_GEAR` or, using the encoder, with `MMU_CALIBRATE_GATES` to automate the process. This is important even if the drive gears are from the same vendor look similar. 
 
 > [!TIP] 
 > All of the calibration commands can be run in a "check/test" mode. Simply add `SAVE=0` to the command and the calibration will be run but the results will not be saved. This is very useful to practice or to verify calibration.
@@ -92,30 +91,62 @@ Repeat for the three positions:
 > - Servo Down. This position meshes the BMG gears to push filament. The filament trap is released to allow for Load/unload or to print with sync mode)
 > <p align="center"><img src="assets/servo_down.jpeg" width="250" alt="Servo Down"></p>
 
-### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Step 2. Calibrate Gate 0 offset
+The reason we must calibrate this first, is so that the next step can succeed. If the servo isn't aligned, the arm will likely catch on the Tophats during the Selector calibration, and cause it to fail! You can 
 
-Firstly ensure MMU motors are off by running `MMU_MOTORS_OFF` and remove filament from gate #0 -- you may need to run `MMU_SERVO POS=up` to release the filament.  Then re-insert and remove filament through selector to ensure that gate #0 is correctly alined with selector. Be careful and move the selector side to side whilst moving the filament inside the gate. Try to assess where the filament is centered in the gate and leave the selector in that position. Then run:
+### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Step 2. Calibrate selector offsets
 
-  > MMU_CALIBRATE_SELECTOR SINGLE=1 GATE=0
+There are three ways to calibrate the selector offsets:
 
-We will calibrate the other gates soon, but we need Gate 0 to be calibrated first to continue with the other calibration steps.
+#### A) Fully automatic calibration
+Let's start by getting the selector cailbrated in this easy step (it is important to do this early because the bowden and gate calibration need to be able to select gates).  This sets up the position all of all the gates as well as the bypass position if fitted.  Firstly ensure MMU motors are off by running `MMU_MOTORS_OFF` and remove filament from gate #0 -- you may need to run `MMU_SERVO POS=up` to release the filament.  Then re-insert and remove filament through selector to ensure that gate #0 is correctly alined with selector. Be careful and move the selector side to side whilst moving the filament inside the gate. Try to assess where the filament is centered in the gate and leave the selector in that position. Then run:
 
+  > MMU_CALIBRATE_SELECTOR
+
+Sit back and relax. The selector will move to find the extremes of movement and then use information about the geometry of the particular MMU and version/options you are using to generate and save the selector offsets automatically!
+
+#### B) Extrapolate first and last gates
+Although the above automated method above will attempt to calibrate the Selector, it can result in drift unless all the gates/lanes are perfectly tight together. To address this a better method that can be used with ERCF v2.5 is as follows:
+```yml
+MMU_MOTORS_OFF
+  (Use a piece of filament to align gate 0; remove filament)
+MMU_CALIBRATE_SELECTOR GATE=0
+MMU_MOTORS_OFF
+  (Use a piece of filament to align the last gate; remove filament)
+MMU_CALIBRATE_SELECTOR GATE=n
+  (where n is the last gate number, remember we are 0 based)
+```
+This will automatically set the offset of all intermediate gates distributing any build variance
+
+
+#### C) Individual gate calibration
+Although it should not be necessary other than for the bypass gate, there is an option update a single position if you would like to tune or run into problems. See the command reference for more detailed information on options, but basically, you turn MMU motors off, line up the desired gate with the selector and run:
+
+  > MMU_CALIBRATE_SELECTOR SINGLE=1 GATE=...
+
+Strictly speaking `SINGLE=1` is only required if calibrating just your final gate to avoid automatic extrapolation.
+
+#### C part 2) Bypass gate calibration
+ERCF has a built-in bypass gate. Similar to the above step, you can calibrate it's position by aligning the selector and running:
+
+  > MMU_CALIBRATE_SELECTOR BYPASS=1
+
+**Validation:** At the end of this step you should be able to select any tool/gate on your MMU. For instance, try running `MMU_HOME TOOL=3` to re-home and select tool/gate #3.
 
 ### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Step 3. Springy Calibration
 
 Put a scrap of PTFE into Gate 0. Run the command `MMU_SELECT GATE=0`.
 
-Feed a new piece of filament at least 250mm long into Gate 0.
+Feed a **new** piece of filament at least 250mm long into Gate 0 and past the encoder.
 
-Run the command `MMU_SERVO POS=DOWN`
+Run the command `MMU_TEST_GRIP`
 
-Run the command `MMU_TEST_MOVE MOVE=100`.
+Pull on the filament in the unloading direction. The gears should grip the filament and move the entire Drive Shaft as you pull. 
 
-The filament should now be partially loaded into the MMU, with the Gear Motor engaged to keep it in place.
+If the filament slips on the gears at all, tighten the Springy tensioner bolt, half a turn at a time, until the filament is fully and firmly gripped by the drive gears when you pull.
 
-Pull on the filament in the unloading direction, gently at first. If it moves at all, tighten the Springy tensioner bolt, half a turn at a time, until the filament is held firmly when you pull.
+If the grip is too strong, eg. the filament is being mangled by the gears, or the filament is grinding, back off the Springy tensioner bolt half a turn and test again.
 
-Run the command `MMU_TEST_GRIP` and pull on the filament. The gears should grip the filament and move the Drive Shaft when you pull. If the grip is too strong, eg. there are deep grooves in the filament from the gears, or the filament is grinding, back off the Springy tensioner bolt half a turn and test again. 
+It is important to set the Springy tension correctly so that the drive gears have good grip on the filament. If this is not set correctly, later calibration steps may give erroneous readings, because the length of filament sent by the Gear Motor is used in the calibration calculations.
 
 
 ### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Step 4. Calibrate your gear stepper
@@ -138,12 +169,12 @@ Get out your ruler and very carefully measure the length of the emited filament.
     Gear calibration for gate 0 has been saved
 ```
 
-> [!NOTE]  
-> You can also measure over a different length by using something like `MMU_TEST_MOVE MOVE=200` and `MMU_CALIBRATE_GEAR LENGTH=200 MEASURED=205.25` for a 200mm length for example.
+> [!TIP]  
+> You can also measure over a different length by using something like `MMU_TEST_MOVE MOVE=200` and `MMU_CALIBRATE_GEAR LENGTH=200 MEASURED=205.25` for a 200mm length for example. Don't forget the `LENGTH=200` argument, or it the calibration calculation will default to 100mm and set your gear calibration wrong!
 
-**Validation:** If you want to test, snip the filament again flush with the ECAS connector and run `MMU_TEST_MOVE`.  Exactly 100mm should be moved this time.
+**Validation:** If you want to test, snip the filament flush with the ECAS connector again and run `MMU_TEST_MOVE`.  Exactly 100mm should be moved this time.
 
-You can either repeat for all other gates, or you can shortcut and use `MMU_CALIBRATE_GATES` in Step 8.
+You can either repeat this for all other gates, or you can shortcut and use `MMU_CALIBRATE_GATES` in Step 7.
 
 
 ### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Step 5. Calibrate your encoder
@@ -178,46 +209,7 @@ You will see an output similar to:
 If this step worked then you should be able to unload the residual filament with `MMU_UNLOAD`. If you aren't happy with results, leave the filament ready for the next run and repeat this section.
 
 
-### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Step 6. Calibrate selector offsets
-
-#### A) Fully automatic calibration
-Let's start by getting the selector cailbrated in this easy step (it is important to do this early because the bowden and gate calibration need to be able to select gates).  This sets up the position all of all the gates as well as the bypass position if fitted.  Firstly ensure MMU motors are off by running `MMU_MOTORS_OFF` and remove filament from gate #0 -- you may need to run `MMU_SERVO POS=up` to release the filament.  Then re-insert and remove filament through selector to ensure that gate #0 is correctly alined with selector. Be careful and move the selector side to side whilst moving the filament inside the gate. Try to assess where the filament is centered in the gate and leave the selector in that position. Then run:
-
-  > MMU_CALIBRATE_SELECTOR
-
-Sit back and relax. The selector will move to find the extremes of movement and then use information about the geometry of the particular MMU and version/options you are using to generate and save the selector offsets automatically!
-
-
-#### B) Extrapolate first and last gates
-Although the above automated method above will attempt to calibrate the Selector, it can result in drift unless all the gates/lanes are perfectly tight together. To address this a better method that can be used with ERCF v2.5 is as follows:
-```yml
-MMU_MOTORS_OFF
-  (Use a piece of filament to align gate 0; remove filament)
-MMU_CALIBRATE_SELECTOR GATE=0
-MMU_MOTORS_OFF
-  (Use a piece of filament to align the last gate; remove filament)
-MMU_CALIBRATE_SELECTOR GATE=n
-  (where n is the last gate number, remember we are 0 based)
-```
-This will automatically set the offset of all intermediate gates distributing any build variance
-
-
-#### C) Individual gate calibration
-Although it should not be necessary other than for the bypass gate, there is an option update a single position if you would like to tune or run into problems. See the command reference for more detailed information on options, but basically, you turn MMU motors off, line up the desired gate with the selector and run:
-
-  > MMU_CALIBRATE_SELECTOR SINGLE=1 GATE=...
-
-Strictly speaking `SINGLE=1` is only required if calibrating just your final gate to avoid automatic extrapolation.
-
-#### D) Individual bypass gate calibration
-Similar to the above if your MMU has a bypass gate you can calibrate it's position by aligning the selector and running:
-
-  > MMU_CALIBRATE_SELECTOR BYPASS=1
-
-**Validation:** At the end of this step you should be able to select any tool/gate on your MMU. For instance, try running `MMU_HOME TOOL=3` to re-home and select tool/gate #3.
-
-
-### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Step 7. Calibrate bowden length
+### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Step 6. Calibrate bowden length
 
 Here you can calibrate the length of your bowden from MMU gate to extruder entrance. This is important because it allows the MMU to move the filament at a fast pace over this distance before getting to the more complicated part of the load sequence. To speed up this process, and depending on what sensors you have fitted for extruder homing, you may need to give the calibration routine a hint of how far way the extruder is.
 
@@ -263,7 +255,7 @@ This will reverse home to the gate and uses Klipper's measurement of stepper mov
 > (ii) This may cause the extruder to be heated. This is to ensure that the extruder motor is energized and can resist the impact of the collision with the filament
 
 
-### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Step 8. Calibrating individual gates
+### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Step 7. Calibrating individual gates
 
 This step allows for calibrating slight differences between gates and saves you from having to use `MMU_CALIBRATE_GEAR` on every gate. Even with ERCF this is optional because if not run, the gates will tune themselves as they are used automatically!  That said it be beneficial to get this out of the way with a test piece of filament, but doing it also: (i) removes the need to set the `autotune_rotation_distance` in `mmu_parameters.cfg`, (ii) is necessary if there is substantial variation between gates -- e.g. if BMG gears for different gates are sourced from different vendors.
 
@@ -290,7 +282,7 @@ You will see an output similar to:
 ```
 
 > [!NOTE]  
-> (i) You can also quickly run through all gates (even pass the loose filament gate to gate) with `MMU_CALIBRATE_GATES ALL=1` <br>
+> (i) You can also quickly run through all gates (and even pass the loose filament gate to gate) with `MMU_CALIBRATE_GATES ALL=1` <br>
 > (ii) If you see "Calibration ignored because it is not considered valid (>20% difference from gate 0)" then it either means the calibration failed because filament was not moving correctly, or the encoder was not working correctly. Less likely but possible is because you have not calibrated gate 0 (`MMU_CALIBRATE_GEAR` and `MMU_CALIBRATE_ENCODER`) correctly which serves as the reference gate.
 
 
