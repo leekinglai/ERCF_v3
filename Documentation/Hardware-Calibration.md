@@ -60,7 +60,7 @@ graph TD;
 
 Now it's finally time to install the servo arm!
 
-First, run the command `MMU_TEST_CONFIG servo_active_down=1`. This will set the servo so that it always tries to return to the down position. You generally don't want this option enabled, but it is useful for servo arm installation.
+First, run the command `MMU_TEST_CONFIG servo_active_down=1`. This will set the servo so that it always tries to return to the down position. You generally don't want this option enabled because it can potentiallly *burn out your servo*, but it is useful for servo arm installation.
 
 Run the command `MMU_SERVO POS=down`. This will set the servo to the initial down position while you attach the servo arm.
 
@@ -70,9 +70,7 @@ Next, tighten down the M3x10mm BHCS that clamps the servo arm down on the servo 
 
 Now run the command `MMU_TEST_CONFIG servo_active_down=0` to disable the servo return-to-down feature.
 
-Happy Hare sets up theoretically good servo postions during installation, however they should be calibrated. ERCF requires precise servo movement. To get that precision, you need to run through this process to update and record the angle for the "up" position. 
-
-* up   = tool is selected and filament is allowed to freely move through gate
+Happy Hare sets up theoretically good servo postions during installation, however they should be calibrated. ERCF requires precise servo calibration to work correctly. To get that precision, you need to run through this process to update and record the correct angle for the `UP` position. Refer to the pictures below to see what each of the servo arm positions should look like.
 
 ```yml
 MMU_SERVO POS=up
@@ -86,14 +84,14 @@ MMU_SERVO POS=up SAVE=1
   (Save the current angle (128) for the "up" position)
 ```
 
-Repeat for the other two positions ("down" and "move").
+Repeat for the other two positions (`DOWN` and `MOVE`).
 
 > [!NOTE]  
-> Servo can only move so far. If you are unable to attain the servo angle required you might need to reposition the Servo Arm, or edit the servo configuration in `mmu_hardware.cfg`
+> Servos have a limited range of rotation. If you are unable to attain the servo angle required you might need to reposition the servo arm on the servo, or edit the servo configuration in `mmu_hardware.cfg`
 > 
 > **Servo positions on ERCF**
 > Make sure the `MOVE` and `UP` positions of your servo arm are set so that the arm does not hit the tophats when the selector is moving. See picture below to see where the servo arm should be for the 3 positions.
-> - Servo Up. This position releasese the filament trap for printing without sync mode.
+> - Servo Up. This position releases the filament trap for printing without sync mode.
 > <p align="center"><img src="assets/servo_up.jpeg" width="250" alt="Servo Up"></p>
 >
 > - Servo Move. This position activates the filament trap so that the Selector can move.
