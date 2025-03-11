@@ -39,7 +39,7 @@ Use MMU_CALIBRATE_GEAR (with gate selected) or MMU_CALIBRATE_GATES GATE=xx to ca
 Use MMU_CALIBRATE_BOWDEN
 ```
 
-That's what we're going to take care of next!
+That is normal, do not worry. Before we tackle that, we need to make sure all of the hardware is configured correctly!
 
 
 ## Step 1. Check Endstop & Optional Sensors

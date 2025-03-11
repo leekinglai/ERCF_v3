@@ -16,6 +16,19 @@ This discussion assumes that you have setup and debugged your [Hardware Configur
 
 Before using your ERCF you will need to calibrate it to adjust for differences in components used on your particular build. Be careful to calibrate in the recommended order because some settings build and depend on earlier ones. Happy Hare now has automated calibration for some of the traditionally longer steps and does not require any Klipper restarts so the process is quick and painless.
 
+Upon starting your printer, you should be greeted by a large warning on your console:
+
+```yml
+Prerequsite calibration steps are not complete:
+Use MMU_CALIBRATE_SELECTOR to calibrate selector for gates: 0,1,2,3,4,5,6,7
+Use MMU_CALIBRATE_GEAR (with gate 0 selected) to calibrate gear rotation_distance on gate: 0
+Use MMU_CALIBRATE_ENCODER (with gate 0 selected)
+Use MMU_CALIBRATE_GEAR (with gate selected) or MMU_CALIBRATE_GATES GATE=xx to calibrate gear rotation_distance on gates: 1,2,3,4,5,6,7
+Use MMU_CALIBRATE_BOWDEN
+```
+
+Let's take care of that next!
+
 
 ## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Calibration Steps
 
@@ -186,6 +199,9 @@ Get out your ruler and very carefully measure the length of the emited filament.
 > [!TIP]  
 > You can also measure over a different length by using something like `MMU_TEST_MOVE MOVE=200` and `MMU_CALIBRATE_GEAR LENGTH=200 MEASURED=205.25` for a 200mm length for example. Don't forget the `LENGTH=200` argument, or it the calibration calculation will default to 100mm and set your gear calibration wrong!
 
+> [!IMPORTANT]
+> The value for `rotation_distance` should be between 22 and 24 for BMG gears - if you get a `rotation_distance` far outside of these values, something has likely gone wrong! Redo this step.
+
 **Validation:** If you want to test, snip the filament flush with the ECAS connector again and run `MMU_TEST_MOVE`.  Exactly 100mm should be moved this time.
 
 You can either repeat this for all other gates, or you can shortcut and use `MMU_CALIBRATE_GATES` in Step 7.
@@ -298,6 +314,9 @@ You will see an output similar to:
 > [!NOTE]  
 > (i) You can also quickly run through all gates (and even pass the loose filament gate to gate) with `MMU_CALIBRATE_GATES ALL=1` <br>
 > (ii) If you see "Calibration ignored because it is not considered valid (>20% difference from gate 0)" then it either means the calibration failed because filament was not moving correctly, or the encoder was not working correctly. Less likely but possible is because you have not calibrated gate 0 (`MMU_CALIBRATE_GEAR` and `MMU_CALIBRATE_ENCODER`) correctly which serves as the reference gate.
+
+> [!IMPORTANT]
+> The value for `rotation_distance` should be very close to the `rotation_distance` from step 4 - if you get a `rotation_distance` that is very different, something has likely gone wrong! Redo this step. Common mechanical causes include overtensioned Selector belts and misaligned Selector positions.
 
 
 ### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Calibration Storage
