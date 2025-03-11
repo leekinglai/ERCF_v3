@@ -200,7 +200,7 @@ Get out your ruler and very carefully measure the length of the emited filament.
 > You can also measure over a different length by using something like `MMU_TEST_MOVE MOVE=200` and `MMU_CALIBRATE_GEAR LENGTH=200 MEASURED=205.25` for a 200mm length for example. Don't forget the `LENGTH=200` argument, or it the calibration calculation will default to 100mm and set your gear calibration wrong!
 
 > [!IMPORTANT]
-> The value for `rotation_distance` should be between 22 and 24 for BMG gears - if you get a `rotation_distance` far outside of these values, something has likely gone wrong! Redo this step.
+> The value for `rotation_distance` should be between 22 and 24 for BMG gears - if you get a `rotation_distance` far outside of these values, something has likely gone wrong! Redo this step. Common mechanical causes include overtensioned Selector belts and misaligned Selector positions.
 
 **Validation:** If you want to test, snip the filament flush with the ECAS connector again and run `MMU_TEST_MOVE`.  Exactly 100mm should be moved this time.
 
