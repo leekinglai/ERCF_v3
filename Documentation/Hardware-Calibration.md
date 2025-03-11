@@ -88,17 +88,22 @@ Repeat for the other two positions (`DOWN` and `MOVE`).
 
 > [!NOTE]  
 > Servos have a limited range of rotation. If you are unable to attain the servo angle required you might need to reposition the servo arm on the servo, or edit the servo configuration in `mmu_hardware.cfg`
-> 
-> **Servo positions on ERCF**
-> Make sure the `MOVE` and `UP` positions of your servo arm are set so that the arm does not hit the tophats when the selector is moving. See picture below to see where the servo arm should be for the 3 positions.
-> - Servo Up. This position releases the filament trap for printing without sync mode.
-> <p align="center"><img src="assets/servo_up.jpeg" width="250" alt="Servo Up"></p>
->
-> - Servo Move. This position activates the filament trap so that the Selector can move.
-> <p align="center"><img src="assets/servo_move.jpeg" width="250" alt="Servo Move"></p>
->
-> - Servo Down. This position meshes the BMG gears to push filament. The filament trap is released to allow for Load/unload or to print with sync mode)
-> <p align="center"><img src="assets/servo_down.jpeg" width="250" alt="Servo Down"></p>
+ 
+**Servo positions on ERCF**
+
+Make sure the `MOVE` and `UP` positions of your servo arm are set so that the arm does not hit the tophats when the selector is moving. See picture below to see where the servo arm should be for the 3 positions.
+
+- Servo Up. This position releases the filament trap for printing without sync mode.
+
+<p align="center"><img src="assets/servo_up.jpeg" width="250" alt="Servo Up"></p>
+
+- Servo Move. This position activates the filament trap so that the Selector can move.
+
+<p align="center"><img src="assets/servo_move.jpeg" width="250" alt="Servo Move"></p>
+
+- Servo Down. This position meshes the BMG gears to push filament. The filament trap is released to allow for Load/unload or to print with sync mode)
+
+<p align="center"><img src="assets/servo_down.jpeg" width="250" alt="Servo Down"></p>
 
 Once you are satisfied with your angles, you are done with this step!
 
