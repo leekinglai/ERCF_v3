@@ -1,12 +1,46 @@
 #### Page Sections:
+  - [Checks You Should Have Done Already](#checks-you-should-have-done-already)
   - [Step 1. Check Endstop & Optional Sensors](#step-1-check-endstop--optional-sensors)
   - [Step 2. Check motor movement and direction](#step-2-check-motor-movement-and-direction)
   - [Step 3. Check the Encoder](#step-3-check-the-encoder)
   - [Step 4. Check other sensors (if fitted)](#step-4-check-other-sensors-if-fitted)
   - [Step 5. Check Servo](#step-5-check-servo)
-  - [Checks You Should Have Done Already](#checks-you-should-have-done-already)
 
 *\[This guide was adapted from the [Happy Hare Wiki](https://github.com/moggieuk/Happy-Hare/wiki) for ERCF v2.5. Thanks Moggie!\]*
+
+
+## Checks You Should Have Done Already
+
+All of these checks and adjustments were covered in the Build Manual, and should have been done while building your ERCF.
+
+-Filament path / BMG Gear alignment (Manual page 71)
+
+-(if using a Geared setup) Adjustment of GT2 pulley and belt tension (Covered in the Geared Drive sub-Manual)
+
+-Encoder path adjustment (page 114)
+
+-Setting GT2 pulley and belt tension (page 127)
+
+-Setting 8mm rod depth (page 136)
+
+**If you haven't done these steps, go review the manual!**
+
+<br>
+
+
+Now that you've completed the [Happy Hare Configuration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Happy-Hare-Configuration.md), you should be greeted by a large warning on your console:
+
+```yml
+Prerequsite calibration steps are not complete:
+Use MMU_CALIBRATE_SELECTOR to calibrate selector for gates: 0,1,2,3,4,5,6,7
+Use MMU_CALIBRATE_GEAR (with gate 0 selected) to calibrate gear rotation_distance on gate: 0
+Use MMU_CALIBRATE_ENCODER (with gate 0 selected)
+Use MMU_CALIBRATE_GEAR (with gate selected) or MMU_CALIBRATE_GATES GATE=xx to calibrate gear rotation_distance on gates: 1,2,3,4,5,6,7
+Use MMU_CALIBRATE_BOWDEN
+```
+
+That is normal, do not worry. Before we tackle that, we need to make sure all of the hardware is configured correctly!
+
 
 ## Step 1. Check Endstop & Optional Sensors
 
@@ -27,7 +61,7 @@ toolhead:open
 [...]
 ```
 
-> [NOTE]
+> [!NOTE]
 > You will only see the sensors you have installed. You will additionally see any endstops or sensors installed on your printer.
 
 Then manually press and hold the selector microswitch and rerun `QUERY_ENDSTOPS`.
@@ -79,9 +113,9 @@ Now repeat the exercise with the gear stepper:
 MMU_MOTORS_OFF
   (remove any filament from your MMU)
 MMU_TEST_MOVE MOVE=100 SPEED=50
-  (verify that the gear stepper would pull filament towards the extruder)
+  (verify that the gear stepper would push filament towards the extruder / pull filament from the spool)
 MMU_TEST_MOVE MOVE=-100 SPEED=50
-  (verify that the gear stepper is pushing filament away from the extruder)
+  (verify that the gear stepper is pulling filament away from the extruder / pushing filament back to the spool)
 ```
 
 If the gear stepper doesn't move or moves the wrong way open up `mmu_hardware.cfg`, find the section `[stepper_mmu_gear]`:<br>
@@ -142,7 +176,7 @@ Note that endstops / filament sensors that are wired normally open (NO) frequent
 
 ## Step 5. Check Servo
 
-> [IMPORTANT]
+> [!IMPORTANT] 
 > The Servo Arm should *not* be installed yet for this test!
 
 Ok, last sanity check. Check that the servo you have fitted is operational. Run this simple commmand. The servo should wiggle somewhere short of the configured 'up' and 'down' positions. Don't worry yet about calibration. That comes next.
@@ -158,21 +192,6 @@ MMU_SERVO POS=up
 ```
 
 All we are checking is that the servo is wired and operational.
-
-
-## Checks You Should Have Done Already
-
-All of these checks and adjustments were covered in the Build Manual, and should have been done while building your ERCF.
-
--Filament path / BMG Gear alignment (Manual page 71)
-
--(if using a Geared setup) Adjustment of GT2 pulley and belt tension (Covered in the Geared Drive sub-Manual)
-
--Encoder path adjustment (Manual page 114)
-
--Setting GT2 pulley and belt tension (page 127)
-
--Setting 8mm rod depth (page 136)
 
 
 ### ERCF Setup Steps:
