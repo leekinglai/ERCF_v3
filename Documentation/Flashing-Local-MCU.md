@@ -3,6 +3,8 @@
 > [!IMPORTANT] 
 > These instructions assume you already have CAN communication working on your printer (unless you're using a USB connection). If you don't, check out [Esoterical's CANBus Guide](https://canbus.esoterical.online/).
 
+**Click on the relevant headings for your mainboard:
+
 <details>
 <summary>Flashing Katapult onto MMBv1.1</summary>
 
