@@ -38,6 +38,8 @@ Use the command `git clone https://github.com/Arksine/katapult` to download the 
 7. After flashing, disconnect the Type-C cable.
 </details>
 
+---
+
 <details>
 <summary>Compiling Klipper Firmware for MMBv1.1</summary>
 
@@ -80,6 +82,8 @@ If CAN-Bus communication is used:
 
 </details>
 
+---
+
 <details>
 <summary>Flashing Katapult onto MMBv2.0</summary>
 
@@ -113,6 +117,8 @@ Use the command `git clone https://github.com/Arksine/katapult` to download the 
 7. After flashing, disconnect the Type-C cable.
 
 </details>
+
+---
 
 <details>
 <summary>Compiling Klipper Firmware for MMBv2.0</summary>
@@ -156,8 +162,10 @@ If CAN-Bus communication is used:
 
 </details>
 
+---
+
 <details>
-<summary>MMB Firmware Update via Katapult</summary>
+<summary>Firmware Update via Katapult for MMB (CANBus only)</summary>
 
 Guide to update Raspberry Pi / CB1 / primary MCU via CANBus using Katapult. These steps are identical for MMBv1.1 and MMBv2.0.
 
@@ -183,8 +191,10 @@ The Application should now show Klipper, indicating it is running correctly.
 <img src="assets/compile_katapult_mmbv1_3.png" alt='Klipper flashing success'>
 </details>
 
+---
+
 <details>
-<summary>MMB Firmware Update via USB (DFU Mode)</summary>
+<summary>Firmware Update for MMB using USB (DFU Mode)</summary>
 
 Guide to update Raspberry Pi / CB1 / primary MCU via USB (DFU Mode). These steps are identical for MMBv1.1 and MMBv2.0.
 
@@ -216,8 +226,13 @@ This will start flashing the firmware.
 
 </details>
 
+---
+
 <details>
-<summary>Compiling and flashing Klipper onto EASY-BRD MCU with Seeeduino XIAO</summary>
+<summary>Compiling and flashing Klipper onto EASY-BRD</summary>
+
+This guide assumes you are using the version with Seeeduino XIAO.
+Other microcontrollers configurations are available in [config](https://github.com/Tircown/ERCF-easy-brd/blob/main/config/Seeeduino%20XIAO%20-%20SAMD21G18/ercf_hardware.cfg).
 
 * Install bossac (version ≥1.8)
 ```
@@ -249,12 +264,16 @@ More informations on how to reset for flashing:
 https://wiki.seeedstudio.com/Seeeduino-XIAO/#enter-bootloader-mode
 </details>
 
+---
+
 <details>
 <summary>EASY-BRD Klipper configuration</summary>
 
 See [ercf_hardware.cfg](https://github.com/Tircown/ERCF-easy-brd/blob/main/config/Seeeduino%20XIAO%20-%20SAMD21G18/ercf_hardware.cfg) for the Seeeduino XIAO (most common solution)
 Other microcontrollers configurations are available in config.
 </details>
+
+---
 
 <details>
 <summary>Compiling Klipper for ERBv1.0</summary>
@@ -279,6 +298,8 @@ make
 ```
 
 </details>
+
+---
 
 <details>
 <summary>Flashing Firmware onto ERBv1.0</summary>
@@ -352,6 +373,8 @@ See `ercf_hardware.cfg` in this repository `config` folder.
 The mark of GPIO24 and GPIO25 is swapped, check the silk file [here](https://github.com/FYSETC/FYSETC-ERB/blob/main/hardware/Silk%20Fixed.pdf).
 </details>
 
+---
+
 <details>
 <summary>Compiling and Flashing Klipper onto ERBv2.0</summary>
 
@@ -424,6 +447,8 @@ See `ercf_hardware.cfg` in this repository `config` folder.
 > ![ERBv2_menuconfig_16kb_CAN](https://github.com/FYSETC/FYSETC-ERB/raw/main/V2.0/images//ERBv2_menuconfig_16kb_CAN.png)
 
 </details>
+
+---
 
 ### ERCF Setup Steps:
 - Flashing Your Local MCU
