@@ -3,7 +3,7 @@
 > [!IMPORTANT] 
 > These instructions assume you already have CAN communication working on your printer (unless you're using a USB connection). If you don't, check out [Esoterical's CANBus Guide](https://canbus.esoterical.online/).
 
-**Click on the relevant headings for your mainboard:
+**Click on the relevant headings for your mainboard:**
 
 <details>
 <summary>Flashing Katapult onto MMBv1.1</summary>
@@ -267,7 +267,7 @@ https://wiki.seeedstudio.com/Seeeduino-XIAO/#enter-bootloader-mode
 ---
 
 <details>
-<summary>EASY-BRD Klipper configuration</summary>
+<summary>Other EASY-BRD MCU configurations</summary>
 
 See [ercf_hardware.cfg](https://github.com/Tircown/ERCF-easy-brd/blob/main/config/Seeeduino%20XIAO%20-%20SAMD21G18/ercf_hardware.cfg) for the Seeeduino XIAO (most common solution)
 Other microcontrollers configurations are available in config.
