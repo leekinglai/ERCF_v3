@@ -12,18 +12,19 @@
   - [Flashing Klipper onto MMB using USB (DFU Mode)](#---firmware-update-via-usb-dfu-mode)
 
 -ERCF EASY-BRD:
-  - [Configure the EASY-BRD MCU with Seeeduino XIAO](#)
-  - [Klipper Config](#)
+  - [Configure the EASY-BRD MCU with Seeeduino XIAO](#---configure-the-easy-brd-mcu-with-seeeduino-xiao)
+  - [Klipper Config](#---klipper-configuration)
 	
 -FysEtc ERB v1.0
-  - [ERBv1.0 Firmware Configuration](#)
-  - [ERBv1.0 Firmware Flashing](#)
+  - [ERBv1.0 Firmware Configuration](#---erbv10-firmware-configuration)
+  - [ERBv1.0 Firmware Flashing](#---erbv10-firmware-flashing)
 	
 -FysEtc ERB v2.0
-  - [ERBv2.0 Firmware Setup](#)
+  - [ERBv2.0 Firmware Setup](#---erbv20-firmware-setup)
 	
 
-These instructions were copied from the manuals provided by BTT, FysEtc, and Tircown and updated for ERCF v2.5.
+*These instructions were copied from the manuals provided by BTT, FysEtc, and Tircown and updated for ERCF v2.5.*
+
 > [!IMPORTANT] 
 > These instructions assume you already have CAN communication working on your printer (unless you're using a USB connection). If you don't, check out [Esoterical's CANBus Guide](https://canbus.esoterical.online/).
 
@@ -387,11 +388,11 @@ Select the following menuconfig settings
 
 Use USB communication
 
-![image-20240619172600522](images/ERBv2_menuconfig_USB.png)
+![image-20240619172600522](https://github.com/FYSETC/FYSETC-ERB/raw/main/V2.0/images//ERBv2_menuconfig_USB.png)
 
 Use CANBUS communication
 
-![image-20240619183021929](images/ERBv2_menuconfig_CAN.png)
+![image-20240619183021929](https://github.com/FYSETC/FYSETC-ERB/raw/main/V2.0/images//ERBv2_menuconfig_CAN.png)
 
 And create and upload the firmware files by running the following:
 
@@ -418,13 +419,13 @@ See `ercf_hardware.cfg` in this repository `config` folder.
 > 
 > Configuration of the katakulpt bootloader:
 > 
-> ![ERBv2_katakulpt_menuconfig_USB](images/ERBv2_katakulpt_menuconfig_USB.png)
-> ![ERBv2_katakulpt_menuconfig_CAN](images/ERBv2_katakulpt_menuconfig_CAN.png)
+> ![ERBv2_katakulpt_menuconfig_USB](https://github.com/FYSETC/FYSETC-ERB/raw/main/V2.0/images//ERBv2_katakulpt_menuconfig_USB.png)
+> ![ERBv2_katakulpt_menuconfig_CAN](https://github.com/FYSETC/FYSETC-ERB/raw/main/V2.0/images//ERBv2_katakulpt_menuconfig_CAN.png)
 > 
 > Configuration of klipper using katakulpt:
 > 
-> ![ERBv2_menuconfig_16kb_USB](images/ERBv2_menuconfig_16kb_USB.png)
-> ![ERBv2_menuconfig_16kb_CAN](images/ERBv2_menuconfig_16kb_CAN.png)
+> ![ERBv2_menuconfig_16kb_USB](https://github.com/FYSETC/FYSETC-ERB/raw/main/V2.0/images//ERBv2_menuconfig_16kb_USB.png)
+> ![ERBv2_menuconfig_16kb_CAN](https://github.com/FYSETC/FYSETC-ERB/raw/main/V2.0/images//ERBv2_menuconfig_16kb_CAN.png)
 
 
 ### ERCF Setup Steps:
