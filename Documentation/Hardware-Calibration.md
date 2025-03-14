@@ -161,6 +161,8 @@ ERCF has a built-in bypass gate. Similar to the above step, you can calibrate it
 
 ### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Step 3. Springy Calibration
 
+*You should start with the Springy adjustment bolt only just touching the Spring Cap part, with little to no tension on the spring.*
+
 Put a scrap of PTFE into Gate 0. Run the command `MMU_SELECT GATE=0`.
 
 Feed a **new** piece of filament at least 250mm long into Gate 0 and past the encoder.
@@ -174,6 +176,8 @@ If the filament slips on the gears at all, tighten the Springy tensioner bolt, h
 If the grip is too strong, eg. the filament is being mangled by the gears, or the filament is grinding, back off the Springy tensioner bolt half a turn and test again.
 
 It is important to set the Springy tension correctly so that the drive gears have good grip on the filament. If this is not set correctly, later calibration steps may give erroneous readings, because the length of filament sent by the Gear Motor is used in the calibration calculations.
+
+The Springy spring tensions the Servo downward, while still allowing the Servo to flex upwards slightly as necessary during operation.
 
 
 ### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Step 4. Calibrate your gear stepper
