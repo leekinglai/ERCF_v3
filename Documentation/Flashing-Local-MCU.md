@@ -8,7 +8,7 @@
 <details>
 <summary>Flashing Katapult onto MMBv1.1</summary>
 
-> [!NOTE] 
+> **NOTE**
 > Katapult (formerly CanBoot) is for updating MCU firmware directly via CAN Bus. If you prefer to update your firmware via USB (DFU Mode), skip this entire section.
 
 To flash Katapult onto Raspberry Pi or CB1, refer to the following instructions to download the Katapult project: https://github.com/Arksine/katapult
@@ -32,7 +32,7 @@ Use the command `git clone https://github.com/Arksine/katapult` to download the 
 
 6. Enter the following command to flash Katapult: `make flash FLASH_DEVICE=0483:df11`
 
-> [!NOTE] 
+> **NOTE**
 > Replace `0483:df11` with the actual device ID found in the previous step.
 
 7. After flashing, disconnect the Type-C cable.
@@ -87,7 +87,7 @@ If CAN-Bus communication is used:
 <details>
 <summary>Flashing Katapult onto MMBv2.0</summary>
 
-> [!NOTE] 
+> **NOTE** 
 > Katapult (formerly CanBoot) is for updating MCU firmware directly via CAN bus. If you prefer to update via USB (DFU Mode), skip this entire section.
 
 To flash Katapult onto Raspberry Pi or CB1, refer to the following instructions to download the Katapult project: https://github.com/Arksine/katapult
@@ -111,7 +111,7 @@ Use the command `git clone https://github.com/Arksine/katapult` to download the 
 
 6. Enter the following command to flash Katapult: `make flash FLASH_DEVICE=0483:df11`
 
-> [!NOTE] 
+> **NOTE**
 > Replace `0483:df11` with the actual device ID found in the previous step.
 
 7. After flashing, disconnect the Type-C cable.
@@ -178,7 +178,7 @@ This will query the canbus ID (make sure the CAN cable is connected and powered 
 
 3. Enter `python3 flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u be69315a613c`
 
-> [!NOTE] 
+> **NOTE** 
 > Replace `be69315a613c` with the actual device UUID found in the previous step.
 
 klipper.bin needs to be generated in advance using the `make` command, and the application start offset of Katapult is 8KiB offset, so Klipper's menuconfig Bootloader offset should also be 8KiB bootloader as shown in the following figure.
@@ -208,7 +208,7 @@ Guide to update Raspberry Pi / CB1 / primary MCU via USB (DFU Mode). These steps
 
 `make flash FLASH_DEVICE=0483:df11`
 
-> [!NOTE] 
+> **NOTE **
 > Replace `0483:df11` with the actual device ID found in the previous step.
 
 This will start flashing the firmware.
@@ -219,7 +219,7 @@ This will start flashing the firmware.
 
 `make flash FLASH_DEVICE=/dev/serial/by-id/usb-Klipper_stm32g0b1xx_4550357128922FC8-if00`
 
-> [!NOTE] 
+> **NOTE**
 >  Replace `/dev/serial/by-id/xxx` with the actual ID found in the previous step.
 
 6. If you are using CAN bus for communication, disconnect the Type-C cable after flashing.
@@ -433,7 +433,7 @@ See `ercf_hardware.cfg` in this repository `config` folder.
 
 ---------------------------------------------------
 
-> [!TIP]
+> **TIP**
 > We recommend using the Katapult bootloader, whether you use USB or CANBUS communication. This can avoid many strange problems.
 > 
 > Configuration of the Katapult bootloader:
