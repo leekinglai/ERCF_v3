@@ -141,9 +141,12 @@ Use the command `git clone https://github.com/Arksine/katapult` to download the 
 
 7. After flashing, disconnect the Type-C cable.
 
-<details>
+</details>
 
 ## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Compiling Klipper Firmware for MMBv2.0
+
+<details>
+<summary>Compiling Klipper Firmware for MMBv2.0</summary>
 
 1. Connect to CB1/Raspberry Pi via SSH and enter the following commands:
 `cd ~/klipper/`
@@ -182,10 +185,13 @@ If CAN-Bus communication is used:
 
 <img src="assets/compile_klipper_mmbv1_2.png" alt='Klipper binary download'>
 
-
+</details>
 
 
 ## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Firmware Update via Katapult
+
+<details>
+<summary>MMB Firmware Update via Katapult</summary>
 
 Guide to update Raspberry Pi / CB1 / primary MCU via CANBus using Katapult. These steps are identical for MMBv1.1 and MMBv2.0.
 
@@ -209,9 +215,12 @@ klipper.bin needs to be generated in advance using the `make` command, and the a
 The Application should now show Klipper, indicating it is running correctly.
 
 <img src="assets/compile_katapult_mmbv1_3.png" alt='Klipper flashing success'>
-
+</details>
 
 ## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Firmware Update via USB (DFU Mode)
+
+<details>
+<summary>MMB Firmware Update via USB (DFU Mode)</summary>
 
 Guide to update Raspberry Pi / CB1 / primary MCU via USB (DFU Mode). These steps are identical for MMBv1.1 and MMBv2.0.
 
@@ -241,8 +250,13 @@ This will start flashing the firmware.
 
 6. If you are using CAN bus for communication, disconnect the Type-C cable after flashing.
 
+</details>
 
 ## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Configure the EASY-BRD MCU with Seeeduino XIAO
+
+<details>
+<summary>Configure the EASY-BRD MCU with Seeeduino XIAO</summary>
+
 * Install bossac (version ≥1.8)
 ```
 sudo apt install libreadline-dev libwxgtk3.0-*
@@ -271,14 +285,20 @@ sudo /usr/local/bin/bossac -i -d -p /dev/ttyACM1 -e -w -v -R --offset=0x2000 out
 
 More informations on how to reset for flashing:
 https://wiki.seeedstudio.com/Seeeduino-XIAO/#enter-bootloader-mode
-
+</details>
 
 ## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Klipper configuration
+<details>
+<summary>EASY-BRD Klipper configuration</summary>
+
 See [ercf_hardware.cfg](https://github.com/Tircown/ERCF-easy-brd/blob/main/config/Seeeduino%20XIAO%20-%20SAMD21G18/ercf_hardware.cfg) for the Seeeduino XIAO (most common solution)
 Other microcontrollers configurations are available in config.
-
+</details>
 
 ## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) ERBv1.0 Firmware Configuration
+
+<details>
+<summary>ERBv1.0 Firmware Configuration</summary>
 
 ### Compile options
 On your klipper device (usually Raspberry Pi) run the following to create your make configuration:
@@ -299,7 +319,12 @@ And create the firmware files by running the following:
 make
 ```
 
+</details>
+
 ## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) ERBv1.0 Firmware Flashing
+
+<details>
+<summary>ERBv1.0 Firmware Flashing</summary>
 
 #### 1.With your windows PC
 
@@ -368,9 +393,12 @@ See `ercf_hardware.cfg` in this repository `config` folder.
 ### Known issues
 
 The mark of GPIO24 and GPIO25 is swapped, check the silk file [here](https://github.com/FYSETC/FYSETC-ERB/blob/main/hardware/Silk%20Fixed.pdf).
-
+</details>
 
 ## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) ERBv2.0 Firmware Setup
+
+<details>
+<summary>ERBv2.0 Firmware Config and Flashing</summary>
 
 ### Compile and upload
 In order to compile and upload at one time, you need to follow the steps below to put RP2040 into dfu mode.
@@ -440,6 +468,7 @@ See `ercf_hardware.cfg` in this repository `config` folder.
 > ![ERBv2_menuconfig_16kb_USB](https://github.com/FYSETC/FYSETC-ERB/raw/main/V2.0/images//ERBv2_menuconfig_16kb_USB.png)
 > ![ERBv2_menuconfig_16kb_CAN](https://github.com/FYSETC/FYSETC-ERB/raw/main/V2.0/images//ERBv2_menuconfig_16kb_CAN.png)
 
+</details>
 
 ### ERCF Setup Steps:
 - Flashing Your Local MCU
