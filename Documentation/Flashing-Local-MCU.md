@@ -318,9 +318,9 @@ Step 5: Release the RST button, after 3 seconds, Release the bootsel button
 
 Step 6: `RPI-RP2` folder will show up on your computer, copy your built firmware `klipper.uf2` to the folder.
 
-![](images/upload1.png)
+![](https://github.com/FYSETC/FYSETC-ERB/raw/main/V1.0/images/upload1.png)
 
-![](images/upload.png)
+![](https://github.com/FYSETC/FYSETC-ERB/raw/main/V1.0/images/upload.png)
 
 #### 2. With your Pi 
 
@@ -366,7 +366,7 @@ ls /dev/serial/by-id
 
 ### Configuration
 
-See `ercf_hardware.cfg` in this repository `config` folder.
+See `ercf_hardware.cfg` in the ERBv1.0 repository [config](https://github.com/FYSETC/FYSETC-ERB/tree/main/V1.0/config) folder.
 
 ### Known issues
 
@@ -429,7 +429,7 @@ ls /dev/serial/by-id
 ```
 ### Configuration
 
-See `ercf_hardware.cfg` in this repository `config` folder.
+See `ercf_hardware.cfg` in the ERBv2.0 repository [config](https://github.com/FYSETC/FYSETC-ERB/tree/main/V2.0/config) folder.
 
 ---------------------------------------------------
 
