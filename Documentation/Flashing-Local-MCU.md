@@ -29,6 +29,10 @@
 > These instructions assume you already have CAN communication working on your printer (unless you're using a USB connection). If you don't, check out [Esoterical's CANBus Guide](https://canbus.esoterical.online/).
 
 ## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Flashing Katapult for MMBv1.1
+
+<details>
+<summary>Flashing Katapult for MMBv1.1</summary>
+
 > [!NOTE] 
 > Katapult (formerly CanBoot) is for updating MCU firmware directly via CAN Bus. If you prefer to update your firmware via USB (DFU Mode), skip this entire section.
 
@@ -57,9 +61,12 @@ Use the command `git clone https://github.com/Arksine/katapult` to download the 
 > Replace `0483:df11` with the actual device ID found in the previous step.
 
 7. After flashing, disconnect the Type-C cable.
-
+</details>
 
 ## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Compiling Klipper Firmware for MMBv1.1
+
+<details>
+<summary>Compiling Klipper Firmware for MMBv1.1</summary>
 
 1. Connect to CB1/Raspberry Pi via SSH and enter the following commands:
 `cd ~/klipper/`
@@ -98,8 +105,13 @@ If CAN-Bus communication is used:
 
 <img src="assets/compile_klipper_mmbv1_2.png" alt='Klipper binary download'>
 
+</details>
 
 ## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Flashing Katapult for MMBv2.0
+
+<details>
+<summary>Flashing Katapult for MMBv2.0</summary>
+
 > [!NOTE] 
 > Katapult (formerly CanBoot) is for updating MCU firmware directly via CAN bus. If you prefer to update via USB (DFU Mode), skip this entire section.
 
@@ -129,6 +141,7 @@ Use the command `git clone https://github.com/Arksine/katapult` to download the 
 
 7. After flashing, disconnect the Type-C cable.
 
+<details>
 
 ## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Compiling Klipper Firmware for MMBv2.0
 
@@ -415,14 +428,14 @@ See `ercf_hardware.cfg` in this repository `config` folder.
 ---------------------------------------------------
 
 > [!TIP]
-> We recommend using the katakulpt bootloader, whether you use USB or CANBUS communication. This can avoid many strange problems.
+> We recommend using the Katapult bootloader, whether you use USB or CANBUS communication. This can avoid many strange problems.
 > 
-> Configuration of the katakulpt bootloader:
+> Configuration of the Katapult bootloader:
 > 
 > ![ERBv2_katakulpt_menuconfig_USB](https://github.com/FYSETC/FYSETC-ERB/raw/main/V2.0/images//ERBv2_katakulpt_menuconfig_USB.png)
 > ![ERBv2_katakulpt_menuconfig_CAN](https://github.com/FYSETC/FYSETC-ERB/raw/main/V2.0/images//ERBv2_katakulpt_menuconfig_CAN.png)
 > 
-> Configuration of klipper using katakulpt:
+> Configuration of klipper using Katapult:
 > 
 > ![ERBv2_menuconfig_16kb_USB](https://github.com/FYSETC/FYSETC-ERB/raw/main/V2.0/images//ERBv2_menuconfig_16kb_USB.png)
 > ![ERBv2_menuconfig_16kb_CAN](https://github.com/FYSETC/FYSETC-ERB/raw/main/V2.0/images//ERBv2_menuconfig_16kb_CAN.png)
