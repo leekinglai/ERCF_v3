@@ -4,7 +4,7 @@
 > These instructions assume you already have CAN communication working on your printer (unless you're using a USB connection). If you don't, check out [Esoterical's CANBus Guide](https://canbus.esoterical.online/).
 
 <details>
-<summary>##Flashing Katapult for MMBv1.1</summary>
+<summary>Flashing Katapult onto MMBv1.1</summary>
 
 > [!NOTE] 
 > Katapult (formerly CanBoot) is for updating MCU firmware directly via CAN Bus. If you prefer to update your firmware via USB (DFU Mode), skip this entire section.
@@ -79,7 +79,7 @@ If CAN-Bus communication is used:
 </details>
 
 <details>
-<summary>Flashing Katapult for MMBv2.0</summary>
+<summary>Flashing Katapult onto MMBv2.0</summary>
 
 > [!NOTE] 
 > Katapult (formerly CanBoot) is for updating MCU firmware directly via CAN bus. If you prefer to update via USB (DFU Mode), skip this entire section.
@@ -215,7 +215,7 @@ This will start flashing the firmware.
 </details>
 
 <details>
-<summary>Configure the EASY-BRD MCU with Seeeduino XIAO</summary>
+<summary>Compiling and flashing Klipper onto EASY-BRD MCU with Seeeduino XIAO</summary>
 
 * Install bossac (version ≥1.8)
 ```
@@ -255,7 +255,7 @@ Other microcontrollers configurations are available in config.
 </details>
 
 <details>
-<summary>ERBv1.0 Firmware Configuration</summary>
+<summary>Compiling Klipper for ERBv1.0</summary>
 
 ### Compile options
 On your klipper device (usually Raspberry Pi) run the following to create your make configuration:
@@ -279,7 +279,7 @@ make
 </details>
 
 <details>
-<summary>ERBv1.0 Firmware Flashing</summary>
+<summary>Flashing Firmware onto ERBv1.0</summary>
 
 #### 1.With your windows PC
 
@@ -351,7 +351,7 @@ The mark of GPIO24 and GPIO25 is swapped, check the silk file [here](https://git
 </details>
 
 <details>
-<summary>ERBv2.0 Firmware Config and Flashing</summary>
+<summary>Compiling and Flashing Klipper onto ERBv2.0</summary>
 
 ### Compile and upload
 In order to compile and upload at one time, you need to follow the steps below to put RP2040 into dfu mode.
