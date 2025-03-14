@@ -1,37 +1,10 @@
-#### Page Sections:
--MMBv1.1:
-  - [Flashing Katapult onto MMBv1.1](#---flashing-katapult-for-mmbv11)
-  - [Compiling Klipper for MMBv1.1](#---compiling-klipper-firmware-for-mmbv11)
-  
--MMBv2.0:
-  - [Flashing Katapult onto MMBv2.0](#---flashing-katapult-for-mmbv20)
-  - [Compiling Klipper for MMBv2.0](#---flashing-katapult-for-mmbv20)
-
--Flashing MMB:
-  - [Flashing Klipper onto MMB using Katapult](#---firmware-update-via-katapult)
-  - [Flashing Klipper onto MMB using USB (DFU Mode)](#---firmware-update-via-usb-dfu-mode)
-
--ERCF EASY-BRD:
-  - [Configure the EASY-BRD MCU with Seeeduino XIAO](#---configure-the-easy-brd-mcu-with-seeeduino-xiao)
-  - [Klipper Config](#---klipper-configuration)
-	
--FysEtc ERB v1.0
-  - [ERBv1.0 Firmware Configuration](#---erbv10-firmware-configuration)
-  - [ERBv1.0 Firmware Flashing](#---erbv10-firmware-flashing)
-	
--FysEtc ERB v2.0
-  - [ERBv2.0 Firmware Setup](#---erbv20-firmware-setup)
-	
-
 *These instructions were copied from the manuals provided by BTT, FysEtc, and Tircown and updated for ERCF v2.5.*
 
 > [!IMPORTANT] 
 > These instructions assume you already have CAN communication working on your printer (unless you're using a USB connection). If you don't, check out [Esoterical's CANBus Guide](https://canbus.esoterical.online/).
 
-## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Flashing Katapult for MMBv1.1
-
 <details>
-<summary>Flashing Katapult for MMBv1.1</summary>
+<summary>##Flashing Katapult for MMBv1.1</summary>
 
 > [!NOTE] 
 > Katapult (formerly CanBoot) is for updating MCU firmware directly via CAN Bus. If you prefer to update your firmware via USB (DFU Mode), skip this entire section.
@@ -62,8 +35,6 @@ Use the command `git clone https://github.com/Arksine/katapult` to download the 
 
 7. After flashing, disconnect the Type-C cable.
 </details>
-
-## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Compiling Klipper Firmware for MMBv1.1
 
 <details>
 <summary>Compiling Klipper Firmware for MMBv1.1</summary>
@@ -107,8 +78,6 @@ If CAN-Bus communication is used:
 
 </details>
 
-## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Flashing Katapult for MMBv2.0
-
 <details>
 <summary>Flashing Katapult for MMBv2.0</summary>
 
@@ -142,8 +111,6 @@ Use the command `git clone https://github.com/Arksine/katapult` to download the 
 7. After flashing, disconnect the Type-C cable.
 
 </details>
-
-## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Compiling Klipper Firmware for MMBv2.0
 
 <details>
 <summary>Compiling Klipper Firmware for MMBv2.0</summary>
@@ -187,9 +154,6 @@ If CAN-Bus communication is used:
 
 </details>
 
-
-## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Firmware Update via Katapult
-
 <details>
 <summary>MMB Firmware Update via Katapult</summary>
 
@@ -216,8 +180,6 @@ The Application should now show Klipper, indicating it is running correctly.
 
 <img src="assets/compile_katapult_mmbv1_3.png" alt='Klipper flashing success'>
 </details>
-
-## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Firmware Update via USB (DFU Mode)
 
 <details>
 <summary>MMB Firmware Update via USB (DFU Mode)</summary>
@@ -252,8 +214,6 @@ This will start flashing the firmware.
 
 </details>
 
-## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Configure the EASY-BRD MCU with Seeeduino XIAO
-
 <details>
 <summary>Configure the EASY-BRD MCU with Seeeduino XIAO</summary>
 
@@ -287,15 +247,12 @@ More informations on how to reset for flashing:
 https://wiki.seeedstudio.com/Seeeduino-XIAO/#enter-bootloader-mode
 </details>
 
-## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Klipper configuration
 <details>
 <summary>EASY-BRD Klipper configuration</summary>
 
 See [ercf_hardware.cfg](https://github.com/Tircown/ERCF-easy-brd/blob/main/config/Seeeduino%20XIAO%20-%20SAMD21G18/ercf_hardware.cfg) for the Seeeduino XIAO (most common solution)
 Other microcontrollers configurations are available in config.
 </details>
-
-## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) ERBv1.0 Firmware Configuration
 
 <details>
 <summary>ERBv1.0 Firmware Configuration</summary>
@@ -320,8 +277,6 @@ make
 ```
 
 </details>
-
-## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) ERBv1.0 Firmware Flashing
 
 <details>
 <summary>ERBv1.0 Firmware Flashing</summary>
@@ -394,8 +349,6 @@ See `ercf_hardware.cfg` in this repository `config` folder.
 
 The mark of GPIO24 and GPIO25 is swapped, check the silk file [here](https://github.com/FYSETC/FYSETC-ERB/blob/main/hardware/Silk%20Fixed.pdf).
 </details>
-
-## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) ERBv2.0 Firmware Setup
 
 <details>
 <summary>ERBv2.0 Firmware Config and Flashing</summary>
