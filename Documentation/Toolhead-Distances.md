@@ -9,9 +9,9 @@
 
 <br>
 
-This discussion assumes that you have initial setup complete and are now ready to tune the quality of your prints. Although some of the information contained here is useful early in your journey it will make a lot more sense once you have some experience with default or "borrowed" toolhead parameters.
+This discussion assumes that you have initial setup complete and are now ready to tune the quality of your prints. Although some of the information contained here is useful early in your journey it will make a lot more sense once you have some experience with default or "borrowed" toolhead parameters. You *must* configure and calibrate your hardware before doing this step.
 
-This guide will then guide you to optimize a few critical parameters for print qualit that avoids blobbing on your wipetower or print and stringing when moving to change tool.
+This guide will then guide you to optimize a few critical parameters for print quality that avoids blobbing on your wipetower or print and stringing when moving to change tool.
 
 Specifically in this guide you will learn how to correctly set the following parameters (`mmu/base/mmu_parameters.cfg`):
 - `toolhead_extruder_to_nozzle`
@@ -102,6 +102,7 @@ If you have removed the Bowden tube, reattach it to the toolhead, and prepare th
 Then run:
 
 > MMU\_CALIBRATE\_TOOLHEAD CLEAN=1
+
 (optionally add `SAVE=0`)
 
 This will perform a number of probing moves with a cold extruder and report back the empty toolhead parameters. For example:

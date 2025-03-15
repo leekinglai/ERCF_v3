@@ -42,7 +42,7 @@ gcode:
 
 Instead of setting the `form_tip_macro` to `_MMU_CUT_TIP` as above, put your "safe" cutting macro with the rest of your non-MMU macros (eg. in `printer.cfg`), then set `form_tip_macro` to the name of your safe cutting macro, in this example, `_MMU_SAFE_CUT_TIP`.
 
-Next, you will need to go through the entire file `config / mmu / base / mmu_macro_vars.cfg`. Read it, understand it, and change all of the options to suit your unique build and needs. The values you use depend on which extruder / toolhead you are using. There are also instructions for semi-automatic calibration for almost all of the cutter and toolhead length values in the Happy Hare Wiki's [Blobbing and Stringing page](https://github.com/moggieuk/Happy-Hare/wiki/Blobbing-and-Stringing)!
+Next, you will need to go through the entire file `config / mmu / base / mmu_macro_vars.cfg`. Read it, understand it, and change all of the options to suit your unique build and needs. The values you use depend on which extruder / toolhead you are using. See [Toolhead Distances](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Toolhead-Distances.md) for more details, but don't forget to do the hardware configuration and calibration steps first!
 
 Critical variables to change include setting `variable_simple_tip_forming` to `False` and setting the `variable_pin_loc_xy`, but you should really *at least* review the **Movement** and **Cut Tip** sections. These control parking and tip cutting settings and variables.
 
