@@ -48,8 +48,8 @@ Let's run through the important steps in a toolchange (for both tip forming and 
 
 Transitioning from an orange filament to a blue _(Click on images to see the detail)_:
 
-<p align="center"><a href="https://github.com/moggieuk/Happy-Hare/wiki/Blobbing-and-Stringing/Unloading_Tip_Forming.png"><img src="Blobbing-and-Stringing/Unloading_Tip_Forming.png" alt="Unloading Tip Forming"></a></p>
-<p align="center"><a href="https://github.com/moggieuk/Happy-Hare/wiki/Blobbing-and-Stringing/Loading_Tip_Forming.png"><img src="Blobbing-and-Stringing/Loading_Tip_Forming.png" alt="Loading Tip Forming" width="70%"></a></p>
+<p align="center"><a href="https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/assets/Unloading_Tip_Forming.png"><img src="https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/assets/Unloading_Tip_Forming.png" alt="Unloading Tip Forming"></a></p>
+<p align="center"><a href="https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/assets/Loading_Tip_Forming.png"><img src="https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/assets/Loading_Tip_Forming.png" alt="Loading Tip Forming" width="70%"></a></p>
 
 <br>
 
@@ -57,8 +57,8 @@ Transitioning from an orange filament to a blue _(Click on images to see the det
 
 With toolhead tip cutting the procedure is a little more complex and introduces two additional macro variables (defined in `mmu_macro_vars.cfg` that configure the tip cutting logic):
 
-<p align="center"><a href="https://github.com/moggieuk/Happy-Hare/wiki/Blobbing-and-Stringing/Unloading_Tip_Cutting.png"><img src="Blobbing-and-Stringing/Unloading_Tip_Cutting.png" alt="Unloading Tip Cutting"></a></p>
-<p align="center"><a href="https://github.com/moggieuk/Happy-Hare/wiki/Blobbing-and-Stringing/Loading_Tip_Cutting.png"><img src="Blobbing-and-Stringing/Loading_Tip_Cutting.png" alt="Loading Tip Cutting" width="70%"></a></p>
+<p align="center"><a href="https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/assets/Unloading_Tip_Cutting.png"><img src="https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/assets/Unloading_Tip_Cutting.png" alt="Unloading Tip Cutting"></a></p>
+<p align="center"><a href="https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/assets/Loading_Tip_Cutting.png"><img src="https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/assets/Loading_Tip_Cutting.png" alt="Loading Tip Cutting" width="70%"></a></p>
 
 Note that the cut piece of filament remaining and the residual filament are automatically accounted for by Happy Hare so long as you have configured the parameters exactly as defined in this illustration.
 
@@ -79,7 +79,7 @@ Note that the cut piece of filament remaining and the residual filament are auto
 
 Ok, now you know what the correct meaning of the dimensions are the next question is how to discover them for your setup. For everything other than `toolhead_residual_filament` it is possible to use accurate CAD models to measure them (remember to use the internal shoulder in the nozzle). This can be a challenge if using a CHT nozzle as shown below.
 
-<p align="center"><a href="https://github.com/moggieuk/Happy-Hare/wiki/Blobbing-and-Stringing/CHT_Cutaway.png"><img src="Blobbing-and-Stringing/CHT_Cutaway.png" alt="CHT Cutaway" width="40%"></a></p>
+<p align="center"><a href="https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/assets/CHT_Cutaway.png"><img src="https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/assets/CHT_Cutaway.png" alt="CHT Cutaway" width="40%"></a></p>
 
 If you have a toolhead sensor there is now an automated way to measure! If not, then you can refer to this wiki in the future, where we will aim to collate verified measurements for common toolhead combinations and once you have those set, you can experiment to discover the correct `toolhead_residual_filament` setting.
 
@@ -145,7 +145,7 @@ Because the extruder was empty we were able to establish the position of the int
 
 </td>
 <td width=30%>
-<a href="https://github.com/moggieuk/Happy-Hare/wiki/Blobbing-and-Stringing/Probe_Nozzle_Shoulder.png"><img src="Blobbing-and-Stringing/Probe_Nozzle_Shoulder.png" alt="Probe Nozzle Shoulder"></a>
+<a href="https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/assets/Probe_Nozzle_Shoulder.png"><img src="https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/assets/Probe_Nozzle_Shoulder.png" alt="Probe Nozzle Shoulder"></a>
 </td>
 </tr>
 </table>
@@ -200,7 +200,7 @@ New calibrated ooze reduction active until restart. Update mmu_parameters.cfg to
 > 6. If you have a belay sensor (filament tension/compression sensor) installed on your Bowden path, make sure you “lock” it in place so it doesn’t move. It is important that the filament path length stays static throughout the calibration process. You can either remove it and install a coupler or simply hold it firmly in its fully extended position when the calibration commands are run.
 
 > [!IMPORTANT] 
-> Remember, that the calibrated `toolhead_residual_filament` is your starting point. You can still fine tune the reduction in loading length according to what you see happening with the wipetower with and actual print. See [Tip Forming and Purging](Tip-Forming-and-Purging#tuning-toolhead_ooze_reduction) for details on what to look for and how to use `toolhead_ooze_reduction` as the final parameter to tweak load volume. But a word of warning, this should be the very last step and should only be a very small adjustment to optimize blobbing and oozing during tool loading.
+> Remember, that the calibrated `toolhead_residual_filament` is your starting point. You can still fine tune the reduction in loading length according to what you see happening with the wipetower with and actual print. See [Tip Forming and Purging](https://github.com/moggieuk/Happy-Hare/wiki/Tip-Forming-and-Purging#tuning-toolhead_ooze_reduction) for details on what to look for and how to use `toolhead_ooze_reduction` as the final parameter to tweak load volume. But a word of warning, this should be the very last step and should only be a very small adjustment to optimize blobbing and oozing during tool loading.
 
 <table>
 <tr>
@@ -210,7 +210,7 @@ Again referring back to the earlier illustrations, the difference between the cl
 
 </td>
 <td width=30%>
-<a href="https://github.com/moggieuk/Happy-Hare/wiki/Blobbing-and-Stringing/Probe_Filament_Remains.png"><img src="Blobbing-and-Stringing/Probe_Filament_Remains.png" alt="Probe Filament Remains"></a>
+<a href="https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/assets/Probe_Filament_Remains.png"><img src="https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/assets/Probe_Filament_Remains.png" alt="Probe Filament Remains"></a>
 </td>
 </tr>
 </table>
@@ -257,7 +257,7 @@ Referencing earlier illustrations, the blade position `variable_blade_pos` can t
 
 </td>
 <td width=30%>
-<a href="https://github.com/moggieuk/Happy-Hare/wiki/Blobbing-and-Stringing/Probe_Cut_Remains.png"><img src="Blobbing-and-Stringing/Probe_Cut_Remains.png" alt="Probe Cut Remains"></a>
+<a href="https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/assets/Probe_Cut_Remains.png"><img src="https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/assets/Probe_Cut_Remains.png" alt="Probe Cut Remains"></a>
 </td>
 </tr>
 </table>
@@ -285,7 +285,7 @@ Incorrect toolhead dimensions contribute most to blobbing problems, but even whe
 
 This parameter `toolhead_ooze_reduction` should start with a value of 0. It can be tuned to further reduce the extruder loading length to completely eliminate blobs on the wipetower. A positive value will DECREASE the load length by that number of mm. Typically a few mm is all that is required and if you find yourself needing more, check your `toolhead_residual_filament` value. Technically this value can be slightly negative - the effect would be to INCREASE the loading length.
 
-The best way to tune this is while actually printing (it can be altered dynamically during a print with `MMU_TEST_CONFIG`). Refer to this [Tip Forming and Purging](Tip-Forming-and-Purging#tuning-toolhead_ooze_reduction) page for more details.
+The best way to tune this is while actually printing (it can be altered dynamically during a print with `MMU_TEST_CONFIG`). Refer to this [Tip Forming and Purging](https://github.com/moggieuk/Happy-Hare/wiki/Tip-Forming-and-Purging#tuning-toolhead_ooze_reduction) page for more details.
 
 <br>
 
@@ -300,7 +300,7 @@ At the end of the toolchange process and immediately following the reversal of t
 The retraction and un-retraction speed is set with the related `variable_retract_speed` and `variable_unretract_speed` variables and can thus be set independently (often faster) than your general extruder load/unload speeds.
 
 > [!NOTE]  
-> The retraction settings are configured in the MOVEMENT section of `mmu_macro_vars.cfg` and can be specified independently for different operations including toolchange, print complete, pause, cancel, etc. See this section in [Toolchange Movement](Toolchange-Movement#---overview-of-toolhead-parking-movement) for more details.
+> The retraction settings are configured in the MOVEMENT section of `mmu_macro_vars.cfg` and can be specified independently for different operations including toolchange, print complete, pause, cancel, etc. See this section in [Toolchange Movement](https://github.com/moggieuk/Happy-Hare/wiki/Toolchange-Movement#---overview-of-toolhead-parking-movement) for more details.
 
 <br>
 
@@ -318,7 +318,7 @@ This ramped z-hop move essentially allows for a fast travel move of a greater di
 
 To ensure the toolhead does not go out of the print plate “bounds”, the horizontal movement component will be performed towards the center of the build plate.
 
-For full details on how to setup parking and thus define z-hop and retraction movements, read [Toolchange Movement](Toolchange-Movement) page.
+For full details on how to setup parking and thus define z-hop and retraction movements, read [Toolchange Movement](https://github.com/moggieuk/Happy-Hare/wiki/Toolchange-Movement) page.
 
 <br>
 
@@ -373,7 +373,7 @@ To help with the process Happy Hare includes a special macro that will guide you
 1. Move the toolhead to a convenient location, often the front middle of your build plate and at least 20mm above
 2. Detach the bowden tube from toolhead
 3. Open the extruder latch and manually load a 250mm piece of filament all the way in to the nozzle. Then close the extruder latch.
-4. Run `MMU_COLD_PULL MATERIAL=nylon|pla|abs|petg`. Optionally you can add temperature overrides e.g. `PULL_TEMP=xxx` (see [Command Reference](Command-Reference#---calibration) for details) to better suite your material (see [table of defaults](#default-mmu_cold_pull-temperatures-for-different-materials) below)
+4. Run `MMU_COLD_PULL MATERIAL=nylon|pla|abs|petg`. Optionally you can add temperature overrides e.g. `PULL_TEMP=xxx` (see [Command Reference](https://github.com/moggieuk/Happy-Hare/wiki/Command-Reference#---calibration) for details) to better suite your material (see [table of defaults](#default-mmu_cold_pull-temperatures-for-different-materials) below)
 5. Be ready to pull at the right time! You will be given a little warning but it is important to pull at the correct temperature when the filament is still slightly pliable. 
 6. Pull directly upwards with a consistent firm pull. The extruder stepper will also spin to aid the pull. If you want to do the pull manually, unlatch the extruder and pull. Note: some extruders (like the Galileo 2) have enough grip and torque to do this without assistance, although the manual approach allows you to "feel" the correct pull speed.
 
@@ -412,7 +412,7 @@ Cold pull is successful if you can see the shape of the nozzle at the filament e
 
 **How do you know if the cold pull was successful?** The pulled end of the filament should like one of the pictures below. You need to be able to see the impression of the nozzle at the tip of the pulled filament. On regular nozzles it should look similar to the image on the left, while with CHT nozzles similar to the image on the right. Note that the author of that picture (@igiannakas) should be commended for an excellent result because CHT nozzles require the pull at exactly the right temperature and a bit of luck!
 
-<p align="center"><img src="Blobbing-and-Stringing/Cold_Pull_Normal_Example.png" alt="Cold Pull Normal" width="40%"> <img src="Blobbing-and-Stringing/Cold_Pull_CHT_Example.png" alt="Cold Pull Normal" width="40%"></p>
+<p align="center"><img src="https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/assets/Cold_Pull_Normal_Example.png" alt="Cold Pull Normal" width="40%"> <img src="https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/assets/Cold_Pull_CHT_Example.png" alt="Cold Pull Normal" width="40%"></p>
 
 It may take a few pulls to get suitable results...
 
@@ -441,6 +441,7 @@ Good luck!
 - [Happy Hare Configuration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Happy-Hare-Configuration.md)
 - [Hardware Configuration Checks](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Hardware-configuration-checks.md)
 - [Hardware Calibration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Hardware-Calibration.md)
+- [Toolhead Distances](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Toolhead-Distances.md)
 - [Installing KlipperScreen Happy Hare](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Installing-KlipperScreen.md)
 - [Slicer Setup](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Slicer-Setup.md)
 - Further Mods to Consider
