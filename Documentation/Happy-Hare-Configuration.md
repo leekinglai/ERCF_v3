@@ -12,7 +12,7 @@
 
 1.  Open the file `config / mmu / base / mmu.cfg`. At the top of the file, beneath `\[mcu mmu\]`, add your Local MCU's CANBus UUID. If you are using USB to connect, Happy Hare should have detected and filled your serial number in for you. If not, you must add it in at this point. Save and close the file.
 
-2. Open the file `config / mmu / base / mmu_hardware.cfg`. If you are using a beefy NEMA17 motor for Direct Drive, you need to increase your motor currents starting on line 128. You want the current to be set to 70% of the motor's rated current, up to the stepper driver's max rated current. The max for for EZ Drivers and most motors is 1.6 amps.
+2. Open the file `config / mmu / base / mmu_hardware.cfg`. If you are using a beefy NEMA17 motor for Direct Drive, you need to increase your motor currents starting on line 128. You want the current to be set to 70% of the motor's rated current, up to the stepper driver's max rated current. The max for for EZ Drivers and most motors is 1.6 amps, so you should probably only use 70% of that rating - about 1.1 amps.
 
 3. Still in the file `config / mmu / base / mmu_hardware.cfg`. If you are using Direct Drive, comment out the Gear Ratio on line 143 by adding a hash, like this:
 

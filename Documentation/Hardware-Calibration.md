@@ -120,6 +120,9 @@ Make sure the `MOVE` and `UP` positions of your servo arm are set so that the ar
 
 **If the servo angles are set incorrectly, the servo will struggle to reach the angle set, which will likely reduce the servo's lifetime, and may even burn it out! You will know the servo is struggling because it will keep buzzing while it tries to reach the set angle.**
 
+> [!NOTE] 
+> It is normal for the Gear motor to move back and forth slightly during a `MMU_SERVO POS=down` command. This is to ensure that the BMG gears mesh properly.
+
 Once you are satisfied with your angles, you are done with this step!
 
 ### ![#f03c15](assets/f03c15.png) ![#c5f015](assets/c5f015.png) ![#1589F0](assets/1589F0.png) Step 2. Calibrate selector offsets

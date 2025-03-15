@@ -193,6 +193,9 @@ MMU_SERVO POS=up
 
 All we are checking is that the servo is wired and operational.
 
+> [!NOTE] 
+> It is normal for the Gear motor to move back and forth slightly during a `MMU_SERVO POS=down` command. This is to ensure that the BMG gears mesh properly.
+
 
 ### ERCF Setup Steps:
 - [Flashing Your Local MCU](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Flashing-Local-MCU.md)
