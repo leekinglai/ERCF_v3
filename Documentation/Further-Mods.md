@@ -1,4 +1,4 @@
-## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Further Mods to Consider
+## ![#f03c15](assets/f03c15.png) ![#c5f015](assets/c5f015.png) ![#1589F0](assets/1589F0.png) Further Mods to Consider
 
 A toolhead filament cutter (eg Filametrix) or Selector filament cutter (eg EREC) will remove the need to tune your filament tips. It is widely considered to be a very worthwhile modification, because [tip tuning](https://github.com/moggieuk/Happy-Hare/wiki/Tip-Forming-and-Purging) is a lengthy manual process that must be done for each new filament type and brand, and potentially even for each color or batch of filament. Toolhead cutters are recommended over Selector filament cutters because of the chance for strings of filament to be left in the Bowden tube.
 
@@ -16,6 +16,7 @@ Because there are a multitude of different extruders and toolheads, there is no 
 - [Happy Hare Configuration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Happy-Hare-Configuration.md)
 - [Hardware Configuration Checks](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Hardware-configuration-checks.md)
 - [Hardware Calibration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Hardware-Calibration.md)
+- [Toolhead Distances](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Toolhead-Distances.md)
 - [Installing KlipperScreen Happy Hare](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Installing-KlipperScreen.md)
 - [Slicer Setup](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Slicer-Setup.md)
 - Further Mods to Consider
