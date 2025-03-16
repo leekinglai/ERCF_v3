@@ -30,7 +30,7 @@ Use MMU_CALIBRATE_BOWDEN
 Let's take care of that next!
 
 
-## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Calibration Steps
+## ![#f03c15](assets/f03c15.png) ![#c5f015](assets/c5f015.png) ![#1589F0](assets/1589F0.png) Calibration Steps
 
 > [!IMPORTANT]  
 > When calibrating the first time you must perform calibration in the prescribed order.  Once complete you can re-calibrate particular steps but remember that some calibration changes will cascade.  E.g. after calibrating the gear, you must recalibrate the encoder, the bowden and possibly all the `gear_rotation_distances`.  Generally you can re-calibrate the servo (step 1) selector (step 2) and the gates (step 7) at any time, but the gear, encoder and bowden must always be done in that order!
@@ -69,7 +69,7 @@ graph TD;
 > All of the calibration commands can be run in a "check/test" mode. Simply add `SAVE=0` to the command and the calibration will be run but the results will not be saved. This is very useful to practice or to verify calibration.
 
 
-### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Step 1. Calibrate your servo
+### ![#f03c15](assets/f03c15.png) ![#c5f015](assets/c5f015.png) ![#1589F0](assets/1589F0.png) Step 1. Calibrate your servo
 
 Now it's finally time to install the servo arm!
 
@@ -118,9 +118,14 @@ Make sure the `MOVE` and `UP` positions of your servo arm are set so that the ar
 
 <p align="center"><img src="assets/servo_down.jpeg" width="250" alt="Servo Down"></p>
 
+**If the servo angles are set incorrectly, the servo will struggle to reach the angle set, which will likely reduce the servo's lifetime, and may even burn it out! You will know the servo is struggling because it will keep buzzing while it tries to reach the set angle.**
+
+> [!NOTE] 
+> It is normal for the Gear motor to move back and forth slightly during a `MMU_SERVO POS=down` command. This is to ensure that the BMG gears mesh properly.
+
 Once you are satisfied with your angles, you are done with this step!
 
-### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Step 2. Calibrate selector offsets
+### ![#f03c15](assets/f03c15.png) ![#c5f015](assets/c5f015.png) ![#1589F0](assets/1589F0.png) Step 2. Calibrate selector offsets
 
 There are three ways to calibrate the selector offsets:
 
@@ -159,7 +164,7 @@ ERCF has a built-in bypass gate. Similar to the above step, you can calibrate it
 
 **Validation:** At the end of this step you should be able to select any tool/gate on your MMU. For instance, try running `MMU_HOME TOOL=3` to re-home and select tool/gate #3.
 
-### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Step 3. Springy Calibration
+### ![#f03c15](assets/f03c15.png) ![#c5f015](assets/c5f015.png) ![#1589F0](assets/1589F0.png) Step 3. Springy Calibration
 
 *You should start with the Springy adjustment bolt only just touching the Spring Cap part, with little to no tension on the spring.*
 
@@ -180,7 +185,7 @@ It is important to set the Springy tension correctly so that the drive gears hav
 The Springy spring tensions the Servo downward, while still allowing the Servo to flex upwards slightly as necessary during operation.
 
 
-### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Step 4. Calibrate your gear stepper
+### ![#f03c15](assets/f03c15.png) ![#c5f015](assets/c5f015.png) ![#1589F0](assets/1589F0.png) Step 4. Calibrate your gear stepper
 **It is Very Important to get this right!**
 
 In this step you are ensuring that when the gear stepper is told to move 100mm of filament it really does move 100mm.  It is akin to what you did when you set up your extruder rotational distance, although in this case no Klipper restart is necessary!  Select gate #0 (you can use `MMU_SELECT GATE=0` if you have finished the selector calibration above) and put some filament through the gate so that it pokes out just past the selector exit.  Run the following to ensure the filament is gripped if your MMU needs to actuate a servo to grip filament:
@@ -211,7 +216,7 @@ Get out your ruler and very carefully measure the length of the emited filament.
 You can either repeat this for all other gates, or you can shortcut and use `MMU_CALIBRATE_GATES` in Step 7.
 
 
-### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Step 5. Calibrate your encoder
+### ![#f03c15](assets/f03c15.png) ![#c5f015](assets/c5f015.png) ![#1589F0](assets/1589F0.png) Step 5. Calibrate your encoder
 
 The next step is to calibrate the Encoder so it measures distance accurately. Re-fit the bowden to the encoder output. Alternatively, just make sure you have at least 500mm of filament at gate #0 before starting. Now run:
 
@@ -243,7 +248,7 @@ You will see an output similar to:
 If this step worked then you should be able to unload the residual filament with `MMU_UNLOAD`. If you aren't happy with results, leave the filament ready for the next run and repeat this section.
 
 
-### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Step 6. Calibrate bowden length
+### ![#f03c15](assets/f03c15.png) ![#c5f015](assets/c5f015.png) ![#1589F0](assets/1589F0.png) Step 6. Calibrate bowden length
 
 Here you can calibrate the length of your bowden from MMU gate to extruder entrance. This is important because it allows the MMU to move the filament at a fast pace over this distance before getting to the more complicated part of the load sequence. To speed up this process, and depending on what sensors you have fitted for extruder homing, you may need to give the calibration routine a hint of how far way the extruder is.
 
@@ -289,7 +294,7 @@ This will reverse home to the gate and uses Klipper's measurement of stepper mov
 > (ii) This may cause the extruder to be heated. This is to ensure that the extruder motor is energized and can resist the impact of the collision with the filament
 
 
-### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Step 7. Calibrating individual gates
+### ![#f03c15](assets/f03c15.png) ![#c5f015](assets/c5f015.png) ![#1589F0](assets/1589F0.png) Step 7. Calibrating individual gates
 
 This step allows for calibrating slight differences between gates and saves you from having to use `MMU_CALIBRATE_GEAR` on every gate. Even with ERCF this is optional because if not run, the gates will tune themselves as they are used automatically!  That said it be beneficial to get this out of the way with a test piece of filament, but doing it also: (i) removes the need to set the `autotune_rotation_distance` in `mmu_parameters.cfg`, (ii) is necessary if there is substantial variation between gates -- e.g. if BMG gears for different gates are sourced from different vendors.
 
@@ -323,7 +328,7 @@ You will see an output similar to:
 > The value for `rotation_distance` should be very close to the `rotation_distance` from step 4 - if you get a `rotation_distance` that is very different, something has likely gone wrong! Redo this step. Common mechanical causes include overtensioned Selector belts and misaligned Selector positions.
 
 
-### ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Calibration Storage
+### ![#f03c15](assets/f03c15.png) ![#c5f015](assets/c5f015.png) ![#1589F0](assets/1589F0.png) Calibration Storage
 All calibrated results are stored in the configured `[save_variables]` file. By default and most usually this will be `mmu_vars.cfg`. Here is a list of those variables and the command that sets them:
 
   | Variable | Command | Notes |
@@ -346,6 +351,7 @@ Happy Hare documentation lists all [Calibration Commands](https://github.com/mog
 - [Happy Hare Configuration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Happy-Hare-Configuration.md)
 - [Hardware Configuration Checks](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Hardware-configuration-checks.md)
 - Hardware Calibration
+- [Toolhead Distances](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Toolhead-Distances.md)
 - [Installing KlipperScreen Happy Hare](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Installing-KlipperScreen.md)
 - [Slicer Setup](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Slicer-Setup.md)
 - [Further Mods to Consider](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Further-Mods.md)

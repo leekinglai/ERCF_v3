@@ -7,7 +7,7 @@
   
 *\[This guide is copied from the [KlipperScreen Happy Hare repo](https://github.com/moggieuk/KlipperScreen-Happy-Hare-Edition) and reformatted for ERCF. Thanks Moggie!\]*
 
-## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Installation
+## ![#f03c15](assets/f03c15.png) ![#c5f015](assets/c5f015.png) ![#1589F0](assets/1589F0.png) Installation
 **Firstly, make sure Happy Hare software is completely up-to-date. Features were added to support this KlipperScreen add on.**
 
 Install and setup a base KlipperScreen from the original source. Get it working. Don't skip this step because we cannot help with basic KlipperScreen and system setup.  Once you have that installed and working, log into you Rasberry Pi and execute the following commands. You can cut'n'paste...
@@ -28,7 +28,7 @@ KlipperScreen will be restarted and hopefully you should now be running the enha
 
 Note that the base KlipperScreen is up-to-date (and Moggieuk will continue to merge with master every 2 weeks) with changes in the original but also includes extra menu functionality that can be used in the creation of your custom menus.  See the generated ercf_klipperscreen.conf for clues!
 
-## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Caveats & Possible problems / workarounds
+## ![#f03c15](assets/f03c15.png) ![#c5f015](assets/c5f015.png) ![#1589F0](assets/1589F0.png) Caveats & Possible problems / workarounds
 I have only tested on a single screen.  A 640x480 resolution BTT TFT5.0.   It is possible that you might find layout problems on other (likely smaller) displays.  Also, I have only tested in and optimized for horizonal orientation.  I doubt it will be effective in vertical but I don't know of any Voron owners with vertically mounted panels.
 
 JFYI the installer will alter or add the KlipperScreen entry in `moonraker.conf`:
@@ -42,7 +42,7 @@ JFYI the installer will alter or add the KlipperScreen entry in `moonraker.conf`
     install_script: scripts/KlipperScreen-install.sh
     managed_services: KlipperScreen
 
-## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Font problems:
+## ![#f03c15](assets/f03c15.png) ![#c5f015](assets/c5f015.png) ![#1589F0](assets/1589F0.png) Font problems:
 The CSS style only specifies a "Free Mono" font to be used (the same as original KlipperScreen) for all textual displays.  I use the Unicode Box character set in that font to render the selector status, filament positions and TTG map. A couple of users have reported issues with this part of the display, either not appearing or not spaced correctly.  E.g.
 
 ![mmu_panel_printing](https://github.com/moggieuk/KlipperScreen-Happy-Hare-Edition/blob/master/docs/img/mmu/font_problem.jpg)
@@ -86,12 +86,12 @@ If you have to do this, please let Moggieuk know the details about the operating
 
 </details>
 
-## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Blank Screen after system update
+## ![#f03c15](assets/f03c15.png) ![#c5f015](assets/c5f015.png) ![#1589F0](assets/1589F0.png) Blank Screen after system update
 It has come to my attention that sometimes a system (OS) update can break KlipperScreen.  This is nothing to do with KlipperScreen but rather the installation of a slightly broken video driver `fbturbo`.  Luckily the fix is simple.  After OS upgrade run:
 
     sudo apt purge xserver-xorg-video-fbturbo
 
-## ![#f03c15](https://github.com/moggieuk/Happy-Hare/wiki/resources/f03c15.png) ![#c5f015](https://github.com/moggieuk/Happy-Hare/wiki/resources/c5f015.png) ![#1589F0](https://github.com/moggieuk/Happy-Hare/wiki/resources/1589F0.png) Happy Hare version incompatibility
+## ![#f03c15](assets/f03c15.png) ![#c5f015](assets/c5f015.png) ![#1589F0](assets/1589F0.png) Happy Hare version incompatibility
 If you are upgrading and see a message like this when accessing the main MMU panel it is probably because of a version mismatch with Happy Hare on your printer.  Follow the instructions in the popup!
 
 <img src="https://github.com/moggieuk/KlipperScreen-Happy-Hare-Edition/blob/master/docs/img/mmu/mmu_version_error.png" width=50%>
@@ -106,6 +106,7 @@ If you are upgrading and see a message like this when accessing the main MMU pan
 - [Happy Hare Configuration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Happy-Hare-Configuration.md)
 - [Hardware Configuration Checks](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Hardware-configuration-checks.md)
 - [Hardware Calibration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Hardware-Calibration.md)
+- [Toolhead Distances](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Toolhead-Distances.md)
 - Installing KlipperScreen Happy Hare
 - [Slicer Setup](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Slicer-Setup.md)
 - [Further Mods to Consider](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Further-Mods.md)
