@@ -73,15 +73,11 @@ graph TD;
 
 Now it's finally time to install the servo arm!
 
-First, run the command `MMU_TEST_CONFIG servo_active_down=1`. This will set the servo so that it always tries to return to the down position. You generally don't want this option enabled because it can potentiallly *burn out your servo*, but it is useful for servo arm installation.
-
 Run the command `MMU_SERVO POS=down`. This will set the servo to the initial down position while you attach the servo arm.
 
-Attach the servo arm, at about 90 degrees, perpendicular to the servo body. Add the servo arm screw.
+Attach the servo arm, at about 90 degrees, perpendicular to the servo body. *Be careful not to twist the Servo splines while adding the arm - if you do, stop and run the previous command again!* Add the servo arm screw.
 
 Next, tighten down the M3x10mm BHCS that clamps the servo arm down on the servo drive shaft splines.
-
-Now run the command `MMU_TEST_CONFIG servo_active_down=0` to disable the servo return-to-down feature.
 
 Happy Hare sets up theoretically good servo postions during installation, however they should be calibrated. ERCF requires precise servo calibration to work correctly. To get that precision, you need to run through this process to update and record the correct angle for the `UP` position. Refer to the pictures below to see what each of the servo arm positions should look like.
 
