@@ -1,7 +1,7 @@
 ## Page Sections:
 - [Calibration Steps](#---calibration-steps)
   - [1. Servo](#---step-1-calibrate-your-servo)
-  - [2. Selector Offsets](#---step-62calibrate-selector-offsets)
+  - [2. Selector Offsets](#---step-2-calibrate-selector-offsets)
   - [3. Springy Tension](#---step-3-springy-calibration)
   - [4. Gear Stepper](#---step-4-calibrate-your-gear-stepper)
   - [5. Encoder](#---step-5-calibrate-your-encoder)
@@ -77,9 +77,9 @@ Run the command `MMU_SERVO POS=down`. This will set the servo to the initial dow
 
 Attach the servo arm, at about 90 degrees, perpendicular to the servo body. *Be careful not to twist the Servo splines while adding the arm - if you do, stop and run the previous command again!* Add the servo arm screw.
 
-Next, tighten down the M3x10mm BHCS that clamps the servo arm down on the servo drive shaft splines.
+Next, tighten down the M3x10mm BHCS that clamps the servo arm down on the servo drive shaft splines. This will make an impression of the splines, locking the servo arm in place.
 
-Happy Hare sets up theoretically good servo postions during installation, however they should be calibrated. ERCF requires precise servo calibration to work correctly. To get that precision, you need to run through this process to update and record the correct angle for the `UP` position. Refer to the pictures below to see what each of the servo arm positions should look like.
+Happy Hare sets up theoretically good servo postions during installation, however they should be calibrated. ERCF *requires* precise servo calibration to work correctly. To get that precision, you need to run through this process to update and record the correct angle for the `UP` position. Refer to the pictures below to see what each of the servo arm positions should look like.
 
 ```yml
 MMU_SERVO POS=up
@@ -114,7 +114,7 @@ Make sure the `MOVE` and `UP` positions of your servo arm are set so that the ar
 
 <p align="center"><img src="assets/servo_down.jpeg" width="250" alt="Servo Down"></p>
 
-**If the servo angles are set incorrectly, the servo will struggle to reach the angle set, which will likely reduce the servo's lifetime, and may even burn it out! You will know the servo is struggling because it will keep buzzing while it tries to reach the set angle.**
+**If the servo angles are set incorrectly, the servo will struggle to reach the angle set, which will reduce the servo's lifetime, and may even burn the servo out! You will know if the servo is struggling to reach position because it will keep buzzing while it tries to reach the set angle.**
 
 > [!NOTE] 
 > It is normal for the Gear motor to move back and forth slightly during a `MMU_SERVO POS=down` command. This is to ensure that the BMG gears mesh properly.
@@ -123,10 +123,12 @@ Once you are satisfied with your angles, you are done with this step!
 
 ### ![#f03c15](assets/f03c15.png) ![#c5f015](assets/c5f015.png) ![#1589F0](assets/1589F0.png) Step 2. Calibrate selector offsets
 
-There are three ways to calibrate the selector offsets:
+First, make sure that there is room between the endstop and Gate 0. We don't want the endstop to be activated while using Gate 0, instead we want there to be at least a 1.0mm gap between the two positions. If the endstop is activated when using Gate 0, you need to tighten the endstop adjustment screw (the BHCS on the Encoder). If for the endstop isn't activating even at the end of travel, the endstop adjustment screw needs to be loosened. The screw has a pitch of 0.5mm, so one full turn will move it in or out 0.5mm.
+
+Once you have the endstop distance adjusted, There are three ways to calibrate the selector offsets:
 
 #### A) Fully automatic calibration
-Let's start by getting the selector cailbrated in this easy step (it is important to do this early because the bowden and gate calibration need to be able to select gates).  This sets up the position all of all the gates as well as the bypass position if fitted.  Firstly ensure MMU motors are off by running `MMU_MOTORS_OFF` and remove filament from gate #0 -- you may need to run `MMU_SERVO POS=up` to release the filament.  Then re-insert and remove filament through selector to ensure that gate #0 is correctly alined with selector. Be careful and move the selector side to side whilst moving the filament inside the gate. Try to assess where the filament is centered in the gate and leave the selector in that position. Then run:
+Let's start by getting the selector cailbrated in this easy step (it is important to do this early because the bowden and gate calibration need to be able to select gates). This sets up the position all of all the gates as well as the bypass position if fitted. Firstly ensure MMU motors are off by running `MMU_MOTORS_OFF` and remove filament from gate #0 -- you may need to run `MMU_SERVO POS=up` to release the filament. Then re-insert and remove filament through selector to ensure that gate #0 is correctly alined with selector. Be careful and move the selector side to side whilst moving the filament inside the gate. Try to assess where the filament is centered in the gate and leave the selector in that position. Then run:
 
   > MMU_CALIBRATE_SELECTOR
 
