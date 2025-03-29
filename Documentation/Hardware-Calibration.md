@@ -12,7 +12,7 @@
 *\[This guide was adapted from the [Happy Hare Wiki](https://github.com/moggieuk/Happy-Hare/wiki) for ERCF v2.5. Thanks Moggie!\]*
 
 
-This discussion assumes that you have setup and debugged your [Hardware Configuration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Hardware-configuration-checks.md).
+This discussion assumes that you have setup and debugged your [Hardware Configuration](https://github.com/Enraged-Rabbit-Community/ERCFv2/blob/master/Documentation/Hardware-configuration-checks.md).
 
 Before using your ERCF you will need to calibrate it to adjust for differences in components used on your particular build. Be careful to calibrate in the recommended order because some settings build and depend on earlier ones. Happy Hare now has automated calibration for some of the traditionally longer steps and does not require any Klipper restarts so the process is quick and painless.
 
@@ -135,7 +135,7 @@ Let's start by getting the selector cailbrated in this easy step (it is importan
 Sit back and relax. The selector will move to find the extremes of movement and then use information about the geometry of the particular MMU and version/options you are using to generate and save the selector offsets automatically!
 
 #### B) Extrapolate first and last gates
-Although the above automated method above will attempt to calibrate the Selector, it can result in drift unless all the gates/lanes are perfectly tight together. To address this a better method that can be used with ERCF v2.5 is as follows:
+Although the automated method above will attempt to calibrate the Selector, it can result in drift unless all the gates/lanes are perfectly tight together. To address this a better method that can be used with ERCF v2.5 is as follows:
 ```yml
 MMU_MOTORS_OFF
   (Use a piece of filament to align gate 0; remove filament)
@@ -252,13 +252,12 @@ Here you can calibrate the length of your bowden from MMU gate to extruder entra
 
 There are different ways to do this depending on your configuration and sensor options:
 
-1. If `extruder_homing_endstop: extruder` (or `mmu_gear_touch` or `filament_compression`), then you have a homing endstop and you can simply specify a `BOWDEN_LENGTH` that is GREATER than your estimated length to give plenty of room to find the homing stop (technically, Happy Hare defaults to 2000mm so you can probably omit this parameter completely).
+1. If `extruder_homing_endstop: extruder` (or `mmu_gear_touch` or `filament_compression`), then you have a homing endstop and you can simply specify a `BOWDEN_LENGTH` that is GREATER than your estimated length to give plenty of room to find the homing stop.
 
-  > MMU_CALIBRATE_BOWDEN
   > MMU_CALIBRATE_BOWDEN BOWDEN_LENGTH=1500
 
 
-2. If you are using `extruder_homing_endstop: collision`, then during Bowden calibration `BOWDEN_LENGTH` needs to be supplied and MUST be slightly shorter than the actual length. A good rule of thumb is to manually measure the distance from exit from the selector to the entrance to your extruder. Subtract 40-50mm from that distance. I measured approximately 690mm on my system, so will supply 650mm as the starting value. For example:
+2. If you are using `extruder_homing_endstop: collision`, then the `BOWDEN_LENGTH` supplied MUST be slightly shorter than the actual length. A good rule of thumb is to manually measure the distance from exit from the selector to the entrance to your extruder. Subtract 40-50mm from that distance. I measured approximately 690mm on my system, so will supply 650mm as the starting value. For example:
 
   > MMU_CALIBRATE_BOWDEN BOWDEN_LENGTH=650
 
@@ -344,15 +343,15 @@ Happy Hare documentation lists all [Calibration Commands](https://github.com/mog
 
 
 ### ERCF Setup Steps:
-- [Flashing Your Local MCU](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Flashing-Local-MCU.md)
-- [Installing Happy Hare](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Installing-Happy-Hare.md)
-- [Happy Hare Configuration](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Happy-Hare-Configuration.md)
-- [Hardware Configuration Checks](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Hardware-configuration-checks.md)
+- [Flashing Your Local MCU](https://github.com/Enraged-Rabbit-Community/ERCFv2/blob/master/Documentation/Flashing-Local-MCU.md)
+- [Installing Happy Hare](https://github.com/Enraged-Rabbit-Community/ERCFv2/blob/master/Documentation/Installing-Happy-Hare.md)
+- [Happy Hare Configuration](https://github.com/Enraged-Rabbit-Community/ERCFv2/blob/master/Documentation/Happy-Hare-Configuration.md)
+- [Hardware Configuration Checks](https://github.com/Enraged-Rabbit-Community/ERCFv2/blob/master/Documentation/Hardware-configuration-checks.md)
 - Hardware Calibration
-- [Toolhead Distances](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Toolhead-Distances.md)
-- [Installing KlipperScreen Happy Hare](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Installing-KlipperScreen.md)
-- [Slicer Setup](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Slicer-Setup.md)
-- [Further Mods to Consider](https://github.com/Enraged-Rabbit-Community/ERCFv2.5/blob/main/Documentation/Further-Mods.md)
+- [Toolhead Distances](https://github.com/Enraged-Rabbit-Community/ERCFv2/blob/master/Documentation/Toolhead-Distances.md)
+- [Installing KlipperScreen Happy Hare](https://github.com/Enraged-Rabbit-Community/ERCFv2/blob/master/Documentation/Installing-KlipperScreen.md)
+- [Slicer Setup](https://github.com/Enraged-Rabbit-Community/ERCFv2/blob/master/Documentation/Slicer-Setup.md)
+- [Further Mods to Consider](https://github.com/Enraged-Rabbit-Community/ERCFv2/blob/master/Documentation/Further-Mods.md)
 
 #### Even more Happy Hare info can be found at:
 - [Happy Hare Wiki](https://github.com/moggieuk/Happy-Hare/wiki)
