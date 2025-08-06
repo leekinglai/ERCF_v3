@@ -1,0 +1,194 @@
+"Part","Qty"
+"--3 x 20 shaft for BondTech Idler",9
+"--BondTech BMG Idler Gear",9
+"--BondTech Direct Drive Gear",8
+"--K3x5x7 Needlebearing for BondTech Idler",18
+"--M3x2mm Set Screw",8
+"12x6x1 Spring (1)",1
+"2020 Extrusion (HFSB5-2020-239-TPW)",1
+"3x2 Magnet",2
+"5mm D Rod (250mm)",1
+"6x3 Magnet",16
+"7x7 Drag Chain (300mm)",1
+"8mm Smooth Rod (237mm)",2
+"Base.stl",1
+"Base_xN.STL",8
+"BondTech Direct Drive Gear Set",8
+"BondTech Idler Gear Set",9
+"COAS_Holder_Female",2
+"COAS_Holder_Male",2
+"Carrot on a Stick PCB",2
+"D2F-01L Microswitch",8
+"Drag_Chain_Anchor.STL",1
+"ECAS Fitting",10
+"ERCF Binky PCB",1
+"Encoder_Left.STL (1)",1
+"Encoder_Right (2)",1
+"Encoder_Right.STL",1
+"End_Block.STL",1
+"Filament_Path_Pregate_Switch_xN",8
+"GT2 20T 6mm Pulley",1
+"GT2 20T Idler",1
+"GT2 6mm Belt (530mm)",1
+"Gearbox.STL",1
+"LDO-42STH47-1684AC",1
+"LED_Carrier.STL",1
+"LM8UU Bearing",2
+"Lens 0",1
+"Lens 1",1
+"Lens 2",1
+"Lens 3",1
+"Lens 4",1
+"Lens 5",1
+"Lens 6",1
+"Lens 7",1
+"Lens_Bracket",2
+"Lens_Bracket (1)",2
+"Lid.stl",1
+"Linear_Axis_Idler_Block.STL",1
+"Linear_Axis_Selector_Motor_Support.STL",1
+"Logo_Plate.STL",1
+"M2x10 SHCS",17
+"M2x8 SHCS",2
+"M3 Hex Nut",3
+"M3 Roll-in Nut",14
+"M3 Threaded Insert",36
+"M3x10 BHCS",1
+"M3x10 SHCS",8
+"M3x12 SHCS",16
+"M3x20 SHCS",15
+"M3x30 SHCS",2
+"M3x8 BHCS",5
+"M3x8 FHCS",4
+"M3x8 SHCS",37
+"M5 Nylock Nut",3
+"M5x16 BHCS",2
+"M5x30 BHCS",2
+"MR85ZZ Bearing",21
+"Motor_Mount_NEMA17_Direct_Drive.STL",1
+"NEMA17 - Pancake 20mm Motor",1
+"PTFE Tube",1
+"Savox Servo",1
+"Selector_Door.STL",1
+"Selector_Spring_Cap.STL (1)",1
+"Servo_Mount_Savox.STL",1
+"Tag plate_0.STL",2
+"Tag plate_1.STL",2
+"Tag plate_2.STL",2
+"Tag plate_3.STL",2
+"Tag plate_4.STL",2
+"Tag plate_5.STL",2
+"Tag plate_6.STL",2
+"Tag plate_7.STL",2
+"V623ZZ Bearing",1
+"[a]_Bypass.STL",1
+"[a]_Drag_Chain_Anchor_Bottom.STL",1
+"[a]_Gear_Box_Foot.STL",1
+"[a]_Gear_Box_Top_Panel.STL",1
+"[a]_Hatch.STL",1
+"[a]_Latch_xN.STL",8
+"[a]_Motor_Lock.STL",1
+"[a]_Selector_Cart.STL",1
+"[a]_Side_Latch_v2_x2.STL",2
+"[a]_Split_Coupler_A.STL (1)",1
+"[a]_Split_Coupler_B.STL",1
+"[a]_Tophat_xN.STL",8
+"[a]_Universal_Servo_Arm.STL",1
+"[a]_Universal_Servo_Arm.STL (1)",1
+"[c]_Logo_Diffuser.STL",1
+"[mm]_Selector_Door_Carrot_Body_1.STL",1
+"[mm]_Selector_Door_Carrot_Body_2.STL",1
+"[mm]_Selector_Door_Carrot_Body_3.STL",1
+"[mm]_Selector_Door_Carrot_Leaf_1.STL",1
+"[mm]_Selector_Door_Carrot_Leaf_2.STL",1
+"[mm]_Selector_Door_Carrot_Leaf_3.STL",1
+"[o]_Diffuser_Mask.STL",1
+"[o]_Encoder_Slotted_Wheel.STL (2)",1
+"_1. Gear Box Part 1",1
+"_1.1 2020 Extrusion",1
+"_1.2 Gear Box",1
+"_1.3 Hatch",1
+"_1.4 Side Latches",1
+"_2 Motor Mount and Drive Shaft",1
+"_2.1A Big NEMA17 Direct Drive",1
+"_2.2 LED Logo",1
+"_2.3A Direct Drive Shaft",1
+"_3. Filament Blocks",1
+"_3.1_[a]_Tophat_xN",8
+"_3.2_Base_xN",8
+"_3.3_[a]_Latch_xN",8
+"_3.5B_Filament_Path_Pregate_Switch_xN",8
+"_4. Gear Box Part 2",1
+"_4.1 Gear Box Top Panel",1
+"_4.2_Gear_Box_Foot",1
+"_4.3_Endstop Microswitch (1)",1
+"_5. End_Block",1
+"_5.1 End_Block",1
+"_5.2_[a]_Bypass.STL (1)",1
+"_5mm Split Coupler",1
+"_6. Selector",1
+"_6.1 Selector Cart",1
+"_6.2 Drag Chain Anchor",1
+"_6.3B Savox Servo Option",1
+"_6.4 Selector Door",1
+"_7 Encoder",1
+"_7.1A Encoder for v623Z Bearing",1
+"_7.2 Encoder Right (1)",1
+"_7.3 Encoder Left (1)",1
+"_8. Linear Axis",1
+"_8.1 Linear Axis Selector Motor Support",1
+"_8.2 Linear Axis Idler Block",1
+"_8.3 GT2 6mm Belt",1
+"_9. Final Assembly",1
+"_9.1 Linear Axis Drag Chain",1
+"_9.2C Apron Lowrider CoaS LEDs",1
+"_Base",1
+"_Base_xN_Supports",1
+"_Built in Supports (1)",1
+"_DS041MG Servo Option Support",1
+"_Drag Chain Anchor Bottom",1
+"_ERCF V2 RC2",1
+"_Fasteners",1
+"_Fasteners (1)",1
+"_Fasteners (10)",1
+"_Fasteners (11)",1
+"_Fasteners (14)",1
+"_Fasteners (17)",1
+"_Fasteners (18)",1
+"_Fasteners (19)",1
+"_Fasteners (2)",1
+"_Fasteners (22)",1
+"_Fasteners (24)",1
+"_Fasteners (25) (1)",1
+"_Fasteners (26)",1
+"_Fasteners (33)",1
+"_Fasteners (36) (1)",1
+"_Fasteners (39)",1
+"_Fasteners (4)",1
+"_Fasteners (41)",1
+"_Fasteners (5)",1
+"_Fasteners (7)",1
+"_Fasteners (8)",1
+"_Fasteners (9)",1
+"_Filament Block",8
+"_Filament_Hinge",1
+"_Filament_Path_Supports",1
+"_Gearbox 2020 Support",1
+"_Geared_Motor_Mounts Support",1
+"_General Servo Option Support",1
+"_Hardware (26)",1
+"_Hardware (28)",1
+"_Hardware (29) (1)",1
+"_Hinge",1
+"_LDO-42STH47-1684AC",1
+"_Lid.stl",1
+"_MMBv2 Box Base Support",1
+"_MMBv2 Box Hinge Support",1
+"_MMBv2_Box",1
+"_Printed_Lever",8
+"_Savox Servo Option Support",1
+"_Selector Supports",1
+"_Tag_Plates",16
+"_Tophat_xN Support",1
+"_[mm] Carrot Sigil",1
+"rgbw_led_pcb",1
