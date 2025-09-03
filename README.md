@@ -1,7 +1,7 @@
 # Enraged Rabbit Community Project
 
 <p align="center">
- <img src="/Assets/Full_CAD.jpg" alt='ERCFv3' width='70%'>
+ <img src="/Assets/main_hero_v3.png" alt='ERCFv3' width='70%'>
  <h1 align="center">ERCF v3.0</h1>
 </p>
 
