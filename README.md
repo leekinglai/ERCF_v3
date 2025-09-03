@@ -1,7 +1,7 @@
 # Enraged Rabbit Community Project
 
 <p align="center">
- <img src="/Assets/Full_CAD.jpg" alt='ERCFv35' width='70%'>
+ <img src="/Assets/Full_CAD.jpg" alt='ERCFv3' width='70%'>
  <h1 align="center">ERCF v3.0</h1>
 </p>
 
@@ -34,7 +34,7 @@ There is a rapidly growing list of MMUs in the marketplace, from the mass-produc
 ## Table of Content
  
 **[ERCF](#enraged-rabbit-carrot-feeder-ercf)**<br>
-**[ERCT](#enraged-rabbit-cotton-tail-erct)**<br>
+**[ERCT](#-enraged-rabbit-cotton-tail-erct---filament-buffer)**<br>
 **[ERF](#enraged-rabbit-filametrix-erf)**<br>
 **[Toolhead Sensor Modifications](#toolhead-sensor-modifications)**<br>
 **[Firmware](#firmware)**<br>
