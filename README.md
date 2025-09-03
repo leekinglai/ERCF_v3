@@ -67,7 +67,7 @@ There is a rapidly growing list of MMUs in the marketplace, from the mass-produc
  <li>Reinforced gearbox assembly
  <li>Beautifully illustrated Manual
  <li>High Quality Step-by-step CAD
- <li>New integrated passive buffer system (Cotton Tail)
+ <li>Integrated passive buffer system (Cotton Tail)
  <li>Perfect tips with Filametrix Filament cutter
  <li>Functional and aesthetic LED status indication
 </ol>
