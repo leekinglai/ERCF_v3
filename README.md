@@ -35,8 +35,8 @@ There is a rapidly growing list of MMUs in the marketplace, from the mass-produc
  
 **[ERCF](#enraged-rabbit-carrot-feeder-ercf)**<br>
 **[ERCT](#-enraged-rabbit-cotton-tail-erct---filament-buffer)**<br>
-**[ERF](#enraged-rabbit-filametrix-erf)**<br>
-**[Toolhead Sensor Modifications](#toolhead-sensor-modifications)**<br>
+**[ERF](#-toolhead-cutter-enraged-rabbit-filametrix-erf)**<br>
+**[Toolhead Sensor Modifications](#-toolhead-cutter-enraged-rabbit-filametrix-erf)**<br>
 **[Firmware](#firmware)**<br>
 **[Documentation](#documentation)**<br>
 **[BOM](#bom)**<br>
@@ -176,7 +176,7 @@ ERCF is designed to be used with the Happy Hare MMU firmware for Klipper which a
 Happy Hare provides an easy installation script which has knowledge of recommended settings and will greatly accelerate the setup process.
 <p>
 
-[Happy Hare](https://github.com/moggieuk/Happy-Hare/blob/main/doc/ercf_v3.md) &nbsp;&nbsp; [KlipperScreen](https://github.com/moggieuk/KlipperScreen-Happy-Hare-Edition)
+[Happy Hare](https://github.com/moggieuk/Happy-Hare/wiki) &nbsp;&nbsp; [KlipperScreen HH Edition](https://github.com/moggieuk/KlipperScreen-Happy-Hare-Edition)
 </td>
 </tr>
 </table>
@@ -207,7 +207,7 @@ You can find a Bill of Materials (BOM) and a convenient printed parts tracker fo
 <p>
 Please be aware that the BOM is strictly for reference. The recommended parts can be exchanged for other similar quality parts. Manufacturers who use the BOM as a reference must submit an application for certification before selling them as ERCF v3.0 kits. Please contact us for certification.
 
-[BOM](https://docs.google.com/spreadsheets/d/1HtVIu4yqzS6xJQr63-JKtMAh4Xq7wbtWPFeuiCnrnnE) &nbsp;&nbsp; [Printed Parts Tracker](https://docs.google.com/spreadsheets/d/1h1bJurR6Z8Ou36c5U9cWmqI86tXKlWrcZrWrHgGN13A)
+[BOM](https://docs.google.com/spreadsheets/d/1UV0rU5Eo4hZX6hcIlSMzn-18oxGSBlLzFjurV6kf8oU/edit?usp=sharing) &nbsp;&nbsp; [Printed Parts Tracker](https://docs.google.com/spreadsheets/d/1MnmpiGlzxnq3sh8Gv73tNb6P1GbJ26OSJ0_e25pumdo/edit?usp=sharing)
 </td>
 </tr>
 </table>
