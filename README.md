@@ -100,7 +100,7 @@ ERCT includes a pre-gate filament sensor for automated filament loading and dete
 ERCT is a very compact and integrated buffer system that is great when your spools are remote from your printer.
 <p>
 
-[Read more](Recommended_Options/ERCT_Buffer/README.md) &nbsp;&nbsp; Videos: [Rear Loading](https://youtu.be/9jzB5Un6HKo) [Front Loading](https://youtu.be/GlSXtUkd-b8)
+[Read more](Recommended_Options/ERCT_Buffer_V3/README.md) &nbsp;&nbsp; Videos: [Rear Loading](https://youtu.be/9jzB5Un6HKo) [Front Loading](https://youtu.be/GlSXtUkd-b8)
 </td>
 </tr>
 </table>
@@ -230,7 +230,7 @@ A lot of work has gone into creating a quality CAD model of the project, careful
 <br>
 
 ## FAQ
-ERCF v3 is currently at the fourth iteration or v3.0 phase. Design evolution has required some BOM changes over v2.0. We're sure there will be lots of questions. To avoid repetition on the various support channels, you can find a list of [frequently asked questions](FAQ.md) here. If something isn't answered the best place to go is the primary [Voron #ercf_questions](https://discord.com/channels/460117602945990666/909743915475816458) Discord server
+ERCF v3 is currently at the fourth iteration or v3.0 phase. Design evolution has required some BOM changes over v2.0. We're sure there will be lots of questions. To avoid repetition on the various support channels, you can find a list of [frequently asked questions](FAQ.md) here. If something isn't answered the best place to go is the primary [ERCF Discord Server](https://discord.com/channels/1267663557999329371/1310278996503826585)
 
 <br>
 
