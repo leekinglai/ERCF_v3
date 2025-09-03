@@ -1,8 +1,8 @@
 # Enraged Rabbit Community Project
 
 <p align="center">
-  <img src="/Assets/Full_CAD.jpg" alt='ERCFv25' width='70%'>
-  <h1 align="center">ERCF v2.5</h1>
+ <img src="/Assets/Full_CAD.jpg" alt='ERCFv35' width='70%'>
+ <h1 align="center">ERCF v3.0</h1>
 </p>
 
 <p align="center">
@@ -10,29 +10,29 @@ An expandable MMU for Klipper-based 3D-Printers
 </p>
 
 <p align="center">
-  <a aria-label="Downloads" href="https://github.com/Enraged-Rabbit-Community/ERCF_v2/releases"><img src="https://img.shields.io/github/release/Enraged-Rabbit-Community/ERCF_v2?display_name=tag&style=flat-square"></a> &nbsp;
-  <a aria-label="Stars" href="https://github.com/Enraged-Rabbit-Community/ERCF_v2/stargazers"><img src="https://img.shields.io/github/stars/Enraged-Rabbit-Community/ERCF_v2?style=flat-square"></a> &nbsp;
-  <a aria-label="Forks" href="https://github.com/Enraged-Rabbit-Community/ERCF_v2/network/members"><img src="https://img.shields.io/github/forks/Enraged-Rabbit-Community/ERCF_v2?style=flat-square"></a> &nbsp;
-  <a aria-label="License" href="https://github.com/Enraged-Rabbit-Community/ERCF_v2/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Enraged-Rabbit-Community/ERCF_v2?style=flat-square"></a> &nbsp;
-  <a aria-label="Commits" href=""><img src="https://img.shields.io/github/commit-activity/y/Enraged-Rabbit-Community/ERCF_v2"></a> &nbsp;
+ <a aria-label="Downloads" href="https://github.com/Enraged-Rabbit-Community/ERCF_v3/releases"><img src="https://img.shields.io/github/release/Enraged-Rabbit-Community/ERCF_v3?display_name=tag&style=flat-square"></a> &nbsp;
+ <a aria-label="Stars" href="https://github.com/Enraged-Rabbit-Community/ERCF_v3/stargazers"><img src="https://img.shields.io/github/stars/Enraged-Rabbit-Community/ERCF_v3?style=flat-square"></a> &nbsp;
+ <a aria-label="Forks" href="https://github.com/Enraged-Rabbit-Community/ERCF_v3/network/members"><img src="https://img.shields.io/github/forks/Enraged-Rabbit-Community/ERCF_v3?style=flat-square"></a> &nbsp;
+ <a aria-label="License" href="https://github.com/Enraged-Rabbit-Community/ERCF_v3/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Enraged-Rabbit-Community/ERCF_v3?style=flat-square"></a> &nbsp;
+ <a aria-label="Commits" href=""><img src="https://img.shields.io/github/commit-activity/y/Enraged-Rabbit-Community/ERCF_v3"></a> &nbsp;
 </p>
 
 <br>
 
 <table>
 <tr>
-<td width=30%><img src="/Assets/Enraged_Rabbit_v2.png" alt='RabbitV2'></td>
+<td width=30%><img src="/Assets/Enraged_Rabbit_v3.png" alt='Rabbitv3'></td>
 <td>
-This is a community-born project and a major update to the Voron ERCF MMU that was started a couple of years ago by Ette.  It is endorsed by Ette, and the guiding philosophy wasn't to start again with a new MMU design but to refine what has already proven to be a very capable machine and push it to be the best it can be by simplifying problematic construction, improving reliability and aligning as close as possible to v1.1 BOM. However, the project includes an all-new optional integrated filament buffer system (ERCT), filament cutter option (ERF), a collection of recommended tool head sensor modifications and a bit of Bling! It fully leverages the Happy Hare firmware MMU control software with Klipper Screen extensions.
+This is a community-born project and a major update to the Voron ERCF MMU that was started a couple of years ago by Ette. It is endorsed by Ette, and the guiding philosophy wasn't to start again with a new MMU design but to refine what has already proven to be a very capable machine and push it to be the best it can be by simplifying problematic construction, improving reliability and aligning as close as possible to v2.0 BOM. The project includes an optional integrated filament buffer system (ERCT), filament cutter option (ERF), a collection of recommended tool head sensor modifications and a bit of Bling! It fully leverages the Happy Hare firmware MMU control software with Klipper Screen extensions.
 <p>
-  
-There is a rapidly growing list of MMUs in the marketplace, from the mass-produced "Fords" who pioneered the market to the "Toyota" that are more recent efficient engineering feat but somehow lacked soul. We consider ERCFv2.5 the "BMW" - a little over-engineered perhaps but distinctively cool, and you feel good driving it.  We hope you enjoy it! &nbsp;&nbsp; Videos: [Teaser](https://www.youtube.com/watch?v=U2QwvPacIUk) &nbsp; [Release](https://www.youtube.com/watch?v=EJCPerBsM3Q)
+ 
+There is a rapidly growing list of MMUs in the marketplace, from the mass-produced "Fords" who pioneered the market to the "Toyota" that are more recent efficient engineering feat but somehow lacked soul. We consider ERCFv3.0 the "BMW" - a little over-engineered perhaps but distinctively cool, and you feel good driving it. We hope you enjoy it! &nbsp;&nbsp; Videos: [Teaser](https://www.youtube.com/watch?v=U2QwvPacIUk) &nbsp; [Release](https://www.youtube.com/watch?v=EJCPerBsM3Q)
 </td>
 </tr>
 </table>
 
 ## Table of Content
-  
+ 
 **[ERCF](#enraged-rabbit-carrot-feeder-ercf)**<br>
 **[ERCT](#enraged-rabbit-cotton-tail-erct)**<br>
 **[ERF](#enraged-rabbit-filametrix-erf)**<br>
@@ -56,20 +56,20 @@ There is a rapidly growing list of MMUs in the marketplace, from the mass-produc
 ## Enraged Rabbit Carrot Feeder (ERCF)
 <table>
 <tr>
-<td width=45%><img src="/Assets/ERCFv2.png">An MMU or Multimaterial Unit/Upgrade allows for the automatic change of filaments on your 3D printer.  You can use it to create beautiful multi-colored prints or, if you're lazy, simply to avoid loading filament by hand. If you are familiar with ERCF v1.1, this will serve as an overview of updates:</td>
+<td width=45%><img src="/Assets/ERCFv3.png">An MMU or Multimaterial Unit/Upgrade allows for the automatic change of filaments on your 3D printer. You can use it to create beautiful multi-colored prints or, if you're lazy, simply to avoid loading filament by hand. If you are familiar with ERCF v1.1, this will serve as an overview of updates:</td>
 <td>
 <ol>
-  <li>Sturdy backbone - no more flex
-  <li>Reliable (and custom) encoder design
-  <li>Sprung servo instead of adjustable top hats
-  <li>Innovative Filament trap in blocks instead of magnetic gates
-  <li>Formal filament bypass
-  <li>Reinforced gearbox assembly
-  <li>Beautifully illustrated Manual
-  <li>High Quality Step-by-step CAD
-  <li>New integrated passive buffer system (Cotton Tail)
-  <li>Perfect tips with Filametrix Filament cutter
-  <li>Functional and aesthetic LED status indication
+ <li>Sturdy backbone - no more flex
+ <li>Reliable (and custom) encoder design
+ <li>Sprung servo instead of adjustable top hats
+ <li>Innovative Filament trap in blocks instead of magnetic gates
+ <li>Formal filament bypass
+ <li>Reinforced gearbox assembly
+ <li>Beautifully illustrated Manual
+ <li>High Quality Step-by-step CAD
+ <li>New integrated passive buffer system (Cotton Tail)
+ <li>Perfect tips with Filametrix Filament cutter
+ <li>Functional and aesthetic LED status indication
 </ol>
 </td>
 </tr>
@@ -91,7 +91,7 @@ When an MMU changes tool, the unloaded filament needs to be thoughtfully managed
 <tr>
 <td width=30%><img src="Recommended_Options/ERCT_Buffer/Assets/heroimage_ERCT.png" alt='ERCT'></td>
 <td>
-The Enraged Rabbit Cotton Tail (ERCT) buffer system is designed to attach directly to ERCF v2.5. It is a passive system that optimizes space and is also designed to reduce resistance in the filament path, creating a consistent system for calibration.
+The Enraged Rabbit Cotton Tail (ERCT) buffer system is designed to attach directly to ERCF v3.0. It is a passive system that optimizes space and is also designed to reduce resistance in the filament path, creating a consistent system for calibration.
 <p>
 
 ERCT includes a pre-gate filament sensor for automated filament loading and detect runout for endless spool feature. It also incorporates a NEOpixel on each gate that, when driven by the Happy Hare firmware, provides functional feedback and the necessary "bling!"
@@ -133,7 +133,7 @@ Filamentalist can also use the modular pre-gate filament sensor and gate entry L
 <tr>
 <td width=30%><img src="Recommended_Options/ERF_Filament_Cutter/Assets/ERF.png" alt='ERF'></td>
 <td>
-Before the MMU can unload a filament, the tip must be prepared so that it can be cleanly loaded next time.  This tip-forming process is very difficult to tune and varies based on material type, temperature, hotend type and even weather!  Introducing Enraged Rabbit Filametrix (ERF) filament cutting system.  This lightweight addition to your Stealthburner toolhead adds a cutting blade.  When retracting, the problematic tip of the filament is simply cut off for perfect tips and no jams.
+Before the MMU can unload a filament, the tip must be prepared so that it can be cleanly loaded next time. This tip-forming process is very difficult to tune and varies based on material type, temperature, hotend type and even weather! Introducing Enraged Rabbit Filametrix (ERF) filament cutting system. This lightweight addition to your Stealthburner toolhead adds a cutting blade. When retracting, the problematic tip of the filament is simply cut off for perfect tips and no jams.
 <p>
 
 ERF also supports an optional servo operated ganrtry activation pin so no print area is lost with this addition. ERF designs also include the recommended integrated toolhead sensor
@@ -161,7 +161,7 @@ ERCF can be operated without a toolhead sensor (filament detection) in the toolh
 <br>
 
 ### Purge System (ERPS)
-Pellet purge system to remove the need for the wipe tower. Stay tuned
+We need to put information about Blobifier here!
 
 <br>
 
@@ -176,7 +176,7 @@ ERCF is designed to be used with the Happy Hare MMU firmware for Klipper which a
 Happy Hare provides an easy installation script which has knowledge of recommended settings and will greatly accelerate the setup process.
 <p>
 
-[Happy Hare](https://github.com/moggieuk/Happy-Hare/blob/main/doc/ercf_v2.md) &nbsp;&nbsp; [KlipperScreen](https://github.com/moggieuk/KlipperScreen-Happy-Hare-Edition)
+[Happy Hare](https://github.com/moggieuk/Happy-Hare/blob/main/doc/ercf_v3.md) &nbsp;&nbsp; [KlipperScreen](https://github.com/moggieuk/KlipperScreen-Happy-Hare-Edition)
 </td>
 </tr>
 </table>
@@ -187,10 +187,10 @@ Happy Hare provides an easy installation script which has knowledge of recommend
 <table>
 <tr>
 <td>
-Building something as complex as an MMU is a challenging undertaking, but the ERCFv2.5 project contains an amazingly detailed and illustrated manual with step-by-step instructions.  We have tried to make the process similar to fitting together a jigsaw puzzle, albeit with a few optional pieces.
+Building something as complex as an MMU is a challenging undertaking, but the ERCFv3.0 project contains an amazingly detailed and illustrated manual with step-by-step instructions. We have tried to make the process similar to fitting together a jigsaw puzzle, albeit with a few optional pieces.
 <p>
 
-[ERCFv2.5 PDF Manual](Documentation/ERCF_v2_Manual.pdf)
+[ERCFv3.0 PDF Manual](Documentation/ERCF_v3_Manual.pdf)
 </td>
 <td width=30%><img src="Assets/Manual_Page.png" alt='ERCF Manual'></td>
 </tr>
@@ -203,9 +203,9 @@ Building something as complex as an MMU is a challenging undertaking, but the ER
 <tr>
 <td width=30%><img src="Assets/BOM.png" alt='ERCF Project BOM'></td>
 <td>
-You can find a Bill of Materials (BOM) and a convenient printed parts tracker for the project and options here. Note that the BOM also contains an upgrade list for those of you who want to use your existing ERCF v1.1 kits. Please make a copy and edit the "Filament Blocks #" to be the number of gates for your build.  This can be any number, but we encourage kit vendors to use 4/8/12 as size variations. Note that there are separate columns for core ERCF, the optional ERCT and ERF options, as well as the suggested "extras"
+You can find a Bill of Materials (BOM) and a convenient printed parts tracker for the project and options here. Note that the BOM also contains an upgrade list for those of you who want to use your existing ERCF v1.1 kits. Please make a copy and edit the "Filament Blocks #" to be the number of gates for your build. This can be any number, but we encourage kit vendors to use 4/8/12 as size variations. Note that there are separate columns for core ERCF, the optional ERCT and ERF options, as well as the suggested "extras"
 <p>
-Please be aware that the BOM is strictly for reference. The recommended parts can be exchanged for other similar quality parts. Manufacturers who use the BOM as a reference must submit an application for certification before selling them as ERCF V2.5 kits. Please contact us for certification.
+Please be aware that the BOM is strictly for reference. The recommended parts can be exchanged for other similar quality parts. Manufacturers who use the BOM as a reference must submit an application for certification before selling them as ERCF v3.0 kits. Please contact us for certification.
 
 [BOM](https://docs.google.com/spreadsheets/d/1HtVIu4yqzS6xJQr63-JKtMAh4Xq7wbtWPFeuiCnrnnE) &nbsp;&nbsp; [Printed Parts Tracker](https://docs.google.com/spreadsheets/d/1h1bJurR6Z8Ou36c5U9cWmqI86tXKlWrcZrWrHgGN13A)
 </td>
@@ -218,7 +218,7 @@ Please be aware that the BOM is strictly for reference. The recommended parts ca
 <table>
 <tr>
 <td>
-A lot of work has gone into creating a quality CAD model of the project, carefully organized into folders that match the documentation!  It is highly recommended that you open the CAD and hide every folder and then expose them one at a time as you work through the build.
+A lot of work has gone into creating a quality CAD model of the project, carefully organized into folders that match the documentation! It is highly recommended that you open the CAD and hide every folder and then expose them one at a time as you work through the build.
 <p>
 
 [Master CAD](CAD)
@@ -230,27 +230,27 @@ A lot of work has gone into creating a quality CAD model of the project, careful
 <br>
 
 ## FAQ
-ERCF v2 is currently at the third iteration or v2.5 phase. Design evolution has required some BOM changes over RC1. There are still some areas that require refinement but we are close to final.  We're sure there will be lots of questions.  To avoid repetition on the various support channels, you can find a list of [frequently asked questions](FAQ.md) here.  If something isn't answered the best place to go is the primary [Voron #ercf_questions](https://discord.com/channels/460117602945990666/909743915475816458) Discord server
+ERCF v3 is currently at the fourth iteration or v3.0 phase. Design evolution has required some BOM changes over v2.0. We're sure there will be lots of questions. To avoid repetition on the various support channels, you can find a list of [frequently asked questions](FAQ.md) here. If something isn't answered the best place to go is the primary [Voron #ercf_questions](https://discord.com/channels/460117602945990666/909743915475816458) Discord server
 
 <br>
 
 ## Acknowledgements
-Most importantly let me introduce the development, test and doc team.  A project like this doesn't happen without many hundreds of hours of volunteer effort and all of these folks are truely awesome.  Please give some :clap: :clap: :clap:
+Most importantly let me introduce the development, test and doc team. A project like this doesn't happen without many hundreds of hours of volunteer effort and all of these folks are truely awesome. Please give some :clap: :clap: :clap:
 <ul>
-  <li>@moggieuk V0.1503 | V2.4088 (Mr Happy Hare & Chief whip)
-  <li>@gneu V2.5345 (Filament block & bling innovator)
-  <li>@sneakytreesnake V2.3804 (The project backbone!)
-  <li>@mneuhaus VT.483 (Mr Binky)
-  <li>@Miriax (Designer & Doc Demon)
-  <li>@kinematicdigit VS.744 (Mr Cotton Tail & Doc Illustrator)
-  <li>@ningpj (Tester, Breaker & Documenter)
-  <li>@fizzy (King of CAD)
-  <li>@gsx8299 (Test Builder Extraordinaire)
-  <li>@sorted (Filametrix "don't get enraged" filament cutting system)
-  <li>@kierantheman (Mr ThumperBlocks)
-  <li>@Fragmon (Videographer)
-  <li>@Silverback V2.1356 (Filametrix tester, builder & engineer)
-  <li>@SkiBikeMake (Mr Filamentalist)
+ <li>@Miriax (Designer & Doc Demon)
+ <li>@kinematicdigit VS.744 (Mr Cotton Tail & Doc Illustrator)
+ <li>@ningpj (Tester, Breaker & Documenter)
+ <li>@SkiBikeMake (Mr Filamentalist)
+ <li>@moggieuk V0.1503 | v3.4088 (Mr Happy Hare)
+ <li>@gneu v3.0345 (Filament block & bling innovator)
+ <li>@sneakytreesnake v3.3804 (The project backbone!)
+ <li>@mneuhaus VT.483 (Mr Binky)
+ <li>@fizzy (King of CAD)
+ <li>@gsx8299 (Test Builder Extraordinaire)
+ <li>@sorted (Filametrix "don't get enraged" filament cutting system)
+ <li>@kierantheman (Mr ThumperBlocks)
+ <li>@Fragmon (Videographer)
+ <li>@Silverback v3.1356 (Filametrix tester, builder & engineer)
 </ul>
 
 <br>
@@ -260,28 +260,28 @@ Most importantly let me introduce the development, test and doc team.  A project
 <tr>
 <td width=25%><img src="Assets/Certified.jpg" alt='Vendor Certification'></td>
 <td>
-These kits and specialty parts will have been checked by us and meet good quality standards. Pending Certification means it has met our first pass inspection and in the process of being verified as a V2 kit. <strong>WE DO NOT RECOMMEND PURCHASING KITS WITHOUT THE CERTIFICATION BY US. PLEASE CHECK BACK HERE FOR THE LIST OF AUTHORIZED VENDORS AND MANUFACTURERS</strong>:<br>
+These kits and specialty parts will have been checked by us and meet good quality standards. Pending Certification means it has met our first pass inspection and in the process of being verified as a v3 kit. <strong>WE DO NOT RECOMMEND PURCHASING KITS WITHOUT THE CERTIFICATION BY US. PLEASE CHECK BACK HERE FOR THE LIST OF AUTHORIZED VENDORS AND MANUFACTURERS</strong>:<br>
 <p>
 <ul>
-  <li> <strong>Certified - Siboor</strong>
-  </li>
-  <li> <strong>Certified - Triangle Labs</strong>
-  </li>
-  <li> <strong>Certified - Seleadlabs</strong>
-  </li>
-  <li> <strong>Certified -  Makerpanda</strong>
-  </li>
-  <li> <strong>Certified -  Fysetc</strong>
-  </li>
-  <li> Pending Certification - LDO Motors
-  </li>
-  <li> Application Under Review/Pending Certification - Dodo 3D Labs
-  </li>
-  
-  
-  <br>
-  <p>
-  A list of more official and certified vendors is on the way... stay tuned!
+ <li> Pending Certification - Siboor
+ </li>
+ <li> Pending Certification - Triangle Labs
+ </li>
+ <li> Pending Certification - Seleadlabs
+ </li>
+ <li> Pending Certification - Makerpanda
+ </li>
+ <li> Pending Certification - Fysetc
+ </li>
+ <li> Pending Certification - LDO Motors
+ </li>
+ <li> Application Under Review/Pending Certification - Dodo 3D Labs
+ </li>
+ 
+ 
+ <br>
+ <p>
+ A list of more official and certified vendors is on the way... stay tuned!
 </td>
 </tr>
 </table>
@@ -293,8 +293,9 @@ _If you want to be included, please contact us. We are happy to validate your ki
 
 ## Changelog
 <ul>
-  <li>v2.5 - Full Release (Happy Easter!)
-  <li>v2 RC1 - Initial Release (Happy Christmas!)
+ <li>v3.0 - Full Release</li>
+ <li>v2.0 - Full Release (Happy Easter!)
+ <li>v2 RC1 - Initial Release (Happy Christmas!)
 </ul>
 
 CAD Design Guidelines used in this project (in case you were interested) can be found: [here](/Assets/Dev_Notes.md).
@@ -312,17 +313,17 @@ The most vibrant prints ever seen!
 <br>
 
 ## Build Photos
-![20231116_230501](https://github.com/Enraged-Rabbit-Community/ERCF_v2/assets/121695166/3d18d3fe-b8f0-4750-8b06-f487ab54ef35)
-![20231116_211032](https://github.com/Enraged-Rabbit-Community/ERCF_v2/assets/121695166/971ceefa-8946-438d-9de7-a26cfcdae56b)
-![20231116_214903](https://github.com/Enraged-Rabbit-Community/ERCF_v2/assets/121695166/5781d748-67eb-44f2-a793-cf8f4229b99f)
-![20231116_211045](https://github.com/Enraged-Rabbit-Community/ERCF_v2/assets/121695166/5df5f56e-9424-42d0-9985-a84c04d67c12)
-![20231116_230638](https://github.com/Enraged-Rabbit-Community/ERCF_v2/assets/121695166/ed578c32-6d4d-4698-8aeb-008a0cdf959e)
-![IMG_2446](https://github.com/Enraged-Rabbit-Community/ERCF_v2/assets/121695166/fde29ef8-6356-4a68-bd17-26fd160b5c9f)
-![IMG_2448](https://github.com/Enraged-Rabbit-Community/ERCF_v2/assets/121695166/bb66a3e3-326e-4866-97da-3e80767f3dc7)
-![IMG_2445](https://github.com/Enraged-Rabbit-Community/ERCF_v2/assets/121695166/1b943168-492d-44d6-ad12-038a6f12a8ca)
-![IMG_2443](https://github.com/Enraged-Rabbit-Community/ERCF_v2/assets/121695166/147fb32d-f3e4-4365-b579-de3997274053)
-![IMG_2444](https://github.com/Enraged-Rabbit-Community/ERCF_v2/assets/121695166/6d84f624-84b9-4a88-ad7c-de2a09619397)
-![IMG_2447](https://github.com/Enraged-Rabbit-Community/ERCF_v2/assets/121695166/52122c6a-e28c-4bd7-a8a8-324b2cc9a74f)
+![20231116_230501](https://github.com/Enraged-Rabbit-Community/ERCF_v3/assets/121695166/3d18d3fe-b8f0-4750-8b06-f487ab54ef35)
+![20231116_211032](https://github.com/Enraged-Rabbit-Community/ERCF_v3/assets/121695166/971ceefa-8946-438d-9de7-a26cfcdae56b)
+![20231116_214903](https://github.com/Enraged-Rabbit-Community/ERCF_v3/assets/121695166/5781d748-67eb-44f2-a793-cf8f4229b99f)
+![20231116_211045](https://github.com/Enraged-Rabbit-Community/ERCF_v3/assets/121695166/5df5f56e-9424-42d0-9985-a84c04d67c12)
+![20231116_230638](https://github.com/Enraged-Rabbit-Community/ERCF_v3/assets/121695166/ed578c32-6d4d-4698-8aeb-008a0cdf959e)
+![IMG_2446](https://github.com/Enraged-Rabbit-Community/ERCF_v3/assets/121695166/fde29ef8-6356-4a68-bd17-26fd160b5c9f)
+![IMG_2448](https://github.com/Enraged-Rabbit-Community/ERCF_v3/assets/121695166/bb66a3e3-326e-4866-97da-3e80767f3dc7)
+![IMG_2445](https://github.com/Enraged-Rabbit-Community/ERCF_v3/assets/121695166/1b943168-492d-44d6-ad12-038a6f12a8ca)
+![IMG_2443](https://github.com/Enraged-Rabbit-Community/ERCF_v3/assets/121695166/147fb32d-f3e4-4365-b579-de3997274053)
+![IMG_2444](https://github.com/Enraged-Rabbit-Community/ERCF_v3/assets/121695166/6d84f624-84b9-4a88-ad7c-de2a09619397)
+![IMG_2447](https://github.com/Enraged-Rabbit-Community/ERCF_v3/assets/121695166/52122c6a-e28c-4bd7-a8a8-324b2cc9a74f)
 
 <br>
 
