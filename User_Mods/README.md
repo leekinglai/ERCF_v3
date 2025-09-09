@@ -5,7 +5,7 @@ Mods for ERCF
 
 
 
-| Creator | Mod link | Description | Printer compatibility | Last Changed |
+| Creator | Mod link | Description | Compatibility | Last Changed |
 | --- | --- | --- | --- | --- |
 | Gneu42 | [Link](Gneu42/Block_End_with_Bushings) | Block End with Bushing | v2 | Pre-Launch |
 | Gneu42 | [Link](Gneu42/Drag_Chain_Anchor_With_Microfit3) | Drag Chain Anchor with Connectors | v2 | Pre-launch |
