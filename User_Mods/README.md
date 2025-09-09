@@ -2,7 +2,19 @@
 
 Mods for ERCF
 ---
+# ERCF user mod repository
 
+Welcome to ERCF user mod repository. This is a place to share your mods for the ERCF v3 and find useful mods and resources from other ERCF community members.
+
+Check the [`user_mods`](./user_mods) folder for mods that apply to the current generation of printers. 
+
+All mods that apply to older (=legacy) ERCF versions can be found in the [`legacy_mods`](./legacy_mods) folder.
+
+Mods where the authors have abandoned development can be found in the [`orphaned mods`](./orphaned_mods/) folder. If you want to start maintaining one of them, feel free to reach out via a [GitHub issue](https://github.com/Enraged-Rabbit-Community/ERCF_v3/issues/new/choose).
+
+Looking to submit a mod? Check the [mod submission rules](https://github.com/Enraged-Rabbit-Community/ERCF_v3/User_Mods/Mod-Submission-Rules) and instructions on [how to submit to ERCF User_Mods](https://github.com/Enraged-Rabbit-Community/ERCF_v3/User_Mods/How-to-Submit-to-User_Mods)
+
+\[ERCF logo here\]
 
 
 | Creator | Mod link | Description | Compatibility | Last Changed |
