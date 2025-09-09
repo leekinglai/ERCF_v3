@@ -26,5 +26,5 @@ Each pull request should also update the associated index.md with a link to the 
 
 # Pull Requests
 
-How to create [Github pull requests](././pull_request_guide.md)
+How to create [Github pull requests](./../pull_request_guide.md)
 
