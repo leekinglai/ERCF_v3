@@ -1,1 +1,1 @@
-This is a Selector Motor mount for Selector motors larger than 20mm. I flipped the motor upside down. It uses all the same hardware. The only difference is that the motor is now 3.8mm closer to the Selector, so you will need to trim ~7mm from your belt.
+This is a Selector Motor mount for Selector motors larger than 20mm. I flipped the motor upside down. It uses all the same hardware. The only difference is that the motor is now 3.8mm closer to the Selector, so you will need to trim ~7.6mm from your belt.
