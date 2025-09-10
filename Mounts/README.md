@@ -14,4 +14,4 @@ Looking to submit a mount? Check the [mount submission rules](https://github.com
 
 | Creator | Mod link | Description | Compatibility | Last Changed |
 | --- | --- | --- | --- | --- |
-| Moggieuk | [Link](/legacy_mounts/) | Legacy Mounts | v2 | Pre-Launch |
+| Moggieuk | [Link](/Mounts/legacy_mounts/) | Legacy Mounts | v2 | Pre-Launch |
