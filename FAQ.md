@@ -1,4 +1,8 @@
-# ERCF v2 FAQ
+# ERCF v3 FAQs
+To be filled out once we know what the FAQs are!
+
+
+# ERCF v2 FAQs
 
 ### Q1. Will there be kits available for ERCF V2, and where can we get them?
 LDO and  a number of vendors will have kits available for ordering in the coming months. Full kits will be available sometime in late 1st quarter of 2024.
