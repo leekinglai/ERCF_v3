@@ -2,21 +2,7 @@ Because mounting is specific to your printer, mounting is left for the community
 
 # Community Submission Information
 
-The following are guidelines for submitting documentation to the ERCF Mounting repo. This is to provide a consistent format for the resulting documentation and information.
-
-## All submissions
-
-All submissions must include the following content in the header of any templated files to be rendered. Any submissions missing this header may be rejected.
-
-<!-- {% raw %} -->
-```
----
-layout: default
-title: <title>
-nav_exclude: true
----
-```
-<!-- {% endraw %} -->
+The following are guidelines for submitting documentation to the ERCF Mounts repo. This is to provide a consistent format for the resulting documentation and information.
 
 ## How to Submit your Design
 
