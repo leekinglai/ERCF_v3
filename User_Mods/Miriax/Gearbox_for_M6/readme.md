@@ -1,1 +1,1 @@
-THese are Gearboxes for M6 fasteners. One version is for BHCS M6 fasteners (preferred) and the other is for SHCS M6 fasteners.
+These are Gearboxes for M6 fasteners. One version is for BHCS M6 fasteners (preferred) and the other is for SHCS M6 fasteners.
