@@ -6,7 +6,7 @@ Welcome to ERCF user mod repository. This is a place to share your mods for the 
 
 Mods where the authors have abandoned development can be found in the [`orphaned mods`](./orphaned_mods/) folder. If you want to start maintaining one of them, feel free to reach out via a [GitHub issue](https://github.com/Enraged-Rabbit-Community/ERCF_v3/issues/new/choose).
 
-Looking to submit a mod? Check the [mod submission rules](https://github.com/Enraged-Rabbit-Community/ERCF_v3/User_Mods/Mod-Submission-Rules) and instructions on [how to submit to ERCF User_Mods](https://github.com/Enraged-Rabbit-Community/ERCF_v3/User_Mods/How-to-Submit-to-User_Mods)
+Looking to submit a mod? Check the [mod submission rules](https://github.com/Enraged-Rabbit-Community/ERCF_v3/User_Mods/Mod-Submission-Rules.md) and instructions on [how to submit to ERCF User_Mods](https://github.com/Enraged-Rabbit-Community/ERCF_v3/User_Mods/How-to-Submit-to-User_Mods)
 
 \[ERCF logo here\]
 
