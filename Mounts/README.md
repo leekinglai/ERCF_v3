@@ -1,5 +1,3 @@
-# Mods
-
 Mounts for ERCF
 ---
 # ERCF user mod repository
