@@ -30,8 +30,8 @@ In order to help users to find the appropriate files of your mod, please conside
 - The following folder tree shows the preferred file layout of your mod. While deviations from this format can be discussed on a case-by-case basis, it is strongly encouraged to adhere to this structure to speed up the review process:
 ```
 .
-└── printer_mods/
-    └── FHeilmann/
+└── User_mods/
+    └── Miriax/
         ├── my_mod/
         │   ├── STL/
         │   │   ├── [a]_accent_part.stl
