@@ -1,6 +1,6 @@
 Mounts for ERCF
 ---
-# ERCF user mod repository
+# ERCF Mounts repository
 
 Welcome to ERCF mounts repository. This is a place to share your mounts for ERCF and find mounts and resources from other ERCF community members.
 
