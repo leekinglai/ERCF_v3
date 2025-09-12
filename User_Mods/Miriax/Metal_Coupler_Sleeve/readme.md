@@ -28,4 +28,4 @@ Insert M3x8mm BHCS and snug
 
 ![insert M3x8 bolt and snug](./images/metal_coupler_sleeve_insert_bolt.PNG)
 
-Insert metal coupler and tighten the bolts, alternating
+Insert metal coupler. Align the grubscrew holes with the holes in the sleeve. Tighten the bolts, alternating until snug. This only needs to be snug enough to grip the metal coupler.
