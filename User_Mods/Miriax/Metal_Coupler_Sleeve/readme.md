@@ -13,19 +13,19 @@ Uses 5mm ID "rigid shaft coupling," 20mm long, 12mm diameter, threaded for M4. I
 
 As normal. Supports are left to the user and not built-in as normal.
 
-![coupler angle 1](./images/metal_coupler_sleeve_1.png)
+![coupler angle 1](./images/metal_coupler_sleeve_1.PNG)
 
-![coupler angle 2](./images/metal_coupler_sleeve_1.png)
+![coupler angle 2](./images/metal_coupler_sleeve_1.PNG)
 
 
 # Instructions
 
 Insert M3 nut into coupler halves
 
-![Insert nut into coupler halves](./images/metal_coupler_sleeve_1.png)
+![Insert nut into coupler halves](./images/metal_coupler_sleeve_1.PNG)
 
 Insert M3x8mm BHCS and snug
 
-![insert M3x8 bolt and snug](./images/metal_coupler_sleeve_1.png)
+![insert M3x8 bolt and snug](./images/metal_coupler_sleeve_1.PNG)
 
 Insert metal coupler and tighten the bolts, alternating
