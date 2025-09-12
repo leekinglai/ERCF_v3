@@ -15,17 +15,17 @@ As normal. Supports are left to the user and not built-in as normal.
 
 ![coupler angle 1](./images/metal_coupler_sleeve_1.PNG)
 
-![coupler angle 2](./images/metal_coupler_sleeve_1.PNG)
+![coupler angle 2](./images/metal_coupler_sleeve_2.PNG)
 
 
 # Instructions
 
 Insert M3 nut into coupler halves
 
-![Insert nut into coupler halves](./images/metal_coupler_sleeve_1.PNG)
+![Insert nut into coupler halves](./images/metal_coupler_sleeve_insert_nut.PNG)
 
 Insert M3x8mm BHCS and snug
 
-![insert M3x8 bolt and snug](./images/metal_coupler_sleeve_1.PNG)
+![insert M3x8 bolt and snug](./images/metal_coupler_sleeve_insert_bolt.PNG)
 
 Insert metal coupler and tighten the bolts, alternating
