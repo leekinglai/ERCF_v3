@@ -19,6 +19,7 @@ Looking to submit a mod? Check the [mod submission rules](https://github.com/Enr
 | Miriax | [Link](Miriax/Linear_Axis_Idler_Block_Flipped_Motor) | Flipped Motor Mount for Linear Axis | v2, v3 | Pre-Launch |
 | Miriax | [Link](Miriax/Gearbox_for_M6) | Gearbox for M6 Fastener | v3 | Pre-Launch |
 | Miriax | [Link](Miriax/Linear_Axis_Idler_Block_for_10mm_Idlers) | Idler Block for 10mm Idlers | v2, v3 | Pre-Launch |
+| Miriax | [Link](Miriax/Metal_Coupler_Sleeve) | Metal Coupler Sleeve | v3 | Pre-Launch |
 | MNeuhaus | [Link](Mneuhaus/623_Bearing_with_LEDs) | 623 Bearing Encoder with LED | v2 | Pre-Launch |
 | MNeuhaus | [Link](Mneuhaus/v623zz_Bearing_with_LEDs) | v623zz Bearing Encoder with LED | v2 | Pre-Launch |
 
