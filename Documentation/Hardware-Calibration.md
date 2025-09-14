@@ -174,13 +174,13 @@ Run the command `MMU_TEST_GRIP`
 
 Pull on the filament in the unloading direction. The gears should grip the filament and move the entire Drive Shaft as you pull. 
 
-If the filament slips on the gears at all, tighten the Springy tensioner bolt, half a turn at a time, until the filament is fully and firmly gripped by the drive gears when you pull.
+If the filament slips on the gears at all, tighten the Springy tensioner bolt, half a turn at a time, until the filament is fully and firmly gripped by the drive gears when you pull. Run this test on every channel.
 
-If the grip is too strong, eg. the filament is being mangled by the gears, or the filament is grinding, back off the Springy tensioner bolt half a turn and test again.
+If the grip is too strong, eg. the filament is being mangled by the gears, or the filament is grinding, tighten the anti-squish screw by a quarter turn and test again.
 
-It is important to set the Springy tension correctly so that the drive gears have good grip on the filament. If this is not set correctly, later calibration steps may give erroneous readings, because the length of filament sent by the Gear Motor is used in the calibration calculations.
+It is important to set the Springy tension and antisquish screws correctly so that the drive gears have good grip on the filament. If this is not set correctly, later calibration steps may give erroneous readings, because the length of filament sent by the Gear Motor is used in the calibration calculations.
 
-The Springy spring tensions the Servo downward, while still allowing the Servo to flex upwards slightly as necessary during operation.
+The Springy spring tensions the Servo downward, while still allowing the Servo to flex upwards slightly as necessary during operation. The antisquish screw prevents the tension from squishing the filament too much.
 
 
 ### ![#f03c15](assets/f03c15.png) ![#c5f015](assets/c5f015.png) ![#1589F0](assets/1589F0.png) Step 4. Calibrate your gear stepper
