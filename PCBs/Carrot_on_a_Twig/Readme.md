@@ -1,4 +1,4 @@
-##Carrot on a Twig LED Board
+## Carrot on a Twig LED Board
 
 This board was based on the Disco on a Stick board. The LEDs are spaced 23.05mm, exactly the same as the Filament Blocks, allowing these to be daisy-chained together to make any even number of channels possible with no soldering required!
 
