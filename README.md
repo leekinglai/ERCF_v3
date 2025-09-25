@@ -73,6 +73,8 @@ There is a rapidly growing list of MMUs in the marketplace, from the mass-produc
 </ol>
 </td>
 </tr>
+</table>
+<table>
 <tr>
 <td>
 New features in v3.0 include:
