@@ -179,20 +179,19 @@ ERCF can be operated without a toolhead sensor (filament detection) in the toolh
 
 <br>
 
-### Purge System (ERPS)
+### Purge System (Blobifier)
 <table>
 <tr>
 <td width=30%><img src="https://raw.githubusercontent.com/Dendrowen/Blobifier/main/Pictures/Render_Base.png" alt='Blobifier'></td>
 <td>
-The Blobifier is a small device that eliminates the need for a purgeblock, making filament swaps more quick. It does this by extruding filament onto a tray creating a blob that will get ejected into a purge-bucket.
-## 1.1 Features
-- Turn your filament purge waste into blobs for fewer waste and quicker purging.
-- Store the blobs in a bucket that can hold **400 blobs!** (for the V2 300mm version)
-- Automatically pause the printer once the bucket is full.
-- Detect when the bucket is installed or missing.
-    - NOTE: Empty the bucket if you remove it! The system will reset the blob counter.
-- Shake the bucket for better dispersion of the blobs in the bucket.
-- Clean your nozzle on a brass brush before resuming to print.
+The Blobifier is a small device that eliminates the need for a purgeblock, making filament swaps more quick. It does this by extruding filament onto a tray creating a blob that will get ejected into a purge-bucket.<br />
+<h3>Features</h3>
+- Turn your filament purge waste into blobs for fewer waste and quicker purging.<br />
+- Store the blobs in a bucket that can hold **400 blobs!** (for the V2 300mm version)<br />
+- Automatically pause the printer once the bucket is full.<br />
+- Detect when the bucket is installed or missing.<br />
+- Shake the bucket for better dispersion of the blobs in the bucket.<br />
+- Clean your nozzle on a brass brush before resuming to print.<br />
 </td>
 </tr>
 </table>
