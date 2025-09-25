@@ -184,15 +184,20 @@ ERCF can be operated without a toolhead sensor (filament detection) in the toolh
 <tr>
 <td width=30%><img src="https://raw.githubusercontent.com/Dendrowen/Blobifier/main/Pictures/Render_Base.png" alt='Blobifier'></td>
 <td>
-The Blobifier is a small device that eliminates the need for a purgeblock, making filament swaps more quick. It does this by extruding filament onto a tray creating a blob that will get ejected into a purge-bucket.<br />
+
+The Blobifier is a small device that eliminates the need for a purgeblock, making filament swaps quicker. It does this by extruding filament onto a tray creating a blob that will get ejected into a purge-bucket.<br />
+
 <h3>Features</h3>
+
 - Turn your filament purge into blobs for less waste and quicker purging.<br />
 - Store the blobs in a bucket that can hold 400 blobs!<br />
 - Automatically pause the printer once the bucket is full.<br />
 - Detect when the bucket is installed or missing.<br />
 - Shake the bucket for better dispersion of the blobs in the bucket.<br />
 - Clean your nozzle on a brass brush before resuming to print.<br />
+
 [Read More](https://github.com/Enraged-Rabbit-Community/Blobifier)
+
 </td>
 </tr>
 </table>
