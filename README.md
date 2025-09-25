@@ -71,6 +71,10 @@ There is a rapidly growing list of MMUs in the marketplace, from the mass-produc
  <li>Perfect tips with Filametrix Filament cutter</li>
  <li>Functional and aesthetic LED status indication</li>
 </ol>
+</td>
+</tr>
+<tr>
+<td>
 New features in v3.0 include:
 <ol>
  <li>New Direct Drive motor system optimized for torque and ease of use</li>
