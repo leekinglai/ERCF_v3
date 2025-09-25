@@ -59,22 +59,35 @@ There is a rapidly growing list of MMUs in the marketplace, from the mass-produc
 <td width=45%><img src="/Assets/ERCFv3.png">An MMU or Multimaterial Unit/Upgrade allows for the automatic change of filaments on your 3D printer. You can use it to create beautiful multi-colored prints or, if you're lazy, simply to avoid loading filament by hand. If you are familiar with ERCF v1.1, this will serve as an overview of updates:</td>
 <td>
 <ol>
- <li>Sturdy backbone - no more flex
- <li>Reliable (and custom) encoder design
- <li>Sprung servo instead of adjustable top hats
- <li>Innovative Filament trap in blocks instead of magnetic gates
- <li>Formal filament bypass
- <li>Reinforced gearbox assembly
- <li>Beautifully illustrated Manual
- <li>High Quality Step-by-step CAD
- <li>Integrated passive buffer system (Cotton Tail)
- <li>Perfect tips with Filametrix Filament cutter
- <li>Functional and aesthetic LED status indication
+ <li>Sturdy backbone - no more flex</li>
+ <li>Reliable (and custom) encoder design</li>
+ <li>Sprung servo instead of adjustable top hats</li>
+ <li>Innovative Filament trap in blocks instead of magnetic gates</li>
+ <li>Formal filament bypass</li>
+ <li>Reinforced gearbox assembly</li>
+ <li>Beautifully illustrated Manual</li></li>
+ <li>High Quality Step-by-step CAD</li>
+ <li>Integrated passive buffer system (Cotton Tail)</li>
+ <li>Perfect tips with Filametrix Filament cutter</li>
+ <li>Functional and aesthetic LED status indication</li>
+</ol>
+New features in v3.0 include:
+<ol>
+ <li>New Direct Drive motor system optimized for torque and ease of use</li>
+ <li>Redesigned Gearbox that supports legacy gearing options for upgraders</li>
+ <li>Redesigned high-constraint filament blocks with pregate sensors as a default option</li>
+ <li>Many Quality of Life additions such as improved Encoder and Selector Cart</li>
+ <li>optional microswitch PCBs which allow solderless installation</li>
+ <li>optional LED PCBs which allow solderless installation</li>
+ <li>Detailed MMB v1.1 and v2.0 wiring diagrams</li>
+ <li>Software Setup Documentation for the most popular boards</li>
+ <li>Proper GitHub sections for User Mods, Mounting, and PCBs for the community to build upon</li>
+ <li>Electronics boxes for the most popular boards: MMBv1 and v2, EasyBRD, ERB*</li>
 </ol>
 </td>
 </tr>
 </table>
-
+*The ERB is not recommended for use without an additional external 5v power supply.
 <br>
 
 ## Optional Enraged Rabbit Components
