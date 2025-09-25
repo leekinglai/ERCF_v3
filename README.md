@@ -76,7 +76,7 @@ There is a rapidly growing list of MMUs in the marketplace, from the mass-produc
 </table>
 <table>
 <tr>
-<td>
+<td width=100%>
 New features in v3.0 include:
 <ol>
  <li>New Direct Drive motor system optimized for torque and ease of use</li>
@@ -180,7 +180,23 @@ ERCF can be operated without a toolhead sensor (filament detection) in the toolh
 <br>
 
 ### Purge System (ERPS)
-We need to put information about Blobifier here!
+<table>
+<tr>
+<td width=30%>![Blobifier Render](https://raw.githubusercontent.com/Dendrowen/Blobifier/main/Pictures/Render_Base.png)</td>
+<td>
+The Blobifier is a small device that eliminates the need for a purgeblock, making filament swaps more quick. It does this by extruding filament onto a tray creating a blob that will get ejected into a purge-bucket.
+### 1.1 Features
+- Turn your filament purge waste into blobs for fewer waste and quicker purging.
+- Store the blobs in a bucket that can hold **400 blobs!** (for the V2 300mm version)
+- Automatically pause the printer once the bucket is full.
+- Detect when the bucket is installed or missing.
+    - NOTE: Empty the bucket if you remove it! The system will reset the blob counter.
+- Shake the bucket for better dispersion of the blobs in the bucket.
+- Clean your nozzle on a brass brush before resuming to print.
+</td>
+</tr>
+</table>
+
 
 <br>
 
