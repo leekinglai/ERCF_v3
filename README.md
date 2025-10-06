@@ -353,25 +353,26 @@ The most vibrant prints ever seen!
 <br>
 
 ## Build Photos
-![Build from One Seat](https://github.com/Carrot-collective/ERCF_v3/assets/PXL_20250914_234309121.jpg)
-![Build from One Seat](https://github.com/Carrot-collective/ERCF_v3/assets/PXL_20250914_234321817.jpg)
-![Build from One Seat](https://github.com/Carrot-collective/ERCF_v3/assets/PXL_20250914_234324125.jpg)
-![Build from One Seat](https://github.com/Carrot-collective/ERCF_v3/assets/PXL_20250914_234514735.jpg)
-![Selector from Alph4D0g](https://github.com/Carrot-collective/ERCF_v3/assets/PXL_20250926_195417168.RAW-01.COVER.jpg)
-![Selector from Alph4D0g](https://github.com/Carrot-collective/ERCF_v3/assets/PXL_20250926_195427863.RAW-01.COVER.jpg)
+![Build from One Seat](https://github.com/Carrot-collective/ERCF_v3/Assets/PXL_20250914_234309121.jpg)
+![Build from One Seat](https://github.com/Carrot-collective/ERCF_v3/Assets/PXL_20250914_234321817.jpg)
+![Build from One Seat](https://github.com/Carrot-collective/ERCF_v3/Assets/PXL_20250914_234324125.jpg)
+![Build from One Seat](https://github.com/Carrot-collective/ERCF_v3/Assets/PXL_20250914_234514735.jpg )
+![Selector from Alph4D0g](https://github.com/Carrot-collective/ERCF_v3/Assets/PXL_20250926_195417168.RAW-01.COVER.jpg)
+![Selector from Alph4D0g](https://github.com/Carrot-collective/ERCF_v3/Assets/PXL_20250926_195427863.RAW-01.COVER.jpg)
 
 <br>
 
 ## User Print Showroom
 
-<img src="Assets/Showroom/20241224_232456.jpg" alt="Playing Cards from Print3D Pilot" width="950"/>
-<img src="Assets/Showroom/20241224_232236.jpg" alt="Playing Cards from Print3D Pilot" width="950"/>
-<img src="Assets/Showroom/IMG_4783.png" alt="Gremlin from Mark Norris" width="950"/>
-<img src=Assets/Showroom/IMG_4784.png alt="Stormtrooper from Mark Norris" width="950"/>
-<img src=Assets/Showroom/IMG_5128.jpg alt="Gingerbread Cottage from Igiannakas" width="950"/>
-<img src=Assets/Showroom/IMG_5129.jpg alt="Gingerbread Cottage from Igiannakas" width="950"/>
-<img src=Assets/Showroom/IMG_5504.jpg alt="Knit Teddy Bear from Igiannakas" width="950"/>
-<img src=Assets/Showroom/IMG_5505.jpg alt="Knit Teddy Bear from Igiannakas" width="950"/>
-<img src=Assets/Showroom/IMG_5504.jpg alt="Knit Teddy Bear from Igiannakas" width="950"/>
+Click to enlarge.
+
+<a href="Assets/Showroom/20241224_232456.jpg"><img src="Assets/Showroom/20241224_232456.jpg" alt="Playing Cards from Print3D Pilot" width="450"/></a>
+<a href="Assets/Showroom/20241224_232236.jpg"><img src="Assets/Showroom/20241224_232236.jpg" alt="Playing Cards from Print3D Pilot" width="450"/></a>
+<a href="Assets/Showroom/IMG_4783.png"><img src="Assets/Showroom/IMG_4783.png" alt="Gremlin from Mark Norris" width="450"/></a>
+<a href="Assets/Showroom/IMG_4783.png"><img src=Assets/Showroom/IMG_4784.png alt="Stormtrooper from Mark Norris" width="450"/></a>
+<a href="Assets/Showroom/IMG_5128.jpg"><img src=Assets/Showroom/IMG_5128.jpg alt="Gingerbread Cottage from Igiannakas" width="450"/></a>
+<a href="Assets/Showroom/IMG_5129.jpg"><img src=Assets/Showroom/IMG_5129.jpg alt="Gingerbread Cottage from Igiannakas" width="450"/></a>
+<a href="Assets/Showroom/IMG_5504.jpg"><img src=Assets/Showroom/IMG_5504.jpg alt="Knit Teddy Bear from Igiannakas" width="450"/></a>
+<a href="Assets/Showroom/IMG_5505.jpg"><img src=Assets/Showroom/IMG_5505.jpg alt="Knit Teddy Bear from Igiannakas" width="450"/></a>
 
   
