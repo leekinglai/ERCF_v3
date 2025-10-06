@@ -56,7 +56,7 @@ There is a rapidly growing list of MMUs in the marketplace, from the mass-produc
 ## Enraged Rabbit Carrot Feeder (ERCF)
 <table>
 <tr>
-<td width=45%><img src="/Assets/ERCFv3.png">An MMU or Multimaterial Unit/Upgrade allows for the automatic change of filaments on your 3D printer. You can use it to create beautiful multi-colored prints or, if you're lazy, simply to avoid loading filament by hand. If you are familiar with ERCF v1.1, this will serve as an overview of updates:</td>
+<td width=45%><img src="/Assets/main_hero_v3.png">An MMU or Multimaterial Unit/Upgrade allows for the automatic change of filaments on your 3D printer. You can use it to create beautiful multi-colored prints or, if you're lazy, simply to avoid loading filament by hand. If you are familiar with ERCF v1.1, this will serve as an overview of updates:</td>
 <td>
 <ol>
  <li>Sturdy backbone - no more flex</li>
@@ -303,19 +303,17 @@ Most importantly let me introduce the development, test and doc team. A project 
 These kits and specialty parts will have been checked by us and meet good quality standards. Pending Certification means it has met our first pass inspection and in the process of being verified as a v3 kit. <strong>WE DO NOT RECOMMEND PURCHASING KITS WITHOUT THE CERTIFICATION BY US. PLEASE CHECK BACK HERE FOR THE LIST OF AUTHORIZED VENDORS AND MANUFACTURERS</strong>:<br>
 <p>
 <ul>
- <li> Pending Certification - Siboor
+ <li> Pending Submission - Siboor
  </li>
- <li> Pending Certification - Triangle Labs
+ <li> Pending Submission - Triangle Labs
  </li>
- <li> Pending Certification - Seleadlabs
+ <li> Pending Submission - Seleadlabs
  </li>
- <li> Pending Certification - Makerpanda
+ <li> Pending Submission - Makerpanda
  </li>
- <li> Pending Certification - Fysetc
+ <li> Pending Submission - Fysetc
  </li>
- <li> Pending Certification - LDO Motors
- </li>
- <li> Application Under Review/Pending Certification - Dodo 3D Labs
+ <li> Pending Submission - Dodo 3D Labs
  </li>
  
  
@@ -356,12 +354,12 @@ The most vibrant prints ever seen!
 
 Click to enlarge.
 
-<a href="Assets/Showroom/PXL_20250914_234309121.jpg"><img src="Assets/Showroom/PXL_20250914_234309121.jpg" alt="Build from One Seat" width="48%"/></a>
-<a href="Assets/Showroom/PXL_20250914_234321817.jpg"><img src="Assets/Showroom/PXL_20250914_234321817.jpg" alt="Build from One Seat" width="48%"/></a>
-<a href="Assets/Showroom/PXL_20250914_234324125.jpg"><img src="Assets/Showroom/PXL_20250914_234324125.jpg" alt="Build from One Seat" width="48%"/></a>
-<a href="Assets/Showroom/PXL_20250914_234514735.jpg"><img src="Assets/Showroom/PXL_20250914_234514735.jpg" alt="Build from One Seat" width="48%"/></a>
-<a href="Assets/Showroom/PXL_20250926_195417168.RAW-01.COVER.jpg"><img src="Assets/Showroom/PXL_20250926_195417168.RAW-01.COVER.jpg" alt="Selector from Alph4D0g" width="48%"/></a>
-<a href="Assets/Showroom/PXL_20250926_195427863.RAW-01.COVER.jpg"><img src="Assets/Showroom/PXL_20250926_195427863.RAW-01.COVER.jpg" alt="Selector from Alph4D0g" width="48%"/></a>
+<a href="Assets/PXL_20250914_234309121.jpg"><img src="Assets/PXL_20250914_234309121.jpg" alt="Build from One Seat" width="48%"/></a>
+<a href="Assets/PXL_20250914_234321817.jpg"><img src="Assets/PXL_20250914_234321817.jpg" alt="Build from One Seat" width="48%"/></a>
+<a href="Assets/PXL_20250914_234324125.jpg"><img src="Assets/PXL_20250914_234324125.jpg" alt="Build from One Seat" width="48%"/></a>
+<a href="Assets/PXL_20250914_234514735.jpg"><img src="Assets/PXL_20250914_234514735.jpg" alt="Build from One Seat" width="48%"/></a>
+<a href="Assets/PXL_20250926_195417168.RAW-01.COVER.jpg"><img src="Assets/PXL_20250926_195417168.RAW-01.COVER.jpg" alt="Selector from Alph4D0g" width="48%"/></a>
+<a href="Assets/PXL_20250926_195427863.RAW-01.COVER.jpg"><img src="Assets/PXL_20250926_195427863.RAW-01.COVER.jpg" alt="Selector from Alph4D0g" width="48%"/></a>
 
 <br>
 
