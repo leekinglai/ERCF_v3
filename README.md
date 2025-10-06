@@ -74,9 +74,6 @@ There is a rapidly growing list of MMUs in the marketplace, from the mass-produc
 </td>
 </tr>
 </table>
-<table width=100%>
-<tr>
-<td width=100%>
 New features in v3.0 include:
 <ol>
  <li>New Direct Drive motor system optimized for torque and ease of use</li>
@@ -90,9 +87,7 @@ New features in v3.0 include:
  <li>Proper GitHub sections for User Mods, Mounting, and PCBs for the community to build upon</li>
  <li>Electronics boxes for the most popular boards: MMBv1 and v2, EasyBRD, ERB*</li>
 </ol>
-</td>
-</tr>
-</table>
+
 *The ERB is not recommended for use without an additional external 5v power supply.
 <br>
 
@@ -356,8 +351,8 @@ Click to enlarge.
 
 <a href="Assets/PXL_20250914_234309121.jpg"><img src="Assets/PXL_20250914_234309121.jpg" alt="Build from One Seat" width="48%"/></a>
 <a href="Assets/PXL_20250914_234321817.jpg"><img src="Assets/PXL_20250914_234321817.jpg" alt="Build from One Seat" width="48%"/></a>
-<a href="Assets/PXL_20250914_234324125.jpg"><img src="Assets/PXL_20250914_234324125.jpg" alt="Build from One Seat" width="48%"/></a>
 <a href="Assets/PXL_20250914_234514735.jpg"><img src="Assets/PXL_20250914_234514735.jpg" alt="Build from One Seat" width="48%"/></a>
+<a href="Assets/PXL_20250914_234324125.jpg"><img src="Assets/PXL_20250914_234324125.jpg" alt="Build from One Seat" width="48%"/></a>
 <a href="Assets/PXL_20250926_195417168.RAW-01.COVER.jpg"><img src="Assets/PXL_20250926_195417168.RAW-01.COVER.jpg" alt="Selector from Alph4D0g" width="48%"/></a>
 <a href="Assets/PXL_20250926_195427863.RAW-01.COVER.jpg"><img src="Assets/PXL_20250926_195427863.RAW-01.COVER.jpg" alt="Selector from Alph4D0g" width="48%"/></a>
 
@@ -367,8 +362,8 @@ Click to enlarge.
 
 Click to enlarge.
 
-<a href="Assets/Showroom/20241224_232456.jpg"><img src="Assets/Showroom/20241224_232456.jpg" alt="Playing Cards from Print3D Pilot" width="48%"/></a>
 <a href="Assets/Showroom/20241224_232236.jpg"><img src="Assets/Showroom/20241224_232236.jpg" alt="Playing Cards from Print3D Pilot" width="48%"/></a>
+<a href="Assets/Showroom/20241224_232456.jpg"><img src="Assets/Showroom/20241224_232456.jpg" alt="Playing Cards from Print3D Pilot" width="48%"/></a>
 
 <a href="Assets/Showroom/IMG_4783.png"><img src="Assets/Showroom/IMG_4783.png" alt="Gremlin from Mark Norris" width="48%"/></a>
 <a href="Assets/Showroom/IMG_4783.png"><img src=Assets/Showroom/IMG_4784.png alt="Stormtrooper from Mark Norris" width="48%"/></a>
