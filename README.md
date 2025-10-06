@@ -353,12 +353,12 @@ The most vibrant prints ever seen!
 <br>
 
 ## Build Photos
-![Build from One Seat](Assets/PXL_20250914_234309121.jpg)
-![Build from One Seat](Assets/PXL_20250914_234321817.jpg)
-![Build from One Seat](Assets/PXL_20250914_234324125.jpg)
-![Build from One Seat](Assets/PXL_20250914_234514735.jpg )
-![Selector from Alph4D0g](Assets/PXL_20250926_195417168.RAW-01.COVER.jpg)
-![Selector from Alph4D0g](Assets/PXL_20250926_195427863.RAW-01.COVER.jpg)
+![Build from One Seat](Assets/PXL_20250914_234309121.jpg =250x)
+![Build from One Seat](Assets/PXL_20250914_234321817.jpg =250x)
+![Build from One Seat](Assets/PXL_20250914_234324125.jpg =250x)
+![Build from One Seat](Assets/PXL_20250914_234514735.jpg =250x)
+![Selector from Alph4D0g](Assets/PXL_20250926_195417168.RAW-01.COVER.jpg =250x)
+![Selector from Alph4D0g](Assets/PXL_20250926_195427863.RAW-01.COVER.jpg =250x)
 
 <br>
 
@@ -366,13 +366,16 @@ The most vibrant prints ever seen!
 
 Click to enlarge.
 
-<a href="Assets/Showroom/20241224_232456.jpg"><img src="Assets/Showroom/20241224_232456.jpg" alt="Playing Cards from Print3D Pilot" width="25%"/></a>
-<a href="Assets/Showroom/20241224_232236.jpg"><img src="Assets/Showroom/20241224_232236.jpg" alt="Playing Cards from Print3D Pilot" width="25%"/></a>
-<a href="Assets/Showroom/IMG_4783.png"><img src="Assets/Showroom/IMG_4783.png" alt="Gremlin from Mark Norris" width="25%"/></a>
-<a href="Assets/Showroom/IMG_4783.png"><img src=Assets/Showroom/IMG_4784.png alt="Stormtrooper from Mark Norris" width="25%"/></a>
-<a href="Assets/Showroom/IMG_5128.jpg"><img src=Assets/Showroom/IMG_5128.jpg alt="Gingerbread Cottage from Igiannakas" width="25%"/></a>
-<a href="Assets/Showroom/IMG_5129.jpg"><img src=Assets/Showroom/IMG_5129.jpg alt="Gingerbread Cottage from Igiannakas" width="25%"/></a>
-<a href="Assets/Showroom/IMG_5504.jpg"><img src=Assets/Showroom/IMG_5504.jpg alt="Knit Teddy Bear from Igiannakas" width="25%"/></a>
-<a href="Assets/Showroom/IMG_5505.jpg"><img src=Assets/Showroom/IMG_5505.jpg alt="Knit Teddy Bear from Igiannakas" width="25%"/></a>
+<a href="Assets/Showroom/20241224_232456.jpg"><img src="Assets/Showroom/20241224_232456.jpg" alt="Playing Cards from Print3D Pilot" width="48%"/></a>
+<a href="Assets/Showroom/20241224_232236.jpg"><img src="Assets/Showroom/20241224_232236.jpg" alt="Playing Cards from Print3D Pilot" width="48%"/></a>
+
+<a href="Assets/Showroom/IMG_4783.png"><img src="Assets/Showroom/IMG_4783.png" alt="Gremlin from Mark Norris" width="48%"/></a>
+<a href="Assets/Showroom/IMG_4783.png"><img src=Assets/Showroom/IMG_4784.png alt="Stormtrooper from Mark Norris" width="48%"/></a>
+
+<a href="Assets/Showroom/IMG_5128.jpg"><img src=Assets/Showroom/IMG_5128.jpg alt="Gingerbread Cottage from Igiannakas" width="48%"/></a>
+<a href="Assets/Showroom/IMG_5129.jpg"><img src=Assets/Showroom/IMG_5129.jpg alt="Gingerbread Cottage from Igiannakas" width="48%"/></a>
+
+<a href="Assets/Showroom/IMG_5504.jpg"><img src=Assets/Showroom/IMG_5504.jpg alt="Knit Teddy Bear from Igiannakas" width="48%"/></a>
+<a href="Assets/Showroom/IMG_5505.jpg"><img src=Assets/Showroom/IMG_5505.jpg alt="Knit Teddy Bear from Igiannakas" width="48%"/></a>
 
   
