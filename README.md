@@ -353,12 +353,15 @@ The most vibrant prints ever seen!
 <br>
 
 ## Build Photos
-![Build from One Seat](Assets/PXL_20250914_234309121.jpg =250x)
-![Build from One Seat](Assets/PXL_20250914_234321817.jpg =250x)
-![Build from One Seat](Assets/PXL_20250914_234324125.jpg =250x)
-![Build from One Seat](Assets/PXL_20250914_234514735.jpg =250x)
-![Selector from Alph4D0g](Assets/PXL_20250926_195417168.RAW-01.COVER.jpg =250x)
-![Selector from Alph4D0g](Assets/PXL_20250926_195427863.RAW-01.COVER.jpg =250x)
+
+Click to enlarge.
+
+<a href="Assets/Showroom/PXL_20250914_234309121.jpg"><img src="Assets/Showroom/PXL_20250914_234309121.jpg" alt="Build from One Seat" width="48%"/></a>
+<a href="Assets/Showroom/PXL_20250914_234321817.jpg"><img src="Assets/Showroom/PXL_20250914_234321817.jpg" alt="Build from One Seat" width="48%"/></a>
+<a href="Assets/Showroom/PXL_20250914_234324125.jpg"><img src="Assets/Showroom/PXL_20250914_234324125.jpg" alt="Build from One Seat" width="48%"/></a>
+<a href="Assets/Showroom/PXL_20250914_234514735.jpg"><img src="Assets/Showroom/PXL_20250914_234514735.jpg" alt="Build from One Seat" width="48%"/></a>
+<a href="Assets/Showroom/PXL_20250926_195417168.RAW-01.COVER.jpg"><img src="Assets/Showroom/PXL_20250926_195417168.RAW-01.COVER.jpg" alt="Selector from Alph4D0g" width="48%"/></a>
+<a href="Assets/Showroom/PXL_20250926_195427863.RAW-01.COVER.jpg"><img src="Assets/Showroom/PXL_20250926_195427863.RAW-01.COVER.jpg" alt="Selector from Alph4D0g" width="48%"/></a>
 
 <br>
 
