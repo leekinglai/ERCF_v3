@@ -10,11 +10,11 @@ An expandable MMU for Klipper-based 3D-Printers
 </p>
 
 <p align="center">
- <a aria-label="Downloads" href="https://github.com/Enraged-Rabbit-Community/ERCF_v3/releases"><img src="https://img.shields.io/github/release/Enraged-Rabbit-Community/ERCF_v3?display_name=tag&style=flat-square"></a> &nbsp;
- <a aria-label="Stars" href="https://github.com/Enraged-Rabbit-Community/ERCF_v3/stargazers"><img src="https://img.shields.io/github/stars/Enraged-Rabbit-Community/ERCF_v3?style=flat-square"></a> &nbsp;
- <a aria-label="Forks" href="https://github.com/Enraged-Rabbit-Community/ERCF_v3/network/members"><img src="https://img.shields.io/github/forks/Enraged-Rabbit-Community/ERCF_v3?style=flat-square"></a> &nbsp;
- <a aria-label="License" href="https://github.com/Enraged-Rabbit-Community/ERCF_v3/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Enraged-Rabbit-Community/ERCF_v3?style=flat-square"></a> &nbsp;
- <a aria-label="Commits" href=""><img src="https://img.shields.io/github/commit-activity/y/Enraged-Rabbit-Community/ERCF_v3"></a> &nbsp;
+ <a aria-label="Downloads" href="https://github.com/Carrot-collective/ERCF_v3/releases"><img src="https://img.shields.io/github/release/Carrot-collective/ERCF_v3?display_name=tag&style=flat-square"></a> &nbsp;
+ <a aria-label="Stars" href="https://github.com/Carrot-collective/ERCF_v3/stargazers"><img src="https://img.shields.io/github/stars/Carrot-collective/ERCF_v3?style=flat-square"></a> &nbsp;
+ <a aria-label="Forks" href="https://github.com/Carrot-collective/ERCF_v3/network/members"><img src="https://img.shields.io/github/forks/Carrot-collective/ERCF_v3?style=flat-square"></a> &nbsp;
+ <a aria-label="License" href="https://github.com/Carrot-collective/ERCF_v3/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Carrot-collective/ERCF_v3?style=flat-square"></a> &nbsp;
+ <a aria-label="Commits" href=""><img src="https://img.shields.io/github/commit-activity/y/Carrot-collective/ERCF_v3"></a> &nbsp;
 </p>
 
 <br>
@@ -196,7 +196,7 @@ The Blobifier is a small device that eliminates the need for a purgeblock, makin
 - Shake the bucket for better dispersion of the blobs in the bucket.<br />
 - Clean your nozzle on a brass brush before resuming to print.<br />
 
-[Read More](https://github.com/Enraged-Rabbit-Community/Blobifier)
+[Read More](https://github.com/Carrot-collective/Blobifier)
 
 </td>
 </tr>
@@ -353,20 +353,25 @@ The most vibrant prints ever seen!
 <br>
 
 ## Build Photos
-![20231116_230501](https://github.com/Enraged-Rabbit-Community/ERCF_v3/assets/121695166/3d18d3fe-b8f0-4750-8b06-f487ab54ef35)
-![20231116_211032](https://github.com/Enraged-Rabbit-Community/ERCF_v3/assets/121695166/971ceefa-8946-438d-9de7-a26cfcdae56b)
-![20231116_214903](https://github.com/Enraged-Rabbit-Community/ERCF_v3/assets/121695166/5781d748-67eb-44f2-a793-cf8f4229b99f)
-![20231116_211045](https://github.com/Enraged-Rabbit-Community/ERCF_v3/assets/121695166/5df5f56e-9424-42d0-9985-a84c04d67c12)
-![20231116_230638](https://github.com/Enraged-Rabbit-Community/ERCF_v3/assets/121695166/ed578c32-6d4d-4698-8aeb-008a0cdf959e)
-![IMG_2446](https://github.com/Enraged-Rabbit-Community/ERCF_v3/assets/121695166/fde29ef8-6356-4a68-bd17-26fd160b5c9f)
-![IMG_2448](https://github.com/Enraged-Rabbit-Community/ERCF_v3/assets/121695166/bb66a3e3-326e-4866-97da-3e80767f3dc7)
-![IMG_2445](https://github.com/Enraged-Rabbit-Community/ERCF_v3/assets/121695166/1b943168-492d-44d6-ad12-038a6f12a8ca)
-![IMG_2443](https://github.com/Enraged-Rabbit-Community/ERCF_v3/assets/121695166/147fb32d-f3e4-4365-b579-de3997274053)
-![IMG_2444](https://github.com/Enraged-Rabbit-Community/ERCF_v3/assets/121695166/6d84f624-84b9-4a88-ad7c-de2a09619397)
-![IMG_2447](https://github.com/Enraged-Rabbit-Community/ERCF_v3/assets/121695166/52122c6a-e28c-4bd7-a8a8-324b2cc9a74f)
+![Build from One Seat](https://github.com/Carrot-collective/ERCF_v3/assets/PXL_20250914_234309121.jpg)
+![Build from One Seat](https://github.com/Carrot-collective/ERCF_v3/assets/PXL_20250914_234321817.jpg)
+![Build from One Seat](https://github.com/Carrot-collective/ERCF_v3/assets/PXL_20250914_234324125.jpg)
+![Build from One Seat](https://github.com/Carrot-collective/ERCF_v3/assets/PXL_20250914_234514735.jpg)
+![Selector from Alph4D0g](https://github.com/Carrot-collective/ERCF_v3/assets/PXL_20250926_195417168.RAW-01.COVER.jpg)
+![Selector from Alph4D0g](https://github.com/Carrot-collective/ERCF_v3/assets/PXL_20250926_195427863.RAW-01.COVER.jpg)
 
 <br>
 
 ## User Print Showroom
-<img src="Assets/Showroom/Spidermans.png" alt="Spidermans" width="950"/><img src="Assets/Showroom/NoS_Prints.png" alt="NoS_prints" width="950"/><img src="Assets/Showroom/BnE_Prints.png" alt="BnE_Prints" width="950"/><img src=Assets/Showroom/Bimaterial_logo.png alt="Voron Logo TPU" width="650"/><img src=Assets/Showroom/9_colors_test.png alt="9_colors_test" width="400"/>
 
+<img src="Assets/Showroom/20241224_232456.jpg" alt="Playing Cards from Print3D Pilot" width="950"/>
+<img src="Assets/Showroom/20241224_232236.jpg" alt="Playing Cards from Print3D Pilot" width="950"/>
+<img src="Assets/Showroom/IMG_4783.png" alt="Gremlin from Mark Norris" width="950"/>
+<img src=Assets/Showroom/IMG_4784.png alt="Stormtrooper from Mark Norris" width="950"/>
+<img src=Assets/Showroom/IMG_5128.jpg alt="Gingerbread Cottage from Igiannakas" width="950"/>
+<img src=Assets/Showroom/IMG_5129.jpg alt="Gingerbread Cottage from Igiannakas" width="950"/>
+<img src=Assets/Showroom/IMG_5504.jpg alt="Knit Teddy Bear from Igiannakas" width="950"/>
+<img src=Assets/Showroom/IMG_5505.jpg alt="Knit Teddy Bear from Igiannakas" width="950"/>
+<img src=Assets/Showroom/IMG_5504.jpg alt="Knit Teddy Bear from Igiannakas" width="950"/>
+
+  
