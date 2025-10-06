@@ -366,13 +366,13 @@ The most vibrant prints ever seen!
 
 Click to enlarge.
 
-<a href="Assets/Showroom/20241224_232456.jpg"><img src="Assets/Showroom/20241224_232456.jpg" alt="Playing Cards from Print3D Pilot" width="50%"/></a>
-<a href="Assets/Showroom/20241224_232236.jpg"><img src="Assets/Showroom/20241224_232236.jpg" alt="Playing Cards from Print3D Pilot" width="50%"/></a>
-<a href="Assets/Showroom/IMG_4783.png"><img src="Assets/Showroom/IMG_4783.png" alt="Gremlin from Mark Norris" width="50%"/></a>
-<a href="Assets/Showroom/IMG_4783.png"><img src=Assets/Showroom/IMG_4784.png alt="Stormtrooper from Mark Norris" width="50%"/></a>
-<a href="Assets/Showroom/IMG_5128.jpg"><img src=Assets/Showroom/IMG_5128.jpg alt="Gingerbread Cottage from Igiannakas" width="50%"/></a>
-<a href="Assets/Showroom/IMG_5129.jpg"><img src=Assets/Showroom/IMG_5129.jpg alt="Gingerbread Cottage from Igiannakas" width="50%"/></a>
-<a href="Assets/Showroom/IMG_5504.jpg"><img src=Assets/Showroom/IMG_5504.jpg alt="Knit Teddy Bear from Igiannakas" width="50%"/></a>
-<a href="Assets/Showroom/IMG_5505.jpg"><img src=Assets/Showroom/IMG_5505.jpg alt="Knit Teddy Bear from Igiannakas" width="50%"/></a>
+<a href="Assets/Showroom/20241224_232456.jpg"><img src="Assets/Showroom/20241224_232456.jpg" alt="Playing Cards from Print3D Pilot" width="25%"/></a>
+<a href="Assets/Showroom/20241224_232236.jpg"><img src="Assets/Showroom/20241224_232236.jpg" alt="Playing Cards from Print3D Pilot" width="25%"/></a>
+<a href="Assets/Showroom/IMG_4783.png"><img src="Assets/Showroom/IMG_4783.png" alt="Gremlin from Mark Norris" width="25%"/></a>
+<a href="Assets/Showroom/IMG_4783.png"><img src=Assets/Showroom/IMG_4784.png alt="Stormtrooper from Mark Norris" width="25%"/></a>
+<a href="Assets/Showroom/IMG_5128.jpg"><img src=Assets/Showroom/IMG_5128.jpg alt="Gingerbread Cottage from Igiannakas" width="25%"/></a>
+<a href="Assets/Showroom/IMG_5129.jpg"><img src=Assets/Showroom/IMG_5129.jpg alt="Gingerbread Cottage from Igiannakas" width="25%"/></a>
+<a href="Assets/Showroom/IMG_5504.jpg"><img src=Assets/Showroom/IMG_5504.jpg alt="Knit Teddy Bear from Igiannakas" width="25%"/></a>
+<a href="Assets/Showroom/IMG_5505.jpg"><img src=Assets/Showroom/IMG_5505.jpg alt="Knit Teddy Bear from Igiannakas" width="25%"/></a>
 
   
