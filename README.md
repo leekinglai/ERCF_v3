@@ -36,7 +36,7 @@ An expandable MMU for Klipper-based 3D-Printers
 
 [Jabberwocky Toolhead](https://github.com/kinematicdigit/Jabberwocky)
 
-(Happy Hare Wiki)[https://github.com/moggieuk/Happy-Hare/wiki]
+[Happy Hare Wiki](https://github.com/moggieuk/Happy-Hare/wiki)
 
 <br />
 
