@@ -135,7 +135,7 @@ ERCT includes a pre-gate filament sensor for automated filament loading and dete
 ERCT is a very compact and integrated buffer system that is great when your spools are remote from your printer.
 <p>
 
-[Read more](Recommended_Options/ERCT_Buffer_V3/README.md) &nbsp;&nbsp; Videos: [Rear Loading](https://youtu.be/9jzB5Un6HKo) [Front Loading](https://youtu.be/GlSXtUkd-b8)
+[Read more](https://github.com/Carrot-collective/ERCT) &nbsp;&nbsp; Videos: [Rear Loading](https://youtu.be/9jzB5Un6HKo) [Front Loading](https://youtu.be/GlSXtUkd-b8)
 </td>
 </tr>
 </table>
@@ -155,7 +155,7 @@ Filamentalist requires no additional motors because of its innovation of using t
 Filamentalist can also use the modular pre-gate filament sensor and gate entry LED blocks from ERCT so you don't give up on bling!
 <p>
 
-[Read more](Recommended_Options/Filamentalist_Rewinder/README.md)
+[Read more](https://github.com/Carrot-collective/Filamentalist)
 </td>
 <td width=30%><img src="Recommended_Options/Filamentalist_Rewinder/Assets/Filamentalist_render.png" alt='Filamentalist'></td>
 </tr>
@@ -174,7 +174,7 @@ Before the MMU can unload a filament, the tip must be prepared so that it can be
 ERF also supports an optional servo operated ganrtry activation pin so no print area is lost with this addition. ERF designs also include the recommended integrated toolhead sensor
 <p>
 
-[Read more](Recommended_Options/ERF_Filament_Cutter/README.md)
+[Read more](https://github.com/Carrot-collective/Filametrix)
 </td>
 </tr>
 </table>
@@ -246,6 +246,7 @@ Happy Hare provides an easy installation script which has knowledge of recommend
 Building something as complex as an MMU is a challenging undertaking, but the ERCFv3.0 project contains an amazingly detailed and illustrated manual with step-by-step instructions. We have tried to make the process similar to fitting together a jigsaw puzzle, albeit with a few optional pieces.
 <p>
 
+[Documentation](Documentation)
 [ERCFv3.0 PDF Manual](Documentation/ERCF_v3_Manual.pdf)
 </td>
 <td width=30%><img src="Assets/Manual_Page.png" alt='ERCF Manual'></td>
