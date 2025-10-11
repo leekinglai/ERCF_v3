@@ -1,23 +1,3 @@
-# Enraged Rabbit Community Project
-
-<p align="center">
- <img src="/Assets/main_hero_v3.png" alt='ERCFv3' width='70%'>
- <h1 align="center">ERCF v3.0</h1>
-</p>
-
-<p align="center">
-An expandable MMU for Klipper-based 3D-Printers
-</p>
-
-<p align="center">
- <a aria-label="Downloads" href="https://github.com/Carrot-collective/ERCF_v3/releases"><img src="https://img.shields.io/github/release/Carrot-collective/ERCF_v3?display_name=tag&style=flat-square"></a> &nbsp;
- <a aria-label="Stars" href="https://github.com/Carrot-collective/ERCF_v3/stargazers"><img src="https://img.shields.io/github/stars/Carrot-collective/ERCF_v3?style=flat-square"></a> &nbsp;
- <a aria-label="Forks" href="https://github.com/Carrot-collective/ERCF_v3/network/members"><img src="https://img.shields.io/github/forks/Carrot-collective/ERCF_v3?style=flat-square"></a> &nbsp;
- <a aria-label="License" href="https://github.com/Carrot-collective/ERCF_v3/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Carrot-collective/ERCF_v3?style=flat-square"></a> &nbsp;
- <a aria-label="Commits" href=""><img src="https://img.shields.io/github/commit-activity/y/Carrot-collective/ERCF_v3"></a> &nbsp;
-</p>
-
-<br>
 ## Carrot Collective Projects
 
 
@@ -40,6 +20,28 @@ An expandable MMU for Klipper-based 3D-Printers
 
 <br />
 
+# Enraged Rabbit Community Project
+
+<p align="center">
+ <img src="/Assets/main_hero_v3.png" alt='ERCFv3' width='70%'>
+ <h1 align="center">ERCF v3.0</h1>
+</p>
+
+<p align="center">
+An expandable MMU for Klipper-based 3D-Printers
+</p>
+
+<p align="center">
+ <a aria-label="Downloads" href="https://github.com/Carrot-collective/ERCF_v3/releases"><img src="https://img.shields.io/github/release/Carrot-collective/ERCF_v3?display_name=tag&style=flat-square"></a> &nbsp;
+ <a aria-label="Stars" href="https://github.com/Carrot-collective/ERCF_v3/stargazers"><img src="https://img.shields.io/github/stars/Carrot-collective/ERCF_v3?style=flat-square"></a> &nbsp;
+ <a aria-label="Forks" href="https://github.com/Carrot-collective/ERCF_v3/network/members"><img src="https://img.shields.io/github/forks/Carrot-collective/ERCF_v3?style=flat-square"></a> &nbsp;
+ <a aria-label="License" href="https://github.com/Carrot-collective/ERCF_v3/blob/master/LICENSE"><img src="https://img.shields.io/github/license/Carrot-collective/ERCF_v3?style=flat-square"></a> &nbsp;
+ <a aria-label="Commits" href=""><img src="https://img.shields.io/github/commit-activity/y/Carrot-collective/ERCF_v3"></a> &nbsp;
+</p>
+
+<br>
+
+
 <table>
 <tr>
 <td width=30%><img src="/Assets/V3_Bunny.PNG" alt='Rabbit V3'></td>
@@ -47,7 +49,7 @@ An expandable MMU for Klipper-based 3D-Printers
 This is a community-born project and a major update to the Voron ERCF MMU that was started a couple of years ago by Ette. It is endorsed by Ette, and the guiding philosophy wasn't to start again with a new MMU design but to refine what has already proven to be a very capable machine and push it to be the best it can be by simplifying problematic construction, improving reliability and aligning as close as possible to v2.0 BOM. The project includes an optional integrated filament buffer system (ERCT), filament cutter option (ERF), a collection of recommended tool head sensor modifications and a bit of Bling! It fully leverages the Happy Hare firmware MMU control software with Klipper Screen extensions.
 <p>
  
-There is a rapidly growing list of MMUs in the marketplace, from the mass-produced "Fords" who pioneered the market to the "Toyota" that are more recent efficient engineering feat but somehow lacked soul. We consider ERCFv3.0 the "BMW" - a little over-engineered perhaps but distinctively cool, and you feel good driving it. We hope you enjoy it! &nbsp;&nbsp; Videos: [Teaser](https://www.youtube.com/watch?v=U2QwvPacIUk) &nbsp; [Release](https://www.youtube.com/watch?v=EJCPerBsM3Q)
+There is a rapidly growing list of MMUs in the marketplace, from the mass-produced "Fords" who pioneered the market to the "Toyota" that are more recent efficient engineering feat but somehow lacked soul. We consider ERCFv3.0 the "BMW" - a little over-engineered perhaps but distinctively cool, and you feel good driving it. We hope you enjoy it!
 </td>
 </tr>
 </table>
