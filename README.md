@@ -123,7 +123,7 @@ When an MMU changes tool, the unloaded filament needs to be thoughtfully managed
 ### <img src="Assets/Carrot.png" alt="" width="24"> Enraged Rabbit Cotton Tail (ERCT) - Filament Buffer
 <table>
 <tr>
-<td width=30%><img src="Recommended_Options/ERCT_Buffer/Assets/heroimage_ERCT.png" alt='ERCT'></td>
+<td width=30%><img src="Assets/ERCT_render.png" alt='ERCT'></td>
 <td>
 The Enraged Rabbit Cotton Tail (ERCT) buffer system is designed to attach directly to ERCF v3.0. It is a passive system that optimizes space and is also designed to reduce resistance in the filament path, creating a consistent system for calibration.
 <p>
