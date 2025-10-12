@@ -1,11 +1,8 @@
 ## Carrot Collective Projects
 
+[ERCT / CottonTail Integrated Buffer](https://github.com/Carrot-collective/ERCT)
 
-[ERCF v3](https://github.com/Carrot-collective/ERCF_v3)
-
-[ERCT / CottonTail](https://github.com/Carrot-collective/ERCT)
-
-[Filametrix Toolhead Cutter Buffer](https://github.com/Carrot-collective/Filametrix)
+[Filametrix Toolhead Cutter](https://github.com/Carrot-collective/Filametrix)
 
 [Blobifier Purge System](https://github.com/Carrot-collective/Blobifier)
 
