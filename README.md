@@ -159,7 +159,7 @@ Filamentalist can also use the modular pre-gate filament sensor and gate entry L
 
 [Read more](https://github.com/Carrot-collective/Filamentalist)
 </td>
-<td width=30%><img src="Recommended_Options/Filamentalist_Rewinder/Assets/Filamentalist_render.png" alt='Filamentalist'></td>
+<td width=30%><img src="Assets/Filamentalist_render.png" alt='Filamentalist'></td>
 </tr>
 </table>
 
@@ -168,7 +168,7 @@ Filamentalist can also use the modular pre-gate filament sensor and gate entry L
 ### <img src="Assets/Carrot.png" alt="" width="24"> Toolhead Cutter: Enraged Rabbit Filametrix (ERF)
 <table>
 <tr>
-<td width=30%><img src="Recommended_Options/ERF_Filament_Cutter/Assets/ERF.png" alt='ERF'></td>
+<td width=30%><img src="Assets/ERF.png" alt='ERF'></td>
 <td>
 Before the MMU can unload a filament, the tip must be prepared so that it can be cleanly loaded next time. This tip-forming process is very difficult to tune and varies based on material type, temperature, hotend type and even weather! Introducing Enraged Rabbit Filametrix (ERF) filament cutting system. This lightweight addition to your Stealthburner toolhead adds a cutting blade. When retracting, the problematic tip of the filament is simply cut off for perfect tips and no jams.
 <p>
@@ -190,7 +190,7 @@ ERF also supports an optional servo operated ganrtry activation pin so no print 
 ERCF can be operated without a toolhead sensor (filament detection) in the toolhead but it is **not recommended**. A toolhead sensor provides an accurate homing point very close to the nozzle but also adds reliability to the tool change process. ERCF includes a set of toolhead sensor modifications for popular extruders. These work reliably through coupling a microswitch to the filament path.
 <p>
 
-[Read more](Recommended_Options/Toolhead_Modifications/README.md)
+[Read more](Recommended_Options/README.md)
 </td>
 </tr>
 </table>
