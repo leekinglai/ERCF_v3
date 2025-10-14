@@ -294,7 +294,7 @@ ERCF v3 is currently at the fourth iteration or v3.0 phase. Design evolution has
 Most importantly let me introduce the development, test and doc team. A project like this doesn't happen without many hundreds of hours of volunteer effort and all of these folks are truely awesome. Please give some :clap: :clap: :clap:
 <ul>
  <li>@Miriax (Designer & Doc Demon)
- <li>@kinematicdigit VS.744 (Mr Cotton Tail & Doc Illustrator)
+ <li>@kinematicdigit VS.744 (Designer & Vendor Relations)
  <li>@ningpj (Tester, Breaker & Documenter)
  <li>@SkiBikeMake (Mr Filamentalist)
  <li>@moggieuk V0.1503 | v3.4088 (Mr Happy Hare)
