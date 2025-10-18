@@ -22,4 +22,5 @@ Looking to submit a mod? Check the [mod submission rules](https://github.com/Enr
 | Miriax | [Link](Miriax/Metal_Coupler_Sleeve) | Metal Coupler Sleeve | v3 | Pre-Launch |
 | MNeuhaus | [Link](Mneuhaus/623_Bearing_with_LEDs) | 623 Bearing Encoder with LED | v2 | Pre-Launch |
 | MNeuhaus | [Link](Mneuhaus/v623zz_Bearing_with_LEDs) | v623zz Bearing Encoder with LED | v2 | Pre-Launch |
+| Batalhoti | [Link](https://github.com/Batalhoti/QuattroSync) | Quattro Sync Tension/Compression Sensor | v2, v3 | 10-18-25 |
 
