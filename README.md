@@ -246,7 +246,7 @@ Building something as complex as an MMU is a challenging undertaking, but the ER
 <p>
 
 [Documentation](Documentation)
-[ERCFv3.0 PDF Manual](Documentation/ERCF_v3_Manual.pdf)
+[Get the latest version of the ERCFv3.0 PDF Manual](Documentation)
 </td>
 <td width=30%><img src="Assets/Manual_Page.png" alt='ERCF Manual'></td>
 </tr>
