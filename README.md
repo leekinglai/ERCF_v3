@@ -323,13 +323,13 @@ These kits and specialty parts will have been checked by us and meet good qualit
  </li>
  <li> Pending Submission - Triangle Labs
  </li>
- <li> Pending Submission - Seleadlabs
+ <li> Pending Approval - Seleadlabs
  </li>
  <li> Pending Submission - Makerpanda
  </li>
  <li> Pending Submission - Fysetc
  </li>
- <li> Pending Submission - Dodo 3D Labs
+ <li> Pending Approval - Vano3dla
  </li>
  
  
