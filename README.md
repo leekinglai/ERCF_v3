@@ -319,17 +319,17 @@ Most importantly let me introduce the development, test and doc team. A project 
 These kits and specialty parts will have been checked by us and meet good quality standards. Pending Certification means it has met our first pass inspection and in the process of being verified as a v3 kit. <strong>WE DO NOT RECOMMEND PURCHASING KITS WITHOUT THE CERTIFICATION BY US. PLEASE CHECK BACK HERE FOR THE LIST OF AUTHORIZED VENDORS AND MANUFACTURERS</strong>:<br>
 <p>
 <ul>
- <li> Pending Submission - Siboor
+ <li> Approved - Siboor
  </li>
  <li> Pending Submission - Triangle Labs
  </li>
- <li> Pending Approval - Seleadlabs
+ <li> Approved - [Seleadlabs](https://www.aliexpress.us/item/3256810002191161.html)
  </li>
  <li> Pending Submission - Makerpanda
  </li>
  <li> Pending Submission - Fysetc
  </li>
- <li> Pending Approval - Vano3dla
+ <li> Approved - [Vano3dla 8 channel](https://www.aliexpress.com/item/1005010543365831.html) [12 channel](https://www.aliexpress.com/item/1005011827763626.html)
  </li>
  
  
