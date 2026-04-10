@@ -329,7 +329,7 @@ These kits and specialty parts will have been checked by us and meet good qualit
  </li>
  <li> Pending Submission - Fysetc
  </li>
- <li> Approved - <a href="https://www.aliexpress.com/item/1005010543365831.html">Vano3dla 8 channel</a>) <a href="https://www.aliexpress.com/item/1005011827763626.html">12 channel</a>
+ <li> Approved - <a href="https://www.aliexpress.com/item/1005010543365831.html">Vano3dla 8 channel</a> <a href="https://www.aliexpress.com/item/1005011827763626.html">12 channel</a>
  </li>
  
  
