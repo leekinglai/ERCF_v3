@@ -323,13 +323,13 @@ These kits and specialty parts will have been checked by us and meet good qualit
  </li>
  <li> Pending Submission - Triangle Labs
  </li>
- <li> Approved - [Seleadlabs](https://www.aliexpress.us/item/3256810002191161.html)
+ <li> Approved - <a href="https://www.aliexpress.us/item/3256810002191161.html">Seleadlabs</a>
  </li>
  <li> Pending Submission - Makerpanda
  </li>
  <li> Pending Submission - Fysetc
  </li>
- <li> Approved - [Vano3dla 8 channel](https://www.aliexpress.com/item/1005010543365831.html) [12 channel](https://www.aliexpress.com/item/1005011827763626.html)
+ <li> Approved - <a href="https://www.aliexpress.com/item/1005010543365831.html">Vano3dla 8 channel</a>) <a href="https://www.aliexpress.com/item/1005011827763626.html">12 channel</a>
  </li>
  
  
